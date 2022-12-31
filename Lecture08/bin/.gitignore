@@ -2,10 +2,7 @@
 /HelloWorld$1.class
 /HelloWorld.class
 /LoginApplication.class
-/RPCServer.class
-/Calculator.class
-/CalculatorImpl.class
-/Adder.class
-/RPCClient.class
 /RPCCalculator.class
 /RPCCalculatorImpl.class
+/RPCClient.class
+/RPCServer.class

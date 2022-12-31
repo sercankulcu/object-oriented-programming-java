@@ -1,6 +1,8 @@
 /ArrayListDemo.class
+/ArrayListExample.class
 /BinarySearcher.class
 /BubbleSort.class
+/CalculatorStack.class
 /Dictionary.class
 /DuplicateFinderInArray.class
 /Fibonacci.class
@@ -13,6 +15,7 @@
 /Lottery.class
 /MatrixAdder.class
 /MatrixMultiplier.class
+/Maze.class
 /QueueExample.class
 /QuickSort.class
 /SelectionSort.class
@@ -21,6 +24,5 @@
 /SumArray.class
 /ThirdLargestFinder.class
 /WordFrequencyCounter.class
-/ArrayListExample.class
-/CalculatorStack.class
-/Maze.class
+/BestTimeToBuyAndSellStock.class
+/Celebrity.class
