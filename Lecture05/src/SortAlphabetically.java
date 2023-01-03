@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SortalAhabetically {
+public class SortAlphabetically {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
