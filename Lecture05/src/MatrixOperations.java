@@ -122,6 +122,10 @@ public class MatrixOperations {
 	  int count = MatrixOperations.count(0, D);
 
 	  // Print the results
+	  System.out.println("Matrix A: " + Arrays.deepToString(A));
+	  System.out.println("Matrix B: " + Arrays.deepToString(B));
+	  System.out.println("Matrix C: " + Arrays.deepToString(C));
+	  System.out.println("Matrix D: " + Arrays.deepToString(D));
 	  System.out.println("Matrix E: " + Arrays.deepToString(E));
 	  System.out.println("Matrix F: " + Arrays.deepToString(F));
 	  System.out.println("Matrix G: " + Arrays.deepToString(G));
