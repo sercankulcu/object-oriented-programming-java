@@ -1,4 +1,6 @@
+
 public class Automobile {
+	
 	private Gear gear;
 	private Engine engine;
 	private Wheel[] wheels;
@@ -35,54 +37,6 @@ public class Automobile {
 	public void inflateTires() {
 		for (Wheel wheel : this.wheels) {
 			wheel.inflate();
-		}
-	}
-
-	private class Gear {
-		private int gearNumber;
-
-		public void setGearNumber(int gearNumber) {
-			this.gearNumber = gearNumber;
-		}
-
-		public void shiftUp() {
-			// Shift the gear to a higher number
-		}
-
-		public void shiftDown() {
-			// Shift the gear to a lower number
-		}
-	}
-
-	private class Engine {
-		private boolean isRunning;
-
-		public void start() {
-			this.isRunning = true;
-		}
-
-		public void stop() {
-			this.isRunning = false;
-		}
-
-		public void increasePower() {
-			// Increase the horsepower of the engine
-		}
-
-		public void decreasePower() {
-			// Decrease the horsepower of the engine
-		}
-	}
-
-	private class Wheel {
-		private int tirePressure;
-
-		public void inflate() {
-			this.tirePressure = 30;
-		}
-
-		public void deflate() {
-			// Decrease the tire pressure
 		}
 	}
 }

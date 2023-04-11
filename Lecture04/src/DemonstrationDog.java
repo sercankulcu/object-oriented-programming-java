@@ -6,7 +6,7 @@
  * of the Dog class that calls the bark method.
  * */
 
-public class Demonstration {
+public class DemonstrationDog {
 	
 	public static void main(String[] args) {
 		
@@ -24,10 +24,3 @@ public class Demonstration {
 	}
 }
 
-// Define the Dog class
-class Dog {
-	// Define the bark method
-	public void bark() {
-		System.out.println("Woof woof!");
-	}
-}
