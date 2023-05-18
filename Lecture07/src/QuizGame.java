@@ -14,42 +14,44 @@ import java.util.Scanner;
  * */
 
 public class QuizGame {
-	
-    public static void main(String[] args) {
-    	
-        int correctAnswers = 0;
-        int incorrectAnswers = 0;
 
-        // Read the questions and answers from the text file
-        try (BufferedReader reader = new BufferedReader(new FileReader("questions.txt"))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                // Split the line into the question and answer
-                String[] parts = line.split(":");
-                String question = parts[0];
-                String answer = parts[1];
+	public static void main(String[] args) {
 
-                // Ask the player to guess the answer
-                Scanner scanner = new Scanner(System.in);
-                System.out.println(question);
-                for (int i = 0; i < 3; i++) {
-                    System.out.print("Enter your guess: ");
-                    String guess = scanner.nextLine();
-                    if (guess.equalsIgnoreCase(answer)) {
-                        System.out.println("Correct!");
-                        correctAnswers++;
-                        break;
-                    } else {
-                        System.out.println("Incorrect. Try again.");
-                    }
-                }
-                incorrectAnswers++;
-            }
-        } catch (IOException e) {
-            System.out.println("Error reading from file: " + e.getMessage());
-        }
+		int totalQuestionCount = 0;
+		int correctAnswers = 0;
 
-        // Print out the player's score
-        System.out.println("You got " + correctAnswers + " correct answers and " + incorrectAnswers + " incorrect answers.");
-    }
+		// Read the questions and answers from the text file
+		try (BufferedReader reader = new BufferedReader(new FileReader("questions.txt"))) {
+			String line;
+			Scanner scanner = new Scanner(System.in);
+			while ((line = reader.readLine()) != null) {
+
+				totalQuestionCount++;
+				// Split the line into the question and answer
+				String[] parts = line.split(":");
+				String question = parts[0];
+				String answer = parts[1];
+
+				// Ask the player to guess the answer
+				System.out.println(question);
+				for (int i = 0; i < 3; i++) {
+					System.out.print("Enter your guess: ");
+					String guess = scanner.nextLine();
+					if (guess.equalsIgnoreCase(answer)) {
+						System.out.println("Correct!");
+						correctAnswers++;
+						break;
+					} else {
+						System.out.println("Incorrect. Try again.");
+					}
+				}
+			}
+			scanner.close();
+		} catch (IOException e) {
+			System.out.println("Error reading from file: " + e.getMessage());
+		}
+
+		// Print out the player's score
+		System.out.println("You got " + correctAnswers + " correct answers and " + (totalQuestionCount-correctAnswers) + " incorrect answers.");
+	}
 }
