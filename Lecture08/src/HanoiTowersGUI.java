@@ -14,15 +14,19 @@ import java.awt.*;
 
 public class HanoiTowersGUI extends JFrame {
 
-    private static final int WINDOW_WIDTH = 600;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+		private static final int WINDOW_WIDTH = 600;
     private static final int WINDOW_HEIGHT = 400;
 
     private static final int PEG_WIDTH = 20;
     private static final int PEG_HEIGHT = 300;
     private static final int DISK_HEIGHT = 30;
 
-    private static final int NUM_DISKS = 5;
-    private static final int NUM_PEGS = 3;
+    private static final int NUM_DISKS = 6;
+    private static final int NUM_PEGS = 4;
 
     private int[] pegHeights;
     private JPanel[] pegs;
@@ -83,6 +87,7 @@ public class HanoiTowersGUI extends JFrame {
     }
 
     public static void main(String[] args) throws InterruptedException {
+    	
       HanoiTowersGUI gui = new HanoiTowersGUI();
       gui.setVisible(true);
 
@@ -91,7 +96,8 @@ public class HanoiTowersGUI extends JFrame {
   }
     
     public static void solveTowerOfHanoi(int numDisks, int fromPeg, int toPeg, int auxPeg, HanoiTowersGUI gui) throws InterruptedException {
-      if (numDisks == 1) {
+      
+    	if (numDisks == 1) {
           // move the top disk from the fromPeg to the toPeg
           gui.moveDisk(fromPeg, toPeg);
           Thread.sleep(1000);

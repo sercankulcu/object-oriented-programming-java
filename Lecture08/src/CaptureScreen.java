@@ -12,7 +12,10 @@ import javax.imageio.ImageIO;
 public class CaptureScreen {
 	
 	public static void captureScreen(String filename) throws AWTException, IOException {
+		
     Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+    System.out.println(screenSize);
+    
     Rectangle screenRectangle = new Rectangle(screenSize);
     Robot robot = new Robot();
     BufferedImage image = robot.createScreenCapture(screenRectangle);
