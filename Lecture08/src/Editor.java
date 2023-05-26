@@ -138,5 +138,6 @@ public class Editor extends JFrame implements ActionListener {
 	public static void main(String args[])
 	{
 		Editor e = new Editor();
+		e.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
