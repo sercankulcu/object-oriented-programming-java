@@ -7,11 +7,13 @@
  * */
 
 public class BackgroundTask implements Runnable {
+	
   public void run() {
-    for (int i = 0; i < 100; i++) {
+  	
+    for (int i = 0; i < 10; i++) {
       System.out.println("Running task: " + i);
       try {
-        Thread.sleep(1000); // Sleep for 1 second
+        Thread.sleep(500); // Sleep for 1 second
       } catch (InterruptedException e) {
         e.printStackTrace();
       }
@@ -19,6 +21,7 @@ public class BackgroundTask implements Runnable {
   }
   
   public static void main(String[] args) {
+  	
     BackgroundTask task = new BackgroundTask();
     Thread thread = new Thread(task);
     thread.start();
