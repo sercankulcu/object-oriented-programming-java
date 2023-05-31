@@ -6,26 +6,36 @@ import java.sql.*;
  * */
 
 public class SQLiteDemo {
+
 	public static void main(String[] args) {
+
 		Connection conn = null;
 		try {
 			// Connect to the database
 			String url = "jdbc:sqlite:test2.db";
 			conn = DriverManager.getConnection(url);
-			
+
 			Statement stmt = conn.createStatement();
-            String sql = "CREATE TABLE IF NOT EXISTS users (\n"
-                    + " id INTEGER PRIMARY KEY,\n"
-                    + " first_name TEXT NOT NULL,\n"
-                    + " last_name TEXT NOT NULL,\n"
-                    + " age INTEGER NOT NULL\n"
-                    + ");";
-            stmt.execute(sql);
-            System.out.println("Table created successfully");
+			String sql = "CREATE TABLE IF NOT EXISTS users (\n"
+					+ " id INTEGER PRIMARY KEY,\n"
+					+ " first_name TEXT NOT NULL,\n"
+					+ " last_name TEXT NOT NULL,\n"
+					+ " age INTEGER NOT NULL\n"
+					+ ");";
+			stmt.execute(sql);
+			System.out.println("Table created successfully");
 
 			// Insert a new record
 			insertRecord(conn, "John", "Doe", 30);
 			System.out.println("Table inserted successfully");
+
+			// Insert a new record
+			insertRecord(conn, "Mike", "Tyson", 40);
+			System.out.println("Table inserted successfully");
+
+			// Select all records
+			selectAllRecords(conn);
+			System.out.println("Table listed successfully");
 
 			// Update an existing record
 			updateRecord(conn, "John", "Smith", 35);
@@ -38,6 +48,11 @@ public class SQLiteDemo {
 			// Delete a record
 			deleteRecord(conn, "John");
 			System.out.println("Table deleted successfully");
+
+			// Select all records
+			selectAllRecords(conn);
+			System.out.println("Table listed successfully");
+
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
 		} finally {

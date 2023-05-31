@@ -34,6 +34,26 @@ public class Game {
             e.printStackTrace();
         }
         
+     // Insert a new score into the database
+        try (Connection conn = DriverManager.getConnection(DB_URL)) {
+            PreparedStatement pstmt = conn.prepareStatement(INSERT_SCORE_SQL);
+            pstmt.setString(1, "player2");
+            pstmt.setInt(2, 90);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        
+     // Insert a new score into the database
+        try (Connection conn = DriverManager.getConnection(DB_URL)) {
+            PreparedStatement pstmt = conn.prepareStatement(INSERT_SCORE_SQL);
+            pstmt.setString(1, "player3");
+            pstmt.setInt(2, 80);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        
         // Retrieve the top 10 high scores from the database
         try (Connection conn = DriverManager.getConnection(DB_URL)) {
             PreparedStatement pstmt = conn.prepareStatement(SELECT_HIGH_SCORES_SQL);
