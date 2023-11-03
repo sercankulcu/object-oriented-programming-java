@@ -22,7 +22,7 @@ public class GirilenSayidanSonrakiAsalSayi {
 		System.out.println("Bir sayı giriniz");
 		int sayi = okuyucu.nextInt();
 		okuyucu.close();
-		System.out.println("Girilen sayi: " + sayi);
+		System.out.println("Girilen sayı: " + sayi);
 
 		while(true)
 		{
