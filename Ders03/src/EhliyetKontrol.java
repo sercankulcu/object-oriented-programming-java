@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class EhliyetKontrol {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner klavye = new Scanner(System.in);
 
         System.out.print("Yaşınızı girin: ");
-        int yas = scanner.nextInt();
+        int yas = klavye.nextInt();
 
         if (yas >= 18) {
             System.out.println("Ehliyet alabilirsiniz.");
@@ -13,6 +13,6 @@ public class EhliyetKontrol {
             System.out.println("Ehliyet alamazsınız.");
         }
 
-        scanner.close();
+        klavye.close();
     }
 }
