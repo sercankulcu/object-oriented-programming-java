@@ -5,9 +5,9 @@ public class Kitap {
 	int sayfaSayisi;
 
 	public Kitap() {
-		
+
 	}
-	
+
 	public Kitap(String baslik) {
 		this.baslik = baslik;
 	}
@@ -21,7 +21,7 @@ public class Kitap {
 		this(baslik, yazar);  // Constructor chaining
 		this.sayfaSayisi = sayfaSayisi;
 	}
-	
+
 	private void kitapBilgisiGoster() {
 		System.out.println(baslik + " " + yazar + " " + sayfaSayisi);
 	}

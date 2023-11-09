@@ -1,8 +1,8 @@
 
 public class TernaryOrnek {
-	
+
 	public static void main(String[] args) {
-		
+
 		int sayi = 10;
 
 		// Basit bir üçlü operatör örneği

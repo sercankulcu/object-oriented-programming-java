@@ -17,4 +17,5 @@ public class ShortVeriTuruOrnegi {
 		short toplam = (short) (sayi1 + sayi2); // Toplam sonucunu bir short'a dönüştürmemiz gerekebilir
 		System.out.println("Toplam: " + toplam);
 	}
+	
 }

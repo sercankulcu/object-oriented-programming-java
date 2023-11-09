@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class ToplamaHesaplama {
-	
+
 	public static void main(String[] args) {
-		
+
 		// Kullanıcı girdisini okumak için bir Scanner nesnesi oluşturun
 		Scanner tarayici = new Scanner(System.in);
 		// Kullanıcıdan sayıyı girmesini isteyin

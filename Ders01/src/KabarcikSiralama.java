@@ -1,6 +1,6 @@
 
 public class KabarcikSiralama {
-	
+
 	public static void main(String[] args) {
 		// Örnek bir dizi oluştur
 		int[] dizi = {64, 34, 25, 12, 22, 11, 90};

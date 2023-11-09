@@ -1,9 +1,9 @@
 import java.util.Random;
 
 public class RastgeleDiziArama {
-	
+
 	public static void main(String[] args) {
-		
+
 		// Örnek bir dizi oluştur
 		int[] dizi = {5, 10, 15, 20, 25, 30, 35, 40};
 

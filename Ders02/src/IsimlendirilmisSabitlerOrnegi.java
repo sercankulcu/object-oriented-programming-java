@@ -1,6 +1,6 @@
 
 public class IsimlendirilmisSabitlerOrnegi {
-	
+
 	public static void main(String[] args) {
 		// İsimlendirilmiş sabitleri kullanarak matematiksel bir işlem yapalım
 		final double PI = 3.14159; // PI sabiti tanımlandı ve değeri atandı

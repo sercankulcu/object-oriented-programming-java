@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class PalindromKontrol {
-	
+
 	public static void main(String[] args) {
-		
+
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Bir kelime veya cümle girin: ");

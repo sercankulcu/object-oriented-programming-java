@@ -1,11 +1,11 @@
 
 public class RezerveKelimelerOrnegi {
-	
+
 	public static void main(String[] args) {
-		
+
 		// Rezerve edilmiş kelimeleri kullanmaya çalıştığımızda hata alırız
-//		int new = 5; // "new" kelimesi rezerve edilmiştir ve bir değişken adı olarak kullanılamaz
-//		String switch = "Yeşil"; // "switch" kelimesi rezerve edilmiştir ve bir değişken adı olarak kullanılamaz
+		//		int new = 5; // "new" kelimesi rezerve edilmiştir ve bir değişken adı olarak kullanılamaz
+		//		String switch = "Yeşil"; // "switch" kelimesi rezerve edilmiştir ve bir değişken adı olarak kullanılamaz
 
 		// Aşağıdaki rezerve edilmiş kelimeleri kullanmak da hata verir:
 		// abstract, assert, boolean, break, byte, case, catch, char, class, const, continue, default,

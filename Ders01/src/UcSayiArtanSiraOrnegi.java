@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class UcSayiArtanSiraOrnegi {
-	
+
 	public static void main(String[] args) {
-		
+
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Birinci sayıyı girin: ");

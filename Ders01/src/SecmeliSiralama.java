@@ -1,6 +1,6 @@
 
 public class SecmeliSiralama {
-	
+
 	public static void main(String[] args) {
 		// Örnek bir dizi oluştur
 		int[] dizi = {64, 25, 12, 22, 11};

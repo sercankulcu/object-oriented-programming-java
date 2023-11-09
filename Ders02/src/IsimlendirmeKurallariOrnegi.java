@@ -1,8 +1,8 @@
 
 public class IsimlendirmeKurallariOrnegi {
-	
+
 	public static void main(String[] args) {
-		
+
 		// Java'daki isimlendirme kurallarına uyarak değişkenler tanımlayalım
 		int yas; // Geçerli: Basit bir değişken adı
 		String isimSoyisim; // Geçerli: Değişken adı birden fazla kelime içerebilir
