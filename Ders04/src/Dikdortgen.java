@@ -28,6 +28,6 @@ public class Dikdortgen {
 		alan = kare.alanHesapla();  // Dikdörtgenin alanı hesaplanıyor
 		cevre = kare.cevreHesapla(); // Dikdörtgenin çevresi hesaplanıyor
 
-		System.out.println("Dikdörtgen Alanı: " + alan + " Çevresi: " + cevre);
+		System.out.println("Karenin Alanı: " + alan + " Çevresi: " + cevre);
 	}
 }

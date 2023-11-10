@@ -5,22 +5,26 @@ public class BankaHesabi {
 
 	// Hesap Bakiyesi Erişimcisi
 	public double getHesapBakiyesi() {
-		return hesapBakiyesi;
+		return this.hesapBakiyesi;
 	}
 
 	// Hesap Sahibi Erişimcisi
 	public String getHesapSahibi() {
-		return hesapSahibi;
+		return this.hesapSahibi;
 	}
 
 	// Hesap Bakiyesi Değiştirici
-	public void setHesapBakiyesi(double yeniBakiye) {
-		hesapBakiyesi = yeniBakiye;
+	public void setHesapBakiyesi(double hesapBakiyesi) {
+		if(hesapBakiyesi < 0) {
+			System.out.println("hesap bakiyesi negatif olamaz!");
+		} else {
+			this.hesapBakiyesi = hesapBakiyesi;
+		}
 	}
 
 	// Para Yatır metodu - Dışarıdan para yatırmak için kullanılır
 	public void paraYatir(double miktar) {
-		hesapBakiyesi += miktar;
+		this.hesapBakiyesi += miktar;
 	}
 
 	// Para Çek metodu - Dışarıdan para çekmek için kullanılır

@@ -15,5 +15,10 @@ public class Araba {
 
 		System.out.println("Araba 1 Markası: " + araba1.getMarka());
 		System.out.println("Araba 2 Markası: " + araba2.getMarka());
+		
+		araba2.marka = "Opel";
+		
+		System.out.println("Araba 1 Markası: " + araba1.getMarka());
+		System.out.println("Araba 2 Markası: " + araba2.getMarka());
 	}
 }
