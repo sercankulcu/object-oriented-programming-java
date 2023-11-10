@@ -18,12 +18,13 @@ public class Ogrenci {
 
 	// Ana metod (main method) içinde kullanımı
 	public static void main(String[] args) {
+
 		Ogrenci ogrenci1 = new Ogrenci("Ali", 20122273);
 		Ogrenci ogrenci2 = new Ogrenci("Ayşe", 20132272);
 
 		ogrenci1.selamVer(); // "this" kullanarak nesne içindeki alanı (field) kullanma
 		ogrenci2.selamVer();
-		
+
 		System.out.println(ogrenci1);
 		System.out.println(ogrenci2);
 	}
