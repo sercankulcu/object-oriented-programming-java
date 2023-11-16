@@ -9,8 +9,7 @@ public class Ornek9 {
 			System.out.println("case1");
 /*		case 10 * 2 - 20: // duplicate case
 			System.out.println("case2");
-			break;
-			*/
+			break;*/
 		}
 	}
 }
