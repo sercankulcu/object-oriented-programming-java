@@ -5,7 +5,7 @@ public class Ornek8 {
 		int i; 
 		int j; 
 		for (i=1; i < 4; i++) { 
-			for (j=2; j < 4; j++) { 
+			for (j=-2; j < 5; j++) { 
 				if (j == 3) { 
 					continue; 
 				} 

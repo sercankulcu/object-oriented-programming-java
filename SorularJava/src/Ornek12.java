@@ -1,12 +1,12 @@
 
 public class Ornek12 {
 	public static void main(String[] args) {
-		int i = 10;
+		int i = 1;
 		do {
-			while (i < 15) {
+			while (i < 50) {
 				i = i + 20;
 			}
-		} while (i < 2);
+		} while (i < 40);
 		System.out.println(i);
 	}
 }
