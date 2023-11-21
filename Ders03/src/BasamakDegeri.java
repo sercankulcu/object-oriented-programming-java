@@ -10,5 +10,15 @@ public class BasamakDegeri {
 			}
 		}
 	}
+	
+	public int rakamlarToplami(int sayi) {
+		int toplam = 0;
+		while (sayi > 0) {
+			int kalan = sayi % 10;
+			toplam += kalan;
+			sayi /= 10;
+		}
+		return toplam;
+	}
 
 }

@@ -15,18 +15,12 @@ public class GirilenSayidanSonrakiAsalSayi {
 		return true;
 	}
 
-	public static void main(String[] args)
+	public void sonrakiAsal(int sayi)
 	{
-		GirilenSayidanSonrakiAsalSayi asalSayiBulucu = new GirilenSayidanSonrakiAsalSayi();
-		Scanner okuyucu = new Scanner(System.in);
-		System.out.println("Bir sayı giriniz");
-		int sayi = okuyucu.nextInt();
-		okuyucu.close();
-		System.out.println("Girilen sayı: " + sayi);
 
 		while(true)
 		{
-			if(asalSayiBulucu.asalMi(++sayi) == true)
+			if(asalMi(++sayi) == true)
 			{
 				System.out.println(sayi + " asal sayıdır");
 				break;
@@ -37,5 +31,16 @@ public class GirilenSayidanSonrakiAsalSayi {
 			}
 		}
 	}
-	
+
+	public static void main(String[] args)
+	{
+		GirilenSayidanSonrakiAsalSayi asalSayiBulucu = new GirilenSayidanSonrakiAsalSayi();
+		Scanner okuyucu = new Scanner(System.in);
+		System.out.println("Bir sayı giriniz");
+		int sayi = okuyucu.nextInt();
+		okuyucu.close();
+		System.out.println("Girilen sayı: " + sayi);
+		asalSayiBulucu.sonrakiAsal(sayi);
+	}
+
 }

@@ -1,35 +1,34 @@
-import java.util.Scanner;
 
 public class UsHesaplama {
 
 	public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in);
+		double sonuc = usHesapla(5, -2);
+		System.out.println(sonuc);
 
-		System.out.print("Taban sayısını girin: ");
-		double taban = scanner.nextDouble();
+		sonuc = usHesapla(5, -3);
+		System.out.println(sonuc);
 
-		System.out.print("Üs sayısını girin: ");
-		int us = scanner.nextInt();
+		sonuc = usHesapla(5, -1);
+		System.out.println(sonuc);
 
-		scanner.close();
+		sonuc = usHesapla(5, 0);
+		System.out.println(sonuc);
 
-		double sonuc = usHesapla(taban, us);
-
-		System.out.println(taban + " üzeri " + us + " = " + sonuc);
+		sonuc = usHesapla(5, 2);
+		System.out.println(sonuc);
 	}
 
 	public static double usHesapla(double taban, int us) {
-		if (us == 0) {
-			return 1; // Herhangi bir sayının 0. üssü 1'dir.
-		} else if (us < 0) {
-			return 1.0 / (taban * usHesapla(taban, -us - 1)); // Negatif üs için hesaplama
+
+		double sonuc = 1;
+		if (us < 0) {
+			sonuc = 1.0 / (usHesapla(taban, -us)); // Negatif üs için hesaplama
 		} else {
-			double sonuc = 1;
 			for (int i = 0; i < us; i++) {
 				sonuc *= taban;
 			}
-			return sonuc;
 		}
+		return sonuc;
 	}
 }
