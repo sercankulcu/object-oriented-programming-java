@@ -45,7 +45,6 @@ public class TicTacToe {
 			sutun = scanner.nextInt() - 1;
 		} while (satir < 0 || satir > 2 || sutun < 0 || sutun > 2 || tahta[satir][sutun] != ' ');
 		tahta[satir][sutun] = oyuncu;
-		scanner.close();
 	}
 
 	public static boolean oyunDevamEdiyorMu(char[][] tahta, char oyuncu) {
