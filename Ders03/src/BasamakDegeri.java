@@ -20,5 +20,13 @@ public class BasamakDegeri {
 		}
 		return toplam;
 	}
-
+	
+	public int basamakSayisi(int sayi) {
+		int basamak = 0;
+		while (sayi > 0) {
+			basamak++;
+			sayi /= 10;
+		}
+		return basamak;
+	}
 }
