@@ -1,8 +1,9 @@
 
 public class Kitap {
-	String baslik;
-	String yazar;
-	int sayfaSayisi;
+	
+	private String baslik;
+	private String yazar;
+	private int sayfaSayisi;
 
 	public Kitap() {
 
@@ -22,7 +23,7 @@ public class Kitap {
 		this.sayfaSayisi = sayfaSayisi;
 	}
 
-	private void kitapBilgisiGoster() {
+	public void kitapBilgisiGoster() {
 		System.out.println(baslik + " " + yazar + " " + sayfaSayisi);
 	}
 
@@ -33,6 +34,7 @@ public class Kitap {
 		//Kitap nesnesinin özelliklerine erişim
 		kitap.baslik = "Java Programlama";
 		kitap.yazar = "John Doe";
+		kitap.sayfaSayisi = 1043;
 
 		//Kitap nesnesinin metotlarına erişim
 		kitap.kitapBilgisiGoster();

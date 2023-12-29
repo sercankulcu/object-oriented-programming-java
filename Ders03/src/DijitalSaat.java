@@ -1,15 +1,25 @@
 
 public class DijitalSaat {
 	
-	int saat = 23;
-	int dakika = 59;
-	int saniye = 10;
+	private int saat = 0;
+	private int dakika = 0;
+	private int saniye = 0;
 	
-	void goster() {
+	public int getSaniye() {
+		return this.saniye;
+	}
+	
+	public void setSaniye(int saniye) {
+		if(saniye >= 0 && saniye < 60) {
+			this.saniye = saniye;
+		}
+	}
+	
+	public void goster() {
 		System.out.println(saat + ":" + dakika + ":" + saniye);
 	}
 	
-	void saatiArttir()
+	private void saatiArttir()
 	{
 		saat++;
 		if(saat > 23)
@@ -18,7 +28,7 @@ public class DijitalSaat {
 		}
 	}
 	
-	void dakikayiArttir()
+	private void dakikayiArttir()
 	{
 		dakika++;
 		if(dakika > 59)
@@ -28,7 +38,7 @@ public class DijitalSaat {
 		}
 	}
 	
-	void saniyeyiArttir()
+	public void saniyeyiArttir()
 	{
 		saniye++;
 		if(saniye > 59)
