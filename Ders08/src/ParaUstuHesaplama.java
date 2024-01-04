@@ -1,6 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -15,7 +16,7 @@ public class ParaUstuHesaplama extends JFrame {
 	private static final long serialVersionUID = 1912881839758209062L;
 
 	private JTextField miktarAlani = new JTextField(12);
-	private Document metin = miktarAlani.getDocument();
+	private transient Document metin = miktarAlani.getDocument();
 	private JTextArea rapor = new JTextArea(8, 40);
 
 	public ParaUstuHesaplama() {
@@ -45,7 +46,7 @@ public class ParaUstuHesaplama extends JFrame {
 	void raporuGuncelle() {
 		try {
 			var miktar = Integer.parseInt(metin.getText(0, metin.getLength()));
-			int dizi[] = {50, 25, 10, 5, 1};
+			int[] dizi = {50, 25, 10, 5, 1};
 			rapor.setText(miktar + " kuruş yapmak için kullanılacaklar:\n");
 			for(int x: dizi) {
 				rapor.append(miktar / x + " " + x + " kuruş\n");
@@ -63,7 +64,7 @@ public class ParaUstuHesaplama extends JFrame {
 			var frame = new ParaUstuHesaplama();
 			frame.setTitle("Para Üstü Hesaplama");
 			frame.pack();
-			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 			frame.setVisible(true);
 		});
 	}

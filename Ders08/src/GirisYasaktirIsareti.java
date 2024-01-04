@@ -3,12 +3,14 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class GirisYasaktirIsareti extends JPanel {
 	private static final long serialVersionUID = 7148504528835036003L;
 
+	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		var c = new Point(getWidth() / 2, getHeight() / 2); // merkez
@@ -30,7 +32,7 @@ public class GirisYasaktirIsareti extends JPanel {
 			panel.setBackground(Color.GREEN.darker());
 			var frame = new JFrame("Basit bir grafik programı");
 			frame.setSize(400, 300);
-			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 			frame.getContentPane().add(panel, BorderLayout.CENTER);
 			frame.setVisible(true);
 		});

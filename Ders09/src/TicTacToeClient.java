@@ -53,6 +53,7 @@ public class TicTacToeClient {
 			final int j = i;
 			board[i] = new Square();
 			board[i].addMouseListener(new MouseAdapter() {
+				@Override
 				public void mousePressed(MouseEvent e) {
 					currentSquare = board[j];
 					out.println("MOVE " + j);

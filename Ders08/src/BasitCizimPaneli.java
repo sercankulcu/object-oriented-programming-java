@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -17,12 +18,14 @@ public class BasitCizimPaneli extends JPanel {
 	private List<List<Point>> egriler = new ArrayList<>();
 	public BasitCizimPaneli() {
 		addMouseMotionListener(new MouseMotionAdapter() {
+			@Override
 			public void mouseDragged(MouseEvent e) {
 				egriler.get(egriler.size() - 1).add(new Point(e.getX(), e.getY()));
 				repaint(0, 0, getWidth(), getHeight());
 			}
 		});
 		addMouseListener(new MouseAdapter() {
+			@Override
 			public void mousePressed(MouseEvent e) {
 				var yeniEgri = new ArrayList<Point>();
 				yeniEgri.add(new Point(e.getX(), e.getY()));
@@ -31,6 +34,7 @@ public class BasitCizimPaneli extends JPanel {
 		});
 	}
 
+	@Override
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		for (var egri : egriler) {
@@ -46,7 +50,7 @@ public class BasitCizimPaneli extends JPanel {
 		SwingUtilities.invokeLater(() -> {
 			var frame = new JFrame("Basit Çizim Programı");
 			frame.getContentPane().add(new BasitCizimPaneli(), BorderLayout.CENTER);
-			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 			frame.setSize(400, 300);
 			frame.setVisible(true);
 		});

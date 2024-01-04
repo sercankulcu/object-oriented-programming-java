@@ -12,7 +12,7 @@ public class CharVeBooleanCastingOrnegi {
 		System.out.println("Boolean Değeri: " + dogruMu);
 
 		// char verisini int'e dönüştürebiliriz (casting)
-		int karakterInt = (int) karakter; // char'dan int'e dönüşüm (casting)
+		int karakterInt = karakter; // char'dan int'e dönüşüm (casting)
 		System.out.println("Karakterin ASCII Değeri: " + karakterInt);
 
 		// boolean verisini kullanarak koşullu ifade oluşturalım

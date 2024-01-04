@@ -44,7 +44,6 @@ public class ChatServer {
 	private static class Handler implements Runnable {
 		private String name;
 		private Socket socket;
-		private Scanner in;
 		private PrintWriter out;
 
 		/**
@@ -63,8 +62,8 @@ public class ChatServer {
 		 * broadcasts them.
 		 */
 		public void run() {
-			try {
-				in = new Scanner(socket.getInputStream());
+			try (var in = new Scanner(socket.getInputStream())) {
+
 				out = new PrintWriter(socket.getOutputStream(), true);
 
 				// Keep requesting a name until we get a unique one.

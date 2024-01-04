@@ -20,7 +20,7 @@ public class GirilenSayidanSonrakiAsalSayi {
 
 		while(true)
 		{
-			if(asalMi(++sayi) == true)
+			if(asalMi(++sayi))
 			{
 				System.out.println(sayi + " asal sayıdır");
 				break;

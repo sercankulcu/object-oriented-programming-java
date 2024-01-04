@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 public class CapitalizeClient {
 	public static void main(String[] args) throws Exception {
-		/*if (args.length != 1) {
-			System.err.println("Pass the server IP as the sole command line argument");
-			return;
-		}*/
+
 		try (var socket = new Socket("localhost", 59898)) {
 			System.out.println("Enter lines of text then Ctrl+D or Ctrl+C to quit");
 			try (var scanner = new Scanner(System.in)) {

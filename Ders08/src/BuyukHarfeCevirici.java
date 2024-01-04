@@ -1,5 +1,6 @@
 import java.awt.BorderLayout;
 import javax.swing.SwingUtilities;
+import javax.swing.WindowConstants;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -20,7 +21,7 @@ public class BuyukHarfeCevirici {
 			buttonPanel.add(buyukHarfButton);
 			
 			var frame = new JFrame("BuyukHarfeCevirici");
-			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 			frame.getContentPane().add(new JScrollPane(alan), BorderLayout.CENTER);
 			frame.getContentPane().add(buttonPanel, BorderLayout.SOUTH);
 			frame.pack();

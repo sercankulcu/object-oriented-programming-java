@@ -97,6 +97,7 @@ class Game {
 				try {
 					socket.close();
 				} catch (IOException e) {
+					e.printStackTrace();
 				}
 			}
 		}

@@ -40,8 +40,7 @@ public class CapitalizeServer {
 		@Override
 		public void run() {
 			System.out.println("Connected: " + socket);
-			try {
-				var in = new Scanner(socket.getInputStream());
+			try (var in = new Scanner(socket.getInputStream())) {
 				var out = new PrintWriter(socket.getOutputStream(), true);
 				while (in.hasNextLine()) {
 					out.println(in.nextLine().toUpperCase());
@@ -52,6 +51,7 @@ public class CapitalizeServer {
 				try {
 					socket.close();
 				} catch (IOException e) {
+					System.out.println("Error:" + socket);
 				}
 				System.out.println("Closed: " + socket);
 			}

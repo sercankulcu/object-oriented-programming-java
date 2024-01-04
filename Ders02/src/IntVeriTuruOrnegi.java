@@ -18,7 +18,7 @@ public class IntVeriTuruOrnegi {
 
 		// short türünden int türüne açık bir dönüşüm yapabiliriz (casting)
 		short kisaSayi2 = 30000;
-		int toplam2 = kisaSayi2 + (int) kisaSayi2; // Dönüşüm (casting)
+		int toplam2 = kisaSayi2 + kisaSayi2; // Dönüşüm (casting)
 		System.out.println("Toplam 2: " + toplam2);
 	}
 }
