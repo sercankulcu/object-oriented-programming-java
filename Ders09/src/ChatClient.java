@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.WindowConstants;
 
 /**
  * A simple Swing-based client for the chat server. Graphically it is a frame
@@ -89,8 +90,8 @@ public class ChatClient {
 
 	public static void main(String[] args) throws Exception {
 
-		var client = new ChatClient("192.168.1.65");
-		client.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		var client = new ChatClient("localhost");
+		client.frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		client.frame.setVisible(true);
 		client.run();
 	}
