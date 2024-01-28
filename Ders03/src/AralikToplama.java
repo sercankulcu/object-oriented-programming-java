@@ -1,6 +1,15 @@
 import java.util.Scanner;
 
 public class AralikToplama {
+	
+	public static void aralikTopla(int a, int b) {
+		int toplam = 0;
+		for (int i = a; i <= b; i++) {
+			toplam += i;
+		}
+		System.out.println(a + " ile " + b + " arasındaki sayıların toplamı: " + toplam);		
+	}
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
@@ -10,14 +19,7 @@ public class AralikToplama {
 		System.out.print("Bitiş değerini girin (b): ");
 		int b = scanner.nextInt();
 
-		int toplam = 0;
-
-		for (int i = a; i <= b; i++) {
-			toplam += i;
-		}
-
-		System.out.println(a + " ile " + b + " arasındaki sayıların toplamı: " + toplam);
-
+		aralikTopla(a, b);
 		scanner.close();
 	}
 }
