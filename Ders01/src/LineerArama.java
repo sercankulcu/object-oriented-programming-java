@@ -1,7 +1,20 @@
 import java.util.Scanner;
 
 public class LineerArama {
-	
+
+	void lineerArama(int[] dizi, int aranan) {
+		boolean bulundu = false;
+		for (int i = 0; i < dizi.length; i++) {
+			if (dizi[i] == aranan) {
+				bulundu = true;
+				System.out.println("Aranan öğe bulundu: " + i);
+			}
+		}
+		if(bulundu == false) {
+			System.out.println("Aranan öğe bulunamadı");
+		}
+	}
+
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
@@ -11,6 +24,8 @@ public class LineerArama {
 
 		System.out.print("Aranacak değeri girin: ");
 		int aranan = scanner.nextInt();
+		
+		(new LineerArama()).lineerArama(dizi, aranan);
 
 		boolean bulundu = false;
 

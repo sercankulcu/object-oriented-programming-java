@@ -1,6 +1,15 @@
 import java.util.Scanner;
 
 public class MutlakDeger {
+
+	int mutlakDeger(int sayi) {
+		if (sayi < 0) {
+			return -sayi; 
+		} else {
+			return sayi; 
+		}
+	}
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
