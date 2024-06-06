@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class MevsimHesaplama {
+	
 	public static void main(String[] args) {
+		
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Bir ay girin (1-12): ");

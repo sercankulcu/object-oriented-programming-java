@@ -10,8 +10,8 @@ public class FaktoriyelHesaplama {
 		return sonuc;
 	}
 
-	
 	public static void main(String[] args) {
+		
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Faktoriyelini hesaplamak istediğiniz sayıyı girin: ");

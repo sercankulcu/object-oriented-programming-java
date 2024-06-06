@@ -3,12 +3,11 @@ import java.util.Scanner;
 
 public class GirilenSayidanSonrakiAsalSayi {
 
-	boolean asalMi(int sayi)
-	{
-		for(int i = 2; i < sayi; i++)
-		{
-			if(sayi % i == 0)
-			{
+	boolean asalMi(int sayi) {
+		
+		for(int i = 2; i < sayi; i++)	{
+			
+			if(sayi % i == 0) {
 				return false;
 			}
 		}
@@ -17,7 +16,6 @@ public class GirilenSayidanSonrakiAsalSayi {
 
 	public void sonrakiAsal(int sayi)
 	{
-
 		while(true)
 		{
 			if(asalMi(++sayi))

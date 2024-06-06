@@ -1,3 +1,4 @@
+package whileloop;
 
 public class BasamakDegeri {
 
