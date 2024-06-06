@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
-public class ToplamaHesaplama {
+public class KesirliSayiToplam {
 
 	public static void main(String[] args) {
 
 		// Kullanıcı girdisini okumak için bir Scanner nesnesi oluşturun
 		Scanner tarayici = new Scanner(System.in);
 		// Kullanıcıdan sayıyı girmesini isteyin
-		System.out.print("Birinci sayıyı giriniz: ");
+		System.out.println("Birinci sayıyı giriniz: ");
 		double sayi1 = tarayici.nextDouble();
-		System.out.print("İkinci sayıyı giriniz: ");
+		System.out.println("İkinci sayıyı giriniz: ");
 		double sayi2 = tarayici.nextDouble();
 		// İki sayının toplamını hesaplayın
 		double toplam = sayi1 + sayi2;

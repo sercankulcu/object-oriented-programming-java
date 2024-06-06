@@ -1,5 +1,18 @@
 
 public class UsHesaplama {
+	
+	public static double usHesapla(double taban, int us) {
+
+		double sonuc = 1;
+		if (us < 0) {
+			sonuc = 1.0 / (usHesapla(taban, -us)); // Negatif üs için hesaplama
+		} else {
+			for (int i = 0; i < us; i++) {
+				sonuc *= taban;
+			}
+		}
+		return sonuc;
+	}
 
 	public static void main(String[] args) {
 
@@ -17,18 +30,5 @@ public class UsHesaplama {
 
 		sonuc = usHesapla(5, 2);
 		System.out.println(sonuc);
-	}
-
-	public static double usHesapla(double taban, int us) {
-
-		double sonuc = 1;
-		if (us < 0) {
-			sonuc = 1.0 / (usHesapla(taban, -us)); // Negatif üs için hesaplama
-		} else {
-			for (int i = 0; i < us; i++) {
-				sonuc *= taban;
-			}
-		}
-		return sonuc;
 	}
 }

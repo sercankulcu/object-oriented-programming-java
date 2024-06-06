@@ -1,3 +1,4 @@
+package dizi;
 import java.util.Scanner;
 
 public class LineerArama {
@@ -8,6 +9,7 @@ public class LineerArama {
 			if (dizi[i] == aranan) {
 				bulundu = true;
 				System.out.println("Aranan öğe bulundu: " + i);
+				break;
 			}
 		}
 		if(bulundu == false) {
@@ -25,22 +27,8 @@ public class LineerArama {
 		System.out.print("Aranacak değeri girin: ");
 		int aranan = scanner.nextInt();
 		
-		(new LineerArama()).lineerArama(dizi, aranan);
-
-		boolean bulundu = false;
-
-		// Lineer arama
-		for (int i = 0; i < dizi.length; i++) {
-			if (dizi[i] == aranan) {
-				System.out.println("Değer bulundu! İndis: " + i);
-				bulundu = true;
-				break;
-			}
-		}
-
-		if (!bulundu) {
-			System.out.println("Değer bulunamadı.");
-		}
+		LineerArama arayici = new LineerArama();
+		arayici.lineerArama(dizi, aranan);
 
 		scanner.close();
 	}

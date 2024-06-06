@@ -9,12 +9,12 @@ public class AsalSayiKontrol {
 		System.out.print("Bir sayı girin: ");
 		int sayi = scanner.nextInt();
 
-		scanner.close();
-
-		if (sayi <= 1) {
+		while (sayi <= 1) {
 			System.out.println("Lütfen 2'den büyük bir pozitif sayı girin.");
-			return;
+			sayi = scanner.nextInt();
 		}
+		
+		scanner.close();
 
 		boolean asal = true;
 
@@ -26,9 +26,9 @@ public class AsalSayiKontrol {
 		}
 
 		if (asal) {
-			System.out.println(sayi + " bir asal sayıdır.");
+			System.out.println(sayi + " asal sayıdır.");
 		} else {
-			System.out.println(sayi + " bir asal sayı değildir.");
+			System.out.println(sayi + " asal sayı değildir.");
 		}
 	}
 }

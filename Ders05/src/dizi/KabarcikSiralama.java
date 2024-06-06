@@ -1,3 +1,4 @@
+package dizi;
 
 public class KabarcikSiralama {
 

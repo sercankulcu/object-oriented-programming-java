@@ -1,3 +1,4 @@
+package dizi;
 import java.util.Random;
 
 public class RastgeleDiziArama {

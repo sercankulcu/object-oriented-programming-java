@@ -6,10 +6,10 @@ public class ArtanSiraOrnegi {
 
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("İlk sayıyı girin: ");
+		System.out.println("İlk sayıyı girin: ");
 		int sayi1 = scanner.nextInt();
 
-		System.out.print("İkinci sayıyı girin: ");
+		System.out.println("İkinci sayıyı girin: ");
 		int sayi2 = scanner.nextInt();
 
 		scanner.close();

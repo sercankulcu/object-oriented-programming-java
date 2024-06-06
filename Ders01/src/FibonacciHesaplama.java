@@ -6,7 +6,7 @@ public class FibonacciHesaplama {
 		
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("Fibonacci dizisinin kaçıncı terimini hesaplamak istersiniz? ");
+		System.out.print("Kaçıncı terim? ");
 		int n = scanner.nextInt();
 
 		scanner.close();

@@ -1,3 +1,4 @@
+package dizi;
 
 public class MinIndeks {
 
@@ -9,6 +10,7 @@ public class MinIndeks {
 
 		int minIndex = 0; // Minimum elemanın indeksi
 		for (int i = 1; i < dizi.length; i++) {
+			System.out.println(dizi[i] + " ile " + dizi[minIndex] + " karşılaştırılıyor.");
 			if (dizi[i] < dizi[minIndex]) {
 				minIndex = i; // Dizideki yeni minimum elemanın indeksini güncelle
 			}
@@ -17,7 +19,7 @@ public class MinIndeks {
 	}
 
 	public static void main(String[] args) {
-		int[] dizi = {7, 3, 9, 2, 5};
+		int[] dizi = {7, 3, 9, 2, 5, 4, 11, 12, 1};
 		int minIndex = minIndeks(dizi);
 
 		if (minIndex != -1) {

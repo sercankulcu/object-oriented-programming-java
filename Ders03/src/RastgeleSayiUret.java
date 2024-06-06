@@ -5,12 +5,20 @@ public class RastgeleSayiUret {
 	public static void main(String[] args) {
 		
 		Random rastgele = new Random();
+		int otuzbesdenkucukler = 0;
+		int otuzbesdenbuyukler = 0;
 		
-		for(int i = 0; i < 100; i++)
+		for(int i = 0; i < 10000; i++)
 		{
-			System.out.println(rastgele.nextInt(10));
+			int sayi = rastgele.nextInt(100);
+			System.out.print(sayi + " ");
+			if(sayi < 35) {
+				otuzbesdenkucukler++;
+			} else {
+				otuzbesdenbuyukler++;
+			}
 		}
-	
+		System.out.println("\nkucukler: " + otuzbesdenkucukler + 
+				" buyukler: " + otuzbesdenbuyukler);
 	}
-
 }

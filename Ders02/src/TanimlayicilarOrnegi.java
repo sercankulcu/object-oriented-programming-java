@@ -1,7 +1,3 @@
-// Paket tanımlama
-
-//package veri.tabani; // "veri.tabani" adında bir paket tanımlandı
-import java.util.ArrayList; // ArrayList sınıfını kullanmak için import edildi
 
 public class TanimlayicilarOrnegi {
 

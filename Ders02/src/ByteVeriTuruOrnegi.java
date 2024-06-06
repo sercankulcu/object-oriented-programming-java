@@ -12,7 +12,7 @@ public class ByteVeriTuruOrnegi {
 		System.out.println("Byte veri türünün en büyük değeri: " + maxDeger);
 
 		// Bir byte değişkeni kullanarak aritmetik işlemler yapabiliriz
-		byte sayi1 = 30;
+		byte sayi1 = 80;
 		byte sayi2 = 50;
 		byte toplam = (byte) (sayi1 + sayi2); // Toplam sonucunu bir byte'a dönüştürmemiz gerekebilir
 		System.out.println("Toplam: " + toplam);
