@@ -8,6 +8,7 @@
  * the numDisks - 1 disks from the auxPeg to the toPeg using the fromPeg as the auxiliary peg.
  * 
  * */
+package recursive;
 
 public class HanoiTowers {
 
