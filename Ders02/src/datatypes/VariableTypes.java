@@ -18,6 +18,7 @@
  * 
  * The String type is a reference type that holds a sequence of characters.
  * */
+package datatypes;
 
 public class VariableTypes {
 

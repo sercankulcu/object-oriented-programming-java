@@ -7,6 +7,7 @@
  * allow the calculator to perform square root, power, logarithm, and factorial 
  * calculations, respectively.
  * */
+package inheritance;
 
 public class AdvancedCalculator extends Calculator {
 

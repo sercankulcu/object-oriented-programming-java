@@ -7,6 +7,7 @@
  * comparison operators (==, !=, >, <, >=, and <=), 
  * and logical operators (&&, ||, and !).
  * */
+package syntax;
 
 public class OperatorsExample {
 

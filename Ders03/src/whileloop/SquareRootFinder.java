@@ -7,6 +7,7 @@
  * the input number, respectively, and continues to search until the difference between the high 
  * and low bounds is smaller than a specified tolerance.
  * */
+package whileloop;
 
 public class SquareRootFinder {
 	

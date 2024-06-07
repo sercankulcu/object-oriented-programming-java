@@ -14,6 +14,7 @@ public class ChangeMaker {
     double change = sc.nextDouble();
     sc.close();
 
+    change += 0.001; // to handle double precision 1,2999999999 != 1,3
     // Calculate the number of each type of coin needed
     int numQuarters = (int) (change / 0.25);
     change = change % 0.25;
@@ -22,7 +23,6 @@ public class ChangeMaker {
     int numNickels = (int) (change / 0.05);
     change = change % 0.05;
     int numPennies = (int) (change / 0.01);
-    change = change % 0.01;
 
     // Print the result
     System.out.println("Quarters: " + numQuarters);
