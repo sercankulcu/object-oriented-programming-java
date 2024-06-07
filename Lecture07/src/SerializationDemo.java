@@ -55,7 +55,11 @@ public class SerializationDemo {
 }
 
 class Employee implements Serializable {
-  private String name;
+  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String name;
   private int ID;
   private String title;
   

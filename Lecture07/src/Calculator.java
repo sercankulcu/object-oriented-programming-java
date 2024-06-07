@@ -12,9 +12,9 @@ import java.io.IOException;
  * */
 
 public class Calculator {
-	
+
 	public static void main(String[] args) {
-		
+
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader("operations.txt"));
 			String line;
@@ -36,6 +36,9 @@ public class Calculator {
 					break;
 				case '/':
 					result = num1 / num2;
+					break;
+				default:
+					result = 0;
 					break;
 				}
 				System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
