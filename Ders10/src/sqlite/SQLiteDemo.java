@@ -1,3 +1,4 @@
+package sqlite;
 import java.sql.*;
 
 /*
@@ -7,15 +8,15 @@ import java.sql.*;
 
 public class SQLiteDemo {
 
+
 	public static void main(String[] args) {
 
-		Connection conn = null;
-		try {
-			// Connect to the database
-			String url = "jdbc:sqlite:test2.db";
-			conn = DriverManager.getConnection(url);
+		String url = "jdbc:sqlite:test2.db";
 
-			Statement stmt = conn.createStatement();
+		try (Connection conn = DriverManager.getConnection(url);
+				Statement stmt = conn.createStatement()){
+			// Connect to the database
+
 			String sql = "CREATE TABLE IF NOT EXISTS users (\n"
 					+ " id INTEGER PRIMARY KEY,\n"
 					+ " first_name TEXT NOT NULL,\n"
@@ -55,56 +56,52 @@ public class SQLiteDemo {
 
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());
-		} finally {
-			try {
-				if (conn != null) {
-					conn.close();
-				}
-			} catch (SQLException e) {
-				System.out.println(e.getMessage());
-			}
 		}
 	}
 
 	public static void insertRecord(Connection conn, String firstName, String lastName, int age) throws SQLException {
 		String sql = "INSERT INTO users(first_name, last_name, age) VALUES(?, ?, ?)";
 
-		PreparedStatement pstmt = conn.prepareStatement(sql);
-		pstmt.setString(1, firstName);
-		pstmt.setString(2, lastName);
-		pstmt.setInt(3, age);
-		pstmt.executeUpdate();
+		try (PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1, firstName);
+			pstmt.setString(2, lastName);
+			pstmt.setInt(3, age);
+			pstmt.executeUpdate();
+		}
 	}
 
 	public static void updateRecord(Connection conn, String firstName, String lastName, int age) throws SQLException {
 		String sql = "UPDATE users SET last_name = ?, age = ? WHERE first_name = ?";
 
-		PreparedStatement pstmt = conn.prepareStatement(sql);
-		pstmt.setString(1, lastName);
-		pstmt.setInt(2, age);
-		pstmt.setString(3, firstName);
-		pstmt.executeUpdate();
+		try (PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1, lastName);
+			pstmt.setInt(2, age);
+			pstmt.setString(3, firstName);
+			pstmt.executeUpdate();
+		}
 	}
 
 	public static void selectAllRecords(Connection conn) throws SQLException {
 		String sql = "SELECT id, first_name, last_name, age FROM users";
 
-		Statement stmt = conn.createStatement();
-		ResultSet rs = stmt.executeQuery(sql);
+		try (Statement stmt = conn.createStatement()){
 
-		while (rs.next()) {
-			System.out.println(rs.getInt("id") +  "\t" + 
-					rs.getString("first_name") + "\t" +
-					rs.getString("last_name") + "\t" +
-					rs.getInt("age"));
+			ResultSet rs = stmt.executeQuery(sql);
+
+			while (rs.next()) {
+				System.out.println(rs.getInt("id") +  "\t" + 
+						rs.getString("first_name") + "\t" +
+						rs.getString("last_name") + "\t" +
+						rs.getInt("age"));
+			}
 		}
 	}
 
 	public static void deleteRecord(Connection conn, String firstName) throws SQLException {
 		String sql = "DELETE FROM users WHERE first_name = ?";
-
-		PreparedStatement pstmt = conn.prepareStatement(sql);
-		pstmt.setString(1, firstName);
-		pstmt.executeUpdate();
+		try (PreparedStatement pstmt = conn.prepareStatement(sql)){
+			pstmt.setString(1, firstName);
+			pstmt.executeUpdate();
+		}
 	}
 }
