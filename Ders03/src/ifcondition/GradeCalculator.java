@@ -20,7 +20,7 @@ public class GradeCalculator {
 
     // Prompt the user to enter their score
     System.out.print("Enter your score: ");
-    double score = sc.nextDouble();
+    int score = sc.nextInt();
     sc.close();
 
     // Calculate the grade

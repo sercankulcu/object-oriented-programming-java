@@ -1,5 +1,7 @@
+package overriding;
 
 public class Kisi {
+	
 	private String ad;
 	private int yas;
 

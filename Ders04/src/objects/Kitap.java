@@ -1,3 +1,4 @@
+package objects;
 
 public class Kitap {
 	// Örnek Alanlar
@@ -14,27 +15,32 @@ public class Kitap {
 	public String getBaslik() {
 		return baslik;
 	}
+	
 	public void setBaslik(String baslik) {
 		this.baslik = baslik;
 	}
+	
 	public String getYazar() {
 		return yazar;
 	}
+	
 	public void setYazar(String yazar) {
 		this.yazar = yazar;
 	}
+	
 	public int getSayfaSayisi() {
 		return sayfaSayisi;
 	}
+	
 	public void setSayfaSayisi(int sayfaSayisi) {
 		this.sayfaSayisi = sayfaSayisi;
 	}
+	
 	public static int getToplamKitapSayisi() {
 		return toplamKitapSayisi;
 	}
+	
 	public static void setToplamKitapSayisi(int toplamKitapSayisi) {
 		Kitap.toplamKitapSayisi = toplamKitapSayisi;
 	}
-
-
 }

@@ -1,5 +1,7 @@
+package objects;
 
 public class BankaHesabi {
+	
 	private double hesapBakiyesi;
 	private String hesapSahibi;
 
@@ -36,6 +38,7 @@ public class BankaHesabi {
 
 	// Ana metod (main method) içinde kullanımı
 	public static void main(String[] args) {
+		
 		BankaHesabi hesap = new BankaHesabi();
 
 		hesap.setHesapBakiyesi(5000.0);  // Hesap bakiyesini ayarlar

@@ -1,5 +1,7 @@
+package objects;
 
 public class Arac {
+	
 	private String marka;
 	private String model;
 	private int yil;

@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class Main {
+public class ShapeUser {
 	
   public static void main(String[] args) {
   	

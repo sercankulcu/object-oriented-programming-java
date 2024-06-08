@@ -1,5 +1,7 @@
+package objects;
 
 public class Dikdortgen {
+	
 	private double uzunluk;      // Dikdörtgenin uzunluk özelliği
 	private double genislik;     // Dikdörtgenin genişlik özelliği
 
@@ -17,6 +19,7 @@ public class Dikdortgen {
 	}
 
 	public static void main(String[] args) {
+		
 		Dikdortgen dikdortgen = new Dikdortgen(5.0, 3.0); // Dikdörtgen nesnesi oluşturuluyor
 		Dikdortgen kare = new Dikdortgen(5.0, 5.0); // Dikdörtgen nesnesi oluşturuluyor
 

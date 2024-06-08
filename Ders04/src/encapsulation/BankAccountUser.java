@@ -1,7 +1,9 @@
 package encapsulation;
 
-public class Main {
+public class BankAccountUser {
+	
   public static void main(String[] args) {
+  	
       BankAccount account = new BankAccount(123456, 1000.0);
       System.out.println("Account number: " + account.getAccountNumber());
       System.out.println("Initial balance: " + account.getBalance());

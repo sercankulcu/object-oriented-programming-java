@@ -1,7 +1,9 @@
 package inheritance;
 
-public class Main {
+public class AnimalUser {
+	
   public static void main(String[] args) {
+  	
       Animal animal = new Animal("Generic Animal", 5);
       System.out.println(animal.getName() + " is " + animal.getAge() + " years old.");
       animal.speak();

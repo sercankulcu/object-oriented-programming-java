@@ -1,3 +1,4 @@
+package objects;
 
 public class Ogrenci {
 	private String ad;

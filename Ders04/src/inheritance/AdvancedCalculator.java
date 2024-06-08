@@ -11,31 +11,31 @@ package inheritance;
 
 public class AdvancedCalculator extends Calculator {
 
-    public AdvancedCalculator() {
-        super();
-    }
+	public AdvancedCalculator() {
+		super();
+	}
 
-    public double squareRoot(double number) {
-        return Math.sqrt(number);
-    }
+	public double squareRoot(double number) {
+		return Math.sqrt(number);
+	}
 
-    public double power(double base, double exponent) {
-        return Math.pow(base, exponent);
-    }
+	public double power(double base, double exponent) {
+		return Math.pow(base, exponent);
+	}
 
-    public double logarithm(double number) {
-        return Math.log(number);
-    }
+	public double logarithm(double number) {
+		return Math.log(number);
+	}
 
-    public double factorial(double number) {
-        if (number == 0) {
-            return 1;
-        } else {
-            return number * factorial(number - 1);
-        }
-    }
-    
-    public static void main(String[] args)
+	public double factorial(double number) {
+		if (number == 0) {
+			return 1;
+		} else {
+			return number * factorial(number - 1);
+		}
+	}
+
+	public static void main(String[] args)
 	{
 		AdvancedCalculator calc = new AdvancedCalculator();
 		double result = calc.logarithm(5.3);

@@ -6,8 +6,10 @@ package objects;
  * instance variables.
  * */
 
-public class Main {
+public class AddressPersonUser {
+	
   public static void main(String[] args) {
+  	
       Address address = new Address("123 Main St", "Anytown", "CA");
       Person person = new Person("John Smith", 30, address);
       person.introduce();

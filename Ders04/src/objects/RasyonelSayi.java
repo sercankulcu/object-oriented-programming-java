@@ -1,5 +1,7 @@
+package objects;
 
 public class RasyonelSayi {
+	
 	private int pay;        // Rasyonel sayının payını temsil eder
 	private int payda;      // Rasyonel sayının paydasını temsil eder
 
@@ -25,12 +27,14 @@ public class RasyonelSayi {
 	}
 
 	public RasyonelSayi topla(RasyonelSayi digerSayi) {
+		
 		int yeniPay = (this.pay * digerSayi.payda) + (digerSayi.pay * this.payda);  // İki rasyonel sayıyı toplar
 		int yeniPayda = this.payda * digerSayi.payda;
 		return new RasyonelSayi(yeniPay, yeniPayda);   // Yeni rasyonel sayıyı döndürür
 	}
 
 	public RasyonelSayi carp(RasyonelSayi digerSayi) {
+		
 		int yeniPay = this.pay * digerSayi.pay;   // İki rasyonel sayıyı çarpar
 		int yeniPayda = this.payda * digerSayi.payda;
 		return new RasyonelSayi(yeniPay, yeniPayda);   // Yeni rasyonel sayıyı döndürür
@@ -41,6 +45,7 @@ public class RasyonelSayi {
 	}
 
 	public static void main(String[] args) {
+		
 		RasyonelSayi sayi1 = new RasyonelSayi(2, 3);   // İlk rasyonel sayıyı oluşturur
 		RasyonelSayi sayi2 = new RasyonelSayi(1, 4);   // İkinci rasyonel sayıyı oluşturur
 

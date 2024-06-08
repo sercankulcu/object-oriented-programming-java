@@ -1,4 +1,6 @@
+package objects;
 public class Araba {
+	
 	private String marka;
 
 	public Araba(String marka) {
@@ -10,6 +12,7 @@ public class Araba {
 	}
 
 	public static void main(String[] args) {
+		
 		Araba araba1 = new Araba("Toyota"); // araba1 referansı oluşturuluyor
 		Araba araba2 = araba1; // araba2, araba1'i işaret ediyor
 
