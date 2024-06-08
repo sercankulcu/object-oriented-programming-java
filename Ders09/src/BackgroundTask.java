@@ -2,7 +2,7 @@
  * here is another simple Java program that demonstrates how to use a thread to perform a task 
  * in the background:
  * 
- * his program defines a BackgroundTask class that implements the Runnable interface and has a 
+ * this program defines a BackgroundTask class that implements the Runnable interface and has a 
  * run method. This method simply prints out a message and sleeps for 1 second, 100 times.
  * */
 
