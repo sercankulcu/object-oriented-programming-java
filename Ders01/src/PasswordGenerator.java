@@ -10,6 +10,7 @@ import java.util.Random;
 public class PasswordGenerator {
 
     public static String generatePassword() {
+    	
         String upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String digits = "0123456789";
         String specialChars = "!@#$%^&*()_+-=[]{}|;':\"<>,.?/\\";

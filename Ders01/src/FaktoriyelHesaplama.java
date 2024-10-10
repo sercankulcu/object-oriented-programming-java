@@ -8,14 +8,16 @@ public class FaktoriyelHesaplama {
 
 		if (sayi < 0) {
 			System.out.println("Negatif sayının faktoriyeli hesaplanamaz.");
+			return -1;
 		} else if (sayi == 0) {
 			System.out.println("0! = 1");
-		} else {
-			for (int i = 1; i <= sayi; i++) {
-				faktoriyel *= i;
-			}
-			System.out.println(sayi + "! = " + faktoriyel);
+			return 1;
+		} 
+		for (int i = 1; i <= sayi; i++) {
+			faktoriyel *= i;
 		}
+		System.out.println(sayi + "! = " + faktoriyel);
+
 		return faktoriyel;
 	}
 

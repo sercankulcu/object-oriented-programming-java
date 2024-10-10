@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UcSayiArtanSiraOrnegi {
+public class ArtanSiraUcSayi {
 
 	public static void main(String[] args) {
 

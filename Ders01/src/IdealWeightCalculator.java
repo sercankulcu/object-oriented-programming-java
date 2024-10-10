@@ -9,7 +9,9 @@ import java.util.Scanner;
  * */
 
 public class IdealWeightCalculator {
+	
   public static void main(String[] args) {
+	  
     Scanner scanner = new Scanner(System.in);
 
     // Prompt the user to enter their height in meters

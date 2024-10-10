@@ -1,9 +1,9 @@
 eclipse.preferences.version=1
-encoding//src/ArtanSiraOrnegi.java=UTF-8
+encoding//src/ArtanSiraDortSayi.java=UTF-8
+encoding//src/ArtanSiraUcSayi.java=UTF-8
+encoding//src/ArtanSira\u0130kiSayi.java=UTF-8
 encoding//src/AsalSayiKontrol.java=UTF-8
-encoding//src/DortSayiArtanSiraOrnegi.java=UTF-8
 encoding//src/FaktoriyelHesaplama.java=UTF-8
 encoding//src/FibonacciHesaplama.java=UTF-8
 encoding//src/KesirliSayiToplam.java=UTF-8
-encoding//src/UcSayiArtanSiraOrnegi.java=UTF-8
 encoding//src/UsHesaplama.java=UTF-8

@@ -6,7 +6,9 @@ import java.util.Scanner;
  * */
 
 public class ChangeMaker {
+	
   public static void main(String[] args) {
+	  
     Scanner sc = new Scanner(System.in);
 
     // Prompt the user to enter the amount of change
