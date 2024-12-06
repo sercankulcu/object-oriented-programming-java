@@ -1,8 +1,7 @@
 eclipse.preferences.version=1
-encoding//src/dizi/IkiliArama.java=UTF-8
-encoding//src/dizi/KabarcikSiralama.java=UTF-8
-encoding//src/dizi/LineerArama.java=UTF-8
-encoding//src/dizi/RastgeleDiziArama.java=UTF-8
-encoding//src/dizi/SecmeliSiralama.java=UTF-8
+encoding//src/array/DogrusalArama.java=UTF-8
+encoding//src/array/IkiliArama.java=UTF-8
+encoding//src/array/KabarcikSiralama.java=UTF-8
+encoding//src/array/SecmeliSiralama.java=UTF-8
 encoding//src/string/PalindromKontrol.java=UTF-8
 encoding/<project>=UTF-8
