@@ -1,4 +1,5 @@
 // Java'da bir diziyi ters ceviren ve dizideki minimum elemani bulan program
+package array;
 
 public class DiziyiTersCevirme {
 

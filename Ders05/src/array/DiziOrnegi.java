@@ -1,4 +1,5 @@
 // Java'da dizi kullanımını gosteren basit bir program
+package array;
 
 public class DiziOrnegi {
 

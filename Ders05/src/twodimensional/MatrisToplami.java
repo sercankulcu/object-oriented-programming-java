@@ -1,4 +1,5 @@
 // Java'da matris toplamini gerceklestiren program
+package twodimensional;
 
 public class MatrisToplami {
 

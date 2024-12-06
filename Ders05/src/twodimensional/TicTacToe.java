@@ -1,3 +1,4 @@
+package twodimensional;
 import java.util.Scanner; 
 
 public class TicTacToe {

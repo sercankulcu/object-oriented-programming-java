@@ -1,4 +1,5 @@
 // Java'da lineer arama kullanarak bir dizide minimum elemani bulan program
+package array;
 
 public class EnKucukElemaniBul {
 

@@ -1,4 +1,5 @@
 // Java'da matris carpimini gerceklestiren program
+package twodimensional;
 
 public class MatrisCarpimi {
 
