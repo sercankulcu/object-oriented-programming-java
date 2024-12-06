@@ -1,6 +1,6 @@
 package encapsulation;
 
-public class BankaHesabiKullanici {
+public class Banka {
 
 	public static void main(String[] args) {
 

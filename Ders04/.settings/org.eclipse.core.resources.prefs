@@ -1,10 +1,5 @@
 eclipse.preferences.version=1
-encoding//src/objects/Araba.java=UTF-8
-encoding//src/objects/Arac.java=UTF-8
-encoding//src/objects/BankaHesabi.java=UTF-8
 encoding//src/objects/Dikdortgen.java=UTF-8
-encoding//src/objects/Kitap.java=UTF-8
-encoding//src/objects/Matematik.java=UTF-8
 encoding//src/objects/Ogrenci.java=UTF-8
 encoding//src/objects/RasyonelSayi.java=UTF-8
 encoding//src/objects/Telefon.java=UTF-8
