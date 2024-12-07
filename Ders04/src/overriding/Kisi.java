@@ -1,46 +1,67 @@
 package overriding;
 
+// Kisi sinifi
 public class Kisi {
-	
-	private String ad;
-	private int yas;
 
-	public Kisi(String ad, int yas) {
-		this.ad = ad;
-		this.yas = yas;
-	}
+    private String ad;
+    private int yas;
 
-	// equals metodu özelleştirilmiştir
-	@Override
-	public boolean equals(Object obj) {
-		// Aynı referansa sahipse, eşittir.
-		if (this == obj) return true;
+    // Kisi yapilandirici metodu
+    public Kisi(String ad, int yas) {
+        this.ad = ad;
+        this.yas = yas;
+    }
 
-		// Null kontrolü yapılır, ve nesne türü karşılaştırılır.
-		if (obj == null || getClass() != obj.getClass()) return false;
+    // Equals metodu ozellestirilmistir
+    @Override
+    public boolean equals(Object obj) {
+        // Ayni referansa sahipse, esittir
+        if (this == obj) return true;
 
-		// Kisi nesnelerinin alanları karşılaştırılır.
-		Kisi kisi = (Kisi) obj;
-		return yas == kisi.yas && ad.equals(kisi.ad);
-	}
+        // Null kontrolu yapilir ve nesne turu karsilastirilir
+        if (obj == null || getClass() != obj.getClass()) return false;
 
-	public static void main(String[] args) {
-		// İki farklı Kisi nesnesi oluşturulur
-		Kisi kisi1 = new Kisi("Ali", 25);
-		Kisi kisi2 = new Kisi("Ali", 25);
+        // Kisi nesnelerinin alanlari karsilastirilir
+        Kisi kisi = (Kisi) obj;
+        return yas == kisi.yas && ad.equals(kisi.ad);
+    }
 
-		// == işleci kullanılarak eşitlik kontrolü yapılır
-		if (kisi1 == kisi2) {
-			System.out.println("İki kişi nesnesi eşittir.");
-		} else {
-			System.out.println("İki kişi nesnesi eşit değildir.");
-		}
+    // Ad alani icin getter metodu
+    public String getAd() {
+        return ad;
+    }
 
-		// equals metodu kullanılarak eşitlik kontrolü yapılır
-		if (kisi1.equals(kisi2)) {
-			System.out.println("İki kişi nesnesi eşittir.");
-		} else {
-			System.out.println("İki kişi nesnesi eşit değildir.");
-		}
-	}
+    // Yas alani icin getter metodu
+    public int getYas() {
+        return yas;
+    }
+
+    // toString metodu
+    @Override
+    public String toString() {
+        return "Kisi[Ad=" + ad + ", Yas=" + yas + "]";
+    }
+
+    public static void main(String[] args) {
+        // Iki farkli Kisi nesnesi olusturulur
+        Kisi kisi1 = new Kisi("Ali", 25);
+        Kisi kisi2 = new Kisi("Ali", 25);
+
+        // == operatoru ile esitlik kontrolu yapilir
+        if (kisi1 == kisi2) {
+            System.out.println("Iki kisi nesnesi esittir.");
+        } else {
+            System.out.println("Iki kisi nesnesi esit degildir.");
+        }
+
+        // equals metodu kullanilarak esitlik kontrolu yapilir
+        if (kisi1.equals(kisi2)) {
+            System.out.println("Iki kisi nesnesi esittir.");
+        } else {
+            System.out.println("Iki kisi nesnesi esit degildir.");
+        }
+
+        // Kisi nesnesinin bilgileri yazdirilir
+        System.out.println(kisi1.toString());
+    }
 }
