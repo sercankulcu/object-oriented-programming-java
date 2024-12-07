@@ -1,45 +1,45 @@
-package functions;
-import java.util.Scanner;  // Kullanıcıdan giriş almak için Scanner sınıfını içe aktarıyoruz
+package functions; 
+import java.util.Scanner;  // Kullanicidan giris almak icin Scanner sinifini ice aktar
 
 public class RakamlarToplami {
 
-    // 'rakamlarToplaminiBul' metodu, verilen sayının rakamlarının toplamını hesaplar
+    // 'rakamlarToplaminiBul' metodu, verilen sayinin rakamlarinin toplamini hesaplar
     int rakamlarToplaminiBul(int sayi) {
-        int rakamlarToplami = 0;  // Rakamların toplamını tutacak değişken
+        int rakamlarToplami = 0;  // Rakamlarin toplamini tutacak degisken
         
-        // Sayı 0'dan büyük olduğu sürece döngü devam eder
+        // Sayi 0'dan buyuk oldugu surece dongu devam eder
         while(sayi > 0) {
-            // Sayının son rakamını almak için 10'a göre mod işlemi yapılır
+            // Sayinin son rakamini almak icin 10'a gore mod islemi yapilir
             int rakam = sayi % 10;
-            // Rakamlar toplamına bu rakamı ekleriz
+            // Rakamlar toplamina bu rakami ekle
             rakamlarToplami += rakam;
-            // Sayıyı her seferinde 10'a bölerek bir basamağını eksiltiriz
+            // Sayiyi her seferinde 10'a bolerek bir basamagini eksilt
             sayi = sayi / 10;
         }
         
-        // Tüm rakamlar toplandıktan sonra sonucu döndürür
+        // Tum rakamlar toplandiktan sonra sonucu dondurur
         return rakamlarToplami;
     }
 
     public static void main(String[] args) {
         
-        // Kullanıcıdan giriş almak için Scanner nesnesi oluşturuyoruz
+        // Kullanicidan giris almak icin Scanner nesnesi olustur
         Scanner okuyucu = new Scanner(System.in);
         
-        // Kullanıcının bir sayı girmesini isteriz
-        System.out.println("Lütfen bir sayı giriniz:");
-        int sayi = okuyucu.nextInt();  // Kullanıcının girdiği sayı alınır
+        // Kullanicinin bir sayi girmesini iste
+        System.out.println("Lutfen bir sayi giriniz:");
+        int sayi = okuyucu.nextInt();  // Kullanicinin girdigi sayi alinir
         
-        // RakamlarToplami sınıfından bir nesne oluşturuyoruz
+        // RakamlarToplami sinifindan bir nesne olustur
         RakamlarToplami bulucu = new RakamlarToplami();
         
-        // 'rakamlarToplaminiBul' metodunu çağırarak girilen sayının rakamlarının toplamını hesaplıyoruz
+        // 'rakamlarToplaminiBul' metodunu cagirarak girilen sayinin rakamlarinin toplamini hesapla
         int sonuc = bulucu.rakamlarToplaminiBul(sayi);
         
-        // Hesaplanan rakamlar toplamını ekrana yazdırıyoruz
-        System.out.println("Rakamlar Toplamı = " + sonuc);
+        // Hesaplanan rakamlar toplamini ekrana yazdir
+        System.out.println("Rakamlar Toplami = " + sonuc);
         
-        // Scanner nesnesini kapatıyoruz
+        // Scanner nesnesini kapat
         okuyucu.close();
     }
 }

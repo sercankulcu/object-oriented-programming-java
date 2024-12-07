@@ -1,36 +1,35 @@
-package functions;
-import java.util.Scanner;  // Kullanıcıdan giriş almak için Scanner sınıfını içe aktarıyoruz
+package functions; 
+import java.util.Scanner;  // Kullanicidan giris almak icin Scanner sinifini ice aktar
 
 public class TekMiCiftMi {
 
-    // 'tekMiCiftMi' metodu, verilen sayının tek mi yoksa çift mi olduğunu kontrol eder
+    // 'tekMiCiftMi' metodu, verilen sayinin tek mi yoksa cift mi oldugunu kontrol eder
     void tekMiCiftMi(int sayi) {
-        // Eğer sayının 2'ye bölümünden kalan 0 ise sayı çifttir
+        // Eger sayinin 2'ye bolumunden kalan 0 ise sayi ciftir
         if(sayi % 2 == 0) {
-            System.out.println("sayı çift");  // Sonuç olarak çift olduğu ekrana yazdırılır
+            System.out.println("sayi cift");  // Sonuc olarak cift oldugu ekrana yazdirilir
         }
-        // Aksi halde sayı tek olacaktır
+        // Aksi halde sayi tek olacaktir
         else {
-            System.out.println("sayı tek");  // Sonuç olarak tek olduğu ekrana yazdırılır
+            System.out.println("sayi tek");  // Sonuc olarak tek oldugu ekrana yazdirilir
         }
     }
 
     public static void main(String[] args) {
 
-        // TekMiCiftMi sınıfından bir nesne oluşturuyoruz
+        // TekMiCiftMi sinifindan bir nesne olustur
         TekMiCiftMi nesne = new TekMiCiftMi();
         
-        // Kullanıcıdan giriş almak için Scanner nesnesi oluşturuyoruz
+        // Kullanicidan giris almak icin Scanner nesnesi olustur
         Scanner okuyucu = new Scanner(System.in);
         
-        // Kullanıcının bir sayı girmesini isteriz
-        System.out.println("Lütfen bir sayı giriniz:");
-        int sayi = okuyucu.nextInt();  // Kullanıcının girdiği sayı alınır
+        // Kullanicinin bir sayi girmesini iste
+        System.out.println("Lutfen bir sayi giriniz:");
+        int sayi = okuyucu.nextInt();  // Kullanicinin girdigi sayi alinir
         
-        // 'tekMiCiftMi' metodunu çağırarak sayının tek mi yoksa çift mi olduğunu kontrol ediyoruz
+        // 'tekMiCiftMi' metodunu cagirarak sayinin tek mi yoksa cift mi oldugunu kontrol et
         nesne.tekMiCiftMi(sayi);
         
-        // Scanner nesnesini kapatmayı unutmamak için Scanner kapatılabilir
-        okuyucu.close();  // Kaynak sızıntılarını önlemek için Scanner nesnesi kapatılır
+        okuyucu.close();  // Kaynak sızıntılarını onlemek icin Scanner nesnesi kapatilir
     }
 }

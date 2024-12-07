@@ -1,40 +1,65 @@
-package functions;
+package functions; 
 import java.util.Scanner;  // Kullanıcıdan girdi almak için Scanner sınıfını projeye aktar.
 
 public class AsalSayi {
     
-    // 'asalMi' metodu bir sayının asal olup olmadığını kontrol eder.
+    // 'asalMi' metodu bir sayinin asal olup olmadigini kontrol eder.
     boolean asalMi(int sayi) {
-        // 2'den başlayarak sayının kendisinden bir küçük sayıya kadar tam bölünebilir olup olmadığını kontrol et.
+        // 2'den baslayarak sayinin kendisinden bir kucuk sayiya kadar tam bolunebilir olup olmadigini kontrol et.
         for(int i = 2; i < sayi; i++) {
-            // Eğer sayı herhangi bir 'i' değerine tam bölünüyorsa, asal değildir.
+            // Eger sayi herhangi bir 'i' degerine tam bolunuyorsa, asal degildir.
             if(sayi % i == 0) {
-                return false;  // Sayı asal değil, false döner
+                return false;  // Sayi asal degil, false doner
             }
         }
-        // Eğer döngü sonunda hiç bölünen olmadıysa, sayı asaldır.
+        // Eger dongu sonunda hic bolunen olmadiysa, sayi asaldir.
         return true;
+    }
+
+    // 'sonrakiAsalSayi' metodu, kullanicinin girdigi sayidan sonraki ilk asal sayiyi bulur.
+    int sonrakiAsalSayi(int sayi) {
+        // Sayiyi bir arttir, ve asal olup olmadigini kontrol et.
+        while(!asalMi(++sayi)) {
+            // Asal degilse, bir arttirip tekrar kontrol et.
+        }
+        return sayi;  // Sonraki asal sayi bulunur ve doner.
+    }
+    
+    // 'oncekiAsalSayi' metodu, kullanicinin girdigi sayidan onceki ilk asal sayiyi bulur.
+    int oncekiAsalSayi(int sayi) {
+        // Sayiyi bir azalt, ve asal olup olmadigini kontrol et.
+        while(!asalMi(--sayi)) {
+            // Asal degilse, bir azaltip tekrar kontrol et.
+        }
+        return sayi;  // Onceki asal sayi bulunur ve doner.
     }
 
     public static void main(String[] args) {
         
         // Kullanıcıdan girdi almak için Scanner sınıfından nesne oluştur
         Scanner okuyucu = new Scanner(System.in);
-        System.out.println("Lütfen bir sayı giriniz");  // Kullanıcıdan sayı girmesini iste
+        
+        // Kullanıcıdan bir sayı girmesini iste
+        System.out.println("Lutfen bir sayi giriniz");
         int sayi = okuyucu.nextInt();  // Kullanıcının girdiği sayı alınır
         
         // AsalSayi sınıfından bir nesne oluştur
         AsalSayi bulucu = new AsalSayi();
         
-        // Girilen sayıdan sonraki ilk asal sayıyı bulana kadar döngü devam eder
-        while(bulucu.asalMi(++sayi) == false) {
-            // Burada herhangi bir işlem yapılmıyor, sadece sayi değeri bir arttırılıp tekrar kontrol ediliyor
+        // Girilen sayinin asal olup olmadigini kontrol et ve sonucu yazdir
+        if (bulucu.asalMi(sayi)) {
+            System.out.println(sayi + " sayisi asaldir.");
+        } else {
+            System.out.println(sayi + " sayisi asal degildir.");
         }
         
-        // İlk asal sayı bulunduğunda ekrana yazdırılır
-        System.out.println(sayi);
+        // Girilen sayidan sonraki ilk asal sayiyi bul ve yazdir
+        System.out.println("Sonraki asal sayi: " + bulucu.sonrakiAsalSayi(sayi));
         
-        // Scanner nesnesini kapat, kaynakları işletim sistemine geri ver.
+        // Girilen sayidan onceki ilk asal sayiyi bul ve yazdir
+        System.out.println("Onceki asal sayi: " + bulucu.oncekiAsalSayi(sayi));
+        
+        // Scanner nesnesini kapat, kaynaklari isletim sistemine geri ver.
         okuyucu.close();
     }
 }

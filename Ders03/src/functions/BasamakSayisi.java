@@ -1,39 +1,39 @@
-package functions;
-import java.util.Scanner;  // Kullanıcıdan giriş almak için Scanner sınıfını içe aktarıyoruz
+package functions; 
+import java.util.Scanner;  // Kullaniciya giris almak icin Scanner sinifini ice aktar
 
 public class BasamakSayisi {
 
-    // 'basamakSayisiBul' metodu verilen sayının kaç basamaktan oluştuğunu bulur
+    // 'basamakSayisiBul' metodu verilen sayinin kac basamaktan olustugunu bulur
     int basamakSayisiBul(int sayi) {
-        int basamakSayisi = 0;  // Basamak sayısını tutacak değişken
-        // Sayı 0'dan büyük olduğu sürece döngü devam eder
+        int basamakSayisi = 0;  // Basamak sayisini tutacak degisken
+        // Sayi 0'dan buyuk oldugu surece dongu devam eder
         while(sayi > 0) {
-            // Sayı her döngüde 10'a bölünerek bir basamak eksiltilir
+            // Sayi her dongude 10'a bolunerek bir basamak eksiltilir
             sayi = sayi / 10;
-            // Her bölme işleminde bir basamak olduğu için sayacımızı arttırırız
+            // Her bolme isleminde bir basamak oldugu icin sayaci arttir
             basamakSayisi++;
         }
-        // Basamak sayısını döndürür
+        // Basamak sayisini dondur
         return basamakSayisi;
     }
 
     public static void main(String[] args) {
         
-        // Kullanıcıdan giriş almak için Scanner nesnesi oluşturuyoruz
+        // Kullaniciya giris almak icin Scanner nesnesi olustur
         Scanner okuyucu = new Scanner(System.in);
-        // Kullanıcının girdiği sayıyı alıyoruz
+        // Kullanicinin girdigi sayiyi al
         int sayi = okuyucu.nextInt();
         
-        // BasamakSayisi sınıfından bir nesne oluşturuyoruz
+        // BasamakSayisi sinifindan bir nesne olustur
         BasamakSayisi bulucu = new BasamakSayisi();
         
-        // 'basamakSayisiBul' metodunu çağırarak sayının basamak sayısını hesaplıyoruz
+        // 'basamakSayisiBul' metodunu cagirararak sayinin basamak sayisini hesapla
         int sonuc = bulucu.basamakSayisiBul(sayi);
         
-        // Sonucu ekrana yazdırıyoruz
+        // Sonucu ekrana yazdir
         System.out.println(sonuc);
         
-        // Scanner nesnesini kapatıyoruz
+        // Scanner nesnesini kapat
         okuyucu.close();
     }
 }

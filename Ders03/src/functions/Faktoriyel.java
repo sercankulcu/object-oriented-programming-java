@@ -1,41 +1,41 @@
-package functions;
-import java.util.Scanner;  // Kullanıcıdan giriş almak için Scanner sınıfını içe aktarıyoruz
+package functions; 
+import java.util.Scanner;  // Kullanicidan girdi almak icin Scanner sinifini ice aktar
 
 public class Faktoriyel {
 
-    // 'faktoriyelAl' metodu, verilen sayının faktöriyelini hesaplar
+    // 'faktoriyelAl' metodu, verilen sayinin faktoriyelini hesaplar
     int faktoriyelAl(int sayi) {
-        int sonuc = 1;  // Faktöriyel sonucunu tutacak değişken, başlangıçta 1 olmalı
-        // Sayı 0'dan büyük olduğu sürece döngü devam eder
+        int sonuc = 1;  // Faktoriyel sonucunu tutacak degisken, baslangicta 1 olmali
+        // Sayi 0'dan buyuk oldugu surece dongu devam eder
         while(sayi > 0) {
-            // Sonuç değişkenini her adımda sayi ile çarparak faktöriyel hesaplarız
+            // Sonuc degiskenini her adimda sayi ile carp
             sonuc *= sayi;
-            // Sayı her seferinde 1 azaltılır
+            // Sayi her seferinde 1 azaltilir
             sayi--;
         }
-        // Faktöriyel hesaplandıktan sonra sonuç döndürülür
+        // Faktoriyel hesaplandiktan sonra sonuc dondurulur
         return sonuc;
     }
 
     public static void main(String[] args) {
         
-        // Kullanıcıdan giriş almak için Scanner nesnesi oluşturuyoruz
+        // Kullanicidan girdi almak icin Scanner nesnesi olustur
         Scanner okuyucu = new Scanner(System.in);
         
-        // Kullanıcıdan bir sayı girmesini isteriz
-        System.out.println("Lütfen bir sayı giriniz");
-        int sayi = okuyucu.nextInt();  // Kullanıcının girdiği sayı alınır
+        // Kullanicidan bir sayi girmesini iste
+        System.out.println("Lutfen bir sayi giriniz");
+        int sayi = okuyucu.nextInt();  // Kullanicinin girdigi sayiyi al
         
-        // Faktoriyel sınıfından bir nesne oluşturuyoruz
+        // Faktoriyel sinifindan bir nesne olustur
         Faktoriyel bulucu = new Faktoriyel();
         
-        // 'faktoriyelAl' metodunu çağırarak sayının faktöriyelini hesaplıyoruz
+        // 'faktoriyelAl' metodunu cagirarak sayinin faktoriyelini hesapla
         int sonuc = bulucu.faktoriyelAl(sayi);
         
-        // Hesaplanan faktöriyel sonucunu ekrana yazdırıyoruz
-        System.out.println("Sonuç = " + sonuc);
+        // Hesaplanan faktoriyel sonucunu ekrana yazdir
+        System.out.println("Sonuc = " + sonuc);
         
-        // Scanner nesnesini kapatıyoruz
+        // Scanner nesnesini kapat
         okuyucu.close();
     }
 }

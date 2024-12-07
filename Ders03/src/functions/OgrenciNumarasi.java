@@ -1,26 +1,26 @@
-package functions;
-import java.util.Scanner;  // Kullanıcıdan giriş almak için Scanner sınıfını içe aktarıyoruz
+package functions; 
+import java.util.Scanner;  // Kullanicidan giris almak icin Scanner sinifini ice aktar
 
 public class OgrenciNumarasi {
 
-    // 'kayitYili' metodu, öğrenci numarasının ilk iki hanesine bakarak kayıt yılını hesaplar
+    // 'kayitYili' metodu, ogrenci numarasinin ilk iki hanesine bakarak kayit yilini hesaplar
     int kayitYili(int sayi) {
-        // Öğrenci numarasının ilk iki hanesini (numaranın başındaki iki rakamı) alır ve 2000 yılına ekler
+        // Ogrenci numarasinin ilk iki hanesini (numaranin basindaki iki rakami) alir ve 2000 ekler
         return (sayi / 10000000) + 2000;
     }
 
-    // 'kayitSirasi' metodu, öğrenci numarasının son üç hanesine bakarak kayıt sırasını döndürür
+    // 'kayitSirasi' metodu, ogrenci numarasinin son uc hanesine bakarak kayit sirasi'ni dondurur
     int kayitSirasi(int sayi) {
-        // Numaranın son üç rakamını almak için 1000'e göre mod işlemi yapılır
+        // Numaranin son uc rakamini almak icin 1000'e gore mod islemi yapilir
         return sayi % 1000;
     }
 
-    // 'bolumu' metodu, öğrenci numarasındaki belirli bir haneye bakarak öğrencinin bölümünü bulur
+    // 'bolumu' metodu, ogrenci numarasindaki belirli bir haneye bakarak ogrencinin bolumunu bulur
     String bolumu(int sayi) {
-        // Numaranın bölüm bilgisini tutan kısmı alıyoruz (numaranın sondan dördüncü hanesi)
+        // Numaranin bolum bilgisini tutan kisimi al (numaranin sondan dorduncu hanesi)
         int bolum = (sayi / 1000) % 10;
         
-        // Bölüm numarasına göre hangi bölümde okuduğunu kontrol ediyoruz
+        // Bolum numarasina gore hangi bolumde okudugunu kontrol et
         if(bolum == 7) {
             return "Elektrik Elektronik";
         } else if(bolum == 6) {
@@ -28,32 +28,34 @@ public class OgrenciNumarasi {
         } else if(bolum == 5) {
             return "Makina";
         } else {
-            return "Bilinmiyor";  // Belirtilen numaraya uymayan bir değer için bilinmiyor sonucu döner
+            return "Bilinmiyor";  // Belirtilen numaraya uymayan bir deger icin bilinmiyor sonucu doner
         }
     }
 
     public static void main(String[] args) {
 
-        // Kullanıcıdan giriş almak için Scanner nesnesi oluşturuyoruz
+        // Kullanicidan giris almak icin Scanner nesnesi olustur
         Scanner okuyucu = new Scanner(System.in);
         
-        // Kullanıcıdan okul numarasını girmesini isteriz
-        System.out.println("Lütfen okul numaranızı giriniz");
-        int numara = okuyucu.nextInt();  // Kullanıcının girdiği okul numarası alınır
+        // Kullanicidan okul numarasini girmesini iste
+        System.out.println("Lutfen okul numaranizi giriniz");
+        int numara = okuyucu.nextInt();  // Kullanicinin girdigi okul numarasi alinir
         
-        // OgrenciNumarasi sınıfından bir nesne oluşturuyoruz
+        numara = 230707123;
+        
+        // OgrenciNumarasi sinifindan bir nesne olustur
         OgrenciNumarasi bulucu = new OgrenciNumarasi();
         
-        // Öğrencinin kayıt yılı ekrana yazdırılır
-        System.out.println("Kayıt yılı: " + bulucu.kayitYili(numara));
+        // Ogrencinin kayit yili ekrana yazdirilir
+        System.out.println("Kayit yili: " + bulucu.kayitYili(numara));
         
-        // Öğrencinin kayıt sırası ekrana yazdırılır
-        System.out.println("Kayıt sırası: " + bulucu.kayitSirasi(numara));
+        // Ogrencinin kayit sirasi ekrana yazdirilir
+        System.out.println("Kayit sirasi: " + bulucu.kayitSirasi(numara));
         
-        // Öğrencinin bölümü ekrana yazdırılır
-        System.out.println("Bölüm: " + bulucu.bolumu(numara));
+        // Ogrencinin bolumu ekrana yazdirilir
+        System.out.println("Bolum: " + bulucu.bolumu(numara));
         
-        // Scanner nesnesini kapatıyoruz
+        // Scanner nesnesini kapatiyoruz
         okuyucu.close();
     }
 }
