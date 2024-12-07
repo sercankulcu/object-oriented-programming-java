@@ -1,3 +1,4 @@
+package eamples;
 import java.util.Scanner;
 
 public class Toplama {

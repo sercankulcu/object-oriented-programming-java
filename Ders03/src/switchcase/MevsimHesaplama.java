@@ -1,7 +1,10 @@
+package switchcase;
 import java.util.Scanner;
 
-public class MevsimHesaplamaIfElse {
+public class MevsimHesaplama {
+	
 	public static void main(String[] args) {
+		
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Bir ay girin (1-12): ");
@@ -9,16 +12,30 @@ public class MevsimHesaplamaIfElse {
 
 		String mevsim;
 
-		if (ay >= 3 && ay <= 5) {
+		switch (ay) {
+		case 3:
+		case 4:
+		case 5:
 			mevsim = "İlkbahar";
-		} else if (ay >= 6 && ay <= 8) {
+			break;
+		case 6:
+		case 7:
+		case 8:
 			mevsim = "Yaz";
-		} else if (ay >= 9 && ay <= 11) {
+			break;
+		case 9:
+		case 10:
+		case 11:
 			mevsim = "Sonbahar";
-		} else if (ay == 12 || ay == 1 || ay == 2) {
+			break;
+		case 12:
+		case 1:
+		case 2:
 			mevsim = "Kış";
-		} else {
+			break;
+		default:
 			mevsim = "Geçersiz ay";
+			break;
 		}
 
 		System.out.println("Girdiğiniz ayın mevsimi: " + mevsim);

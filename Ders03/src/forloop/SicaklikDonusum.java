@@ -1,3 +1,4 @@
+package forloop;
 
 public class SicaklikDonusum {
 
@@ -7,14 +8,14 @@ public class SicaklikDonusum {
 			double celsius = 25.0;
 			double fahrenheit = (celsius * 1.8) + 32;
 			double kelvin = celsius + 273.15;
-			System.out.println(celsius + "°C = " + fahrenheit + "°F = " + kelvin + "°K");
+			System.out.println(celsius + "ï¿½C = " + fahrenheit + "ï¿½F = " + kelvin + "ï¿½K");
 		}
 		{
 			double[] celsiuses = {-40, 0, 25, 100};
 			for (double celsius : celsiuses) {
 				double fahrenheit = (celsius * 1.8) + 32;
 				double kelvin = celsius + 273.15;
-				System.out.println(celsius + "°C = " + fahrenheit + "°F = " + kelvin + "°K");
+				System.out.println(celsius + "ï¿½C = " + fahrenheit + "ï¿½F = " + kelvin + "ï¿½K");
 			}
 		}
 	}

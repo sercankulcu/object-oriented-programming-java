@@ -1,9 +1,8 @@
+package ifcondition;
 import java.util.Scanner;
 
-public class MevsimHesaplama {
-	
+public class MevsimHesaplamaIfElse {
 	public static void main(String[] args) {
-		
 		Scanner scanner = new Scanner(System.in);
 
 		System.out.print("Bir ay girin (1-12): ");
@@ -11,30 +10,16 @@ public class MevsimHesaplama {
 
 		String mevsim;
 
-		switch (ay) {
-		case 3:
-		case 4:
-		case 5:
+		if (ay >= 3 && ay <= 5) {
 			mevsim = "İlkbahar";
-			break;
-		case 6:
-		case 7:
-		case 8:
+		} else if (ay >= 6 && ay <= 8) {
 			mevsim = "Yaz";
-			break;
-		case 9:
-		case 10:
-		case 11:
+		} else if (ay >= 9 && ay <= 11) {
 			mevsim = "Sonbahar";
-			break;
-		case 12:
-		case 1:
-		case 2:
+		} else if (ay == 12 || ay == 1 || ay == 2) {
 			mevsim = "Kış";
-			break;
-		default:
+		} else {
 			mevsim = "Geçersiz ay";
-			break;
 		}
 
 		System.out.println("Girdiğiniz ayın mevsimi: " + mevsim);

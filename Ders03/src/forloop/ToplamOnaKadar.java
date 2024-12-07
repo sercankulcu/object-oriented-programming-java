@@ -1,3 +1,4 @@
+package forloop;
 
 public class ToplamOnaKadar {
 	

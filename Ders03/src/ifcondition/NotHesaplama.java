@@ -1,3 +1,4 @@
+package ifcondition;
 import java.util.Scanner;
 
 public class NotHesaplama {

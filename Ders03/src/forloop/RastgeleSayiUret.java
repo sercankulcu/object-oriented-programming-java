@@ -1,3 +1,4 @@
+package forloop;
 import java.util.Random;
 
 public class RastgeleSayiUret {
