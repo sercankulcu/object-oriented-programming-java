@@ -1,32 +1,30 @@
-package ifcondition;
+package ifcondition; 
 import java.util.Scanner;
 
 public class MutlakDeger {
 
-	int mutlakDeger(int sayi) {
-		if (sayi < 0) {
-			return -sayi; 
-		} else {
-			return sayi; 
-		}
-	}
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.print("Bir sayı girin: ");
+		// Kullanicidan bir sayi girmesini iste
+		System.out.print("Bir sayi girin: ");
 		double sayi = scanner.nextDouble();
 
 		double mutlakDeger;
 
+		// Sayinin negatif olup olmadigini kontrol et
 		if (sayi < 0) {
+			// Eger sayi negatifse, isareti degistir
 			mutlakDeger = -sayi;
 		} else {
+			// Sayi pozitifse, oldugu gibi sayiyi al
 			mutlakDeger = sayi;
 		}
 
-		System.out.println("Girdiğiniz sayının mutlak değeri: " + mutlakDeger);
+		// Sonuc olarak sayinin mutlak degerini ekrana yazdir
+		System.out.println("Girdiginiz sayinin mutlak degeri: " + mutlakDeger);
 
+		// Scanner nesnesini kapat
 		scanner.close();
 	}
 }

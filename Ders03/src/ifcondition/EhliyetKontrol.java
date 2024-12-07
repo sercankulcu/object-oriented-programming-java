@@ -1,4 +1,4 @@
-package ifcondition;
+package ifcondition; 
 import java.util.Scanner;
 
 public class EhliyetKontrol {
@@ -7,15 +7,19 @@ public class EhliyetKontrol {
 		
 		Scanner klavye = new Scanner(System.in);
 
-		System.out.print("Yaşınızı girin: ");
+		// Kullaniciya yasini sor
+		System.out.print("Yasinizi girin: ");
 		int yas = klavye.nextInt();
 
+		// Eger yas 18 veya daha buyukse ehliyet alabilir
 		if (yas >= 18) {
 			System.out.println("Ehliyet alabilirsiniz.");
 		} else {
-			System.out.println("Ehliyet alamazsınız.");
+			// Yas 18'den kucukse ehliyet alamaz
+			System.out.println("Ehliyet alamazsiniz.");
 		}
 
+		// Scanner nesnesini kapat
 		klavye.close();
 	}
 }
