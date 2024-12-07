@@ -2,17 +2,23 @@ package forloop;
 
 public class CarpimTablosu {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		System.out.println("Carpim Tablosu:");
-		
-		for (int i = 1; i <= 10; i++) {
-			
-			for (int j = 1; j <= 10; j++) {
-				
-				System.out.print(i + "x" + j + "=" + (i * j) + "\t");
-			}
-			System.out.println(); // Yeni satır
-		}
-	}
+        // Baslik yazdirilir
+        System.out.println("Carpim Tablosu:");
+        
+        // Dis dongu: Satirlari temsil eder
+        for (int i = 1; i <= 10; i++) {
+
+            // Ic dongu: Sutunlari temsil eder
+            for (int j = 1; j <= 10; j++) {
+
+                // Carpim sonucu yazdirilir, tab ile hizalama yapilir
+                System.out.print(i + "x" + j + "=" + (i * j) + "\t");
+            }
+
+            // Her satir tamamlandiginda yeni satira gecilir
+            System.out.println();
+        }
+    }
 }
