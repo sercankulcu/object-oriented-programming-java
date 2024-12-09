@@ -1,41 +1,41 @@
 package eamples;
-import java.util.Scanner; // Kullanıcıdan veri girişi almak için Scanner sınıfını içe aktarır.
+import java.util.Scanner; // Kullanicidan veri girisi almak icin Scanner sinifini ice aktarir.
 
-public class Faktoriyel { // Ana sınıf
+public class Faktoriyel { // Ana sinif
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		// Kullanıcıdan bir sayı almak için Scanner nesnesi oluşturur.
-		Scanner scanner = new Scanner(System.in);
+        // Kullanicidan bir sayi almak icin Scanner nesnesi olusturur.
+        Scanner scanner = new Scanner(System.in);
 
-		// Kullanıcıdan faktöriyelini hesaplamak için bir sayı girmesini ister.
-		System.out.println("Bir sayı giriniz:");
-		int sayi = scanner.nextInt(); // Girilen sayıyı okur ve 'sayi' değişkenine atar.
+        // Kullanicidan faktoriyelini hesaplamak icin bir sayi girmesini ister.
+        System.out.println("Bir sayi giriniz:");
+        int sayi = scanner.nextInt(); // Girilen sayiyi okur ve 'sayi' degiskenine atar.
 
-		// Faktöriyel hesaplaması için başlangıç değeri 1 olan 'faktoriyel' değişkeni tanımlanır.
-		int faktoriyel = 1;
+        // Faktoriyel hesaplamasi icin baslangic degeri 1 olan 'faktoriyel' degiskeni tanimlanir.
+        int faktoriyel = 1;
 
-		// Kullanıcının girdiği sayıyı ekrana yazdırır.
-		// Örneğin, "5" girdiyse, ekrana "5" yazdırır.
-		System.out.print(sayi);
+        // Kullanicinin girdigi sayiyi ekrana yazdirir.
+        // Ornegin, "5" girdiyse, ekrana "5" yazdirir.
+        System.out.print(sayi);
 
-		// Faktöriyel hesaplamak için 'while' döngüsü başlatılır.
-		// Döngü, sayı 0'dan büyük olduğu sürece devam eder.
-		// Faktöriyel, 1'den başlayarak sayıya kadar olan tüm sayıların çarpımına eşittir.
-		while(sayi > 0) {
+        // Faktoriyel hesaplamak icin 'while' dongusu baslatilir.
+        // Dongu, sayi 0'dan buyuk oldugu surece devam eder.
+        // Faktoriyel, 1'den baslayarak sayiya kadar olan tum sayilarin carpimina esitttir.
+        while(sayi > 0) {
 
-			// 'faktoriyel' değeri, her adımda o anki 'sayi' değeri ile çarpılır.
-			faktoriyel *= sayi;
+            // 'faktoriyel' degeri, her adimda o anki 'sayi' degeri ile carpilir.
+            faktoriyel *= sayi;
 
-			// Sayıyı 1 azaltarak bir sonraki sayıya geçer.
-			sayi--;
-		}
+            // Sayiyi 1 azaltarak bir sonraki sayiya gecilir.
+            sayi--;
+        }
 
-		// Faktöriyel hesaplandıktan sonra sonucu ekrana yazdırır.
-		// Örneğin, "5! = 120" şeklinde çıktı verecektir.
-		System.out.println("! = " + faktoriyel);
+        // Faktoriyel hesaplandiktan sonra sonucu ekrana yazdirir.
+        // Ornegin, "5! = 120" seklinde cikti verecektir.
+        System.out.println("! = " + faktoriyel);
 
-		// Scanner nesnesini kapatır. Kaynak yönetimi açısından önemli bir adımdır.
-		scanner.close();
-	}
+        // Scanner nesnesini kapatir. Kaynak yonetimi acisindan onemli bir adimdir.
+        scanner.close();
+    }
 }

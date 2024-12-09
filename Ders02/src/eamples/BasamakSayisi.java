@@ -1,35 +1,35 @@
 package eamples;
-import java.util.Scanner; // Kullanıcıdan veri girişi almak için Scanner sınıfını içe aktarır.
+import java.util.Scanner; // Kullanicidan veri girisi almak icin Scanner sinifini ice aktarir.
 
-public class BasamakSayisi { // Ana sınıf
+public class BasamakSayisi { // Ana sinif
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		// Kullanıcıdan bir sayı almak için Scanner nesnesi oluşturur.
-		Scanner scanner = new Scanner(System.in);
+        // Kullanicidan bir sayi almak icin Scanner nesnesi olusturur.
+        Scanner scanner = new Scanner(System.in);
 
-		// Kullanıcıdan bir sayı girmesini ister. Bu sayı basamaklarının sayısını hesaplayacağız.
-		System.out.println("Bir sayı giriniz:");
-		int sayi = scanner.nextInt(); // Kullanıcının girdiği sayıyı okur ve 'sayi' değişkenine atar.
+        // Kullanicidan bir sayi girmesini ister. Bu sayinin basamak sayisi hesaplanir.
+        System.out.println("Bir sayi giriniz:");
+        int sayi = scanner.nextInt(); // Kullanicinin girdigi sayiyi okur ve 'sayi' degiskenine atar.
 
-		// Basamak sayısını tutmak için bir değişken tanımlar ve başlangıç değerini 0 olarak belirler.
-		int basamakSayisi = 0;
+        // Basamak sayisini tutmak icin bir degisken tanimlar ve baslangic degerini 0 olarak belirler.
+        int basamakSayisi = 0;
 
-		// 'while' döngüsü, sayının basamaklarını saymak için kullanılır.
-		// Döngü, sayı 0'dan büyük olduğu sürece devam eder.
-		while(sayi > 0) {
+        // 'while' dongusu, sayinin basamaklarini saymak icin kullanilir.
+        // Dongu, sayi 0'dan buyuk oldugu surece devam eder.
+        while(sayi > 0) {
 
-			// Sayının son basamağını "sayı / 10" işlemiyle sileriz (örneğin 1234 -> 123).
-			sayi = sayi / 10;
+            // Sayinin son basamagi "sayi / 10" islemiyle silinir (ornegin 1234 -> 123).
+            sayi = sayi / 10;
 
-			// Her işlemde bir basamak silindiği için 'basamakSayisi' bir artırılır.
-			basamakSayisi++;
-		}
+            // Her islemde bir basamak silindigi icin 'basamakSayisi' bir artirilir.
+            basamakSayisi++;
+        }
 
-		// Sayının kaç basamaktan oluştuğunu ekrana yazdırır.
-		System.out.println("Basamak sayısı: " + basamakSayisi);
+        // Sayinin kac basamaktan olustugunu ekrana yazdirir.
+        System.out.println("Basamak sayisi: " + basamakSayisi);
 
-		// Scanner nesnesini kapatır. Kaynak yönetimi açısından önemli bir adımdır.
-		scanner.close();
-	}
+        // Scanner nesnesini kapatir. Kaynak yonetimi acisindan onemli bir adimdir.
+        scanner.close();
+    }
 }

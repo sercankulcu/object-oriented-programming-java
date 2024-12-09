@@ -1,26 +1,32 @@
 package eamples;
-import java.util.Scanner; // Kullanıcıdan giriş almak için Scanner sınıfını içe aktarır.
+import java.util.Scanner; // Kullanicidan veri almak icin Scanner sinifini ice aktarir.
 
 public class UsAlma {
 
 	public static void main(String[] args) {
 
-		Scanner scanner = new Scanner(System.in); // Kullanıcıdan veri almak için Scanner objesi oluşturur.
+		// Kullanicidan veri almak icin Scanner objesi olusturur.
+		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("Tabanı gir:"); // Kullanıcıya taban değerini girmesini ister.
-		int taban = scanner.nextInt(); // Girilen taban değerini okur ve 'taban' değişkenine atar.
+		// Kullanicidan taban degerini girmesini ister.
+		System.out.println("Tabani gir:");
+		int taban = scanner.nextInt(); // Girilen taban degerini okur ve 'taban' degiskenine atar.
 
-		System.out.println("Üssü gir:"); // Kullanıcıya üs değerini girmesini ister.
-		int us = scanner.nextInt(); // Girilen üs değerini okur ve 'us' değişkenine atar.
+		// Kullanicidan us degerini girmesini ister.
+		System.out.println("Ussu gir:");
+		int us = scanner.nextInt(); // Girilen us degerini okur ve 'us' degiskenine atar.
+		
+		scanner.close();
 
-		int sonuc = 1; // Sonucu hesaplamak için başlangıç değeri 1 olan bir 'sonuc' değişkeni tanımlar.
+		// Sonucu hesaplamak icin baslangic degeri 1 olan bir 'sonuc' degiskeni tanimlar.
+		int sonuc = 1;
 
-		// 'us' değeri kadar döngü çalışır. Her adımda 'taban' değeri ile 'sonuc' çarpılır.
-		for(int i = 0; i < us; i++) { // Döngü, üs sayısı kadar tekrar eder.
-			sonuc = sonuc * taban; // Her adımda 'sonuc', 'taban' ile çarpılır.
+		// 'us' degeri kadar dongu calisir. Her adimda 'taban' degeri ile 'sonuc' carpilir.
+		for(int i = 0; i < us; i++) { // Dongu, us sayisi kadar tekrar eder.
+			sonuc = sonuc * taban; // Her adimda 'sonuc', 'taban' ile carpilir.
 		}
 
-		// Hesaplanan üs alma işlemini kullanıcıya gösterir.
-		System.out.println(taban + "^" + us + " = " + sonuc); // Sonucu ekrana yazdırır.
+		// Hesaplanan us alma islemine sonucu ekrana yazdirir.
+		System.out.println(taban + "^" + us + " = " + sonuc); // Sonucu ekrana yazdirir.
 	}
 }

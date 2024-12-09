@@ -1,41 +1,41 @@
 package eamples;
-import java.util.Scanner; // Kullanıcıdan veri girişi almak için Scanner sınıfını içe aktarır.
+import java.util.Scanner; // Kullanicidan veri girisi almak icin Scanner sinifini ice aktarir.
 
-public class RakamlarToplami { // Ana sınıf
+public class RakamlarToplami { // Ana sinif
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		// Kullanıcıdan giriş almak için Scanner nesnesi oluşturur.
-		Scanner scanner = new Scanner(System.in);
+        // Kullanicidan giris almak icin Scanner nesnesi olusturur.
+        Scanner scanner = new Scanner(System.in);
 
-		// Kullanıcıdan bir sayı girmesini ister.
-		System.out.println("Bir sayı giriniz:");
+        // Kullanicidan bir sayi girmesini ister.
+        System.out.println("Bir sayi giriniz:");
 
-		// Kullanıcının girdiği sayıyı okur ve 'sayi' değişkenine atar.
-		int sayi = scanner.nextInt();
+        // Kullanicinin girdigi sayiyi okur ve 'sayi' degiskenine atar.
+        int sayi = scanner.nextInt();
 
-		// Rakamların toplamını tutmak için 'rakamlarToplami' adında bir değişken oluşturur, başlangıç değeri 0'dır.
-		int rakamlarToplami = 0;
+        // Rakamlarin toplamini tutmak icin 'rakamlarToplami' adinda bir degisken olusturur, baslangic degeri 0'dir.
+        int rakamlarToplami = 0;
 
-		// Sayının basamaklarını tek tek almak için bir döngü başlatır.
-		// Döngü, 'sayi' 0'dan büyük olduğu sürece devam eder.
-		while(sayi > 0) {
+        // Sayinin basamaklarini tek tek almak icin bir dongu baslatir.
+        // Dongu, 'sayi' 0'dan buyuk oldugu surece devam eder.
+        while(sayi > 0) {
 
-			// Sayının son basamağını almak için 10'a göre mod (kalan) işlemi yapılır.
-			int rakam = sayi % 10;
+            // Sayinin son basamagini almak icin 10'a gore mod (kalan) islemi yapilir.
+            int rakam = sayi % 10;
 
-			// Alınan basamak değeri 'rakamlarToplami' değişkenine eklenir.
-			rakamlarToplami += rakam;
+            // Alinan basamak degeri 'rakamlarToplami' degiskenine eklenir.
+            rakamlarToplami += rakam;
 
-			// Sayının son basamağını silmek için sayıyı 10'a böleriz.
-			// Bu işlemle sayının bir basamağı eksilir.
-			sayi = sayi / 10;
-		}
+            // Sayinin son basamagini silmek icin sayi 10'a bolunur.
+            // Bu islemlerle sayinin bir basamagi eksilir.
+            sayi = sayi / 10;
+        }
 
-		// Sonuç olarak rakamların toplamını ekrana yazdırır.
-		System.out.println("Rakamlar toplamı: " + rakamlarToplami);
+        // Sonuc olarak rakamlarin toplamini ekrana yazdirir.
+        System.out.println("Rakamlar toplami: " + rakamlarToplami);
 
-		// Scanner nesnesini kapatır. Kaynak yönetimi açısından önemli bir adımdır.
-		scanner.close(); 
-	}
+        // Scanner nesnesini kapatir. Kaynak yonetimi acisindan onemli bir adimdir.
+        scanner.close(); 
+    }
 }
