@@ -5,7 +5,7 @@ import java.util.Scanner;
  * Verilen tarihe gore burcunuzu yazdirir: 
  */
 
-public class BurcYazdir {
+public class BurcYazdirma {
 
 	public static void main(String[] args) {
 
@@ -17,6 +17,8 @@ public class BurcYazdir {
 		// Kullaniciya dogum gununu sor
 		System.out.print("Dogum gununuzu girin (1-31): ");
 		int gun = girdi.nextInt();
+		
+		girdi.close();
 
 		String burc = "";
 

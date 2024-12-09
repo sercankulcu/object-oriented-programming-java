@@ -1,7 +1,7 @@
 package ifcondition; 
 import java.util.Scanner;
 
-public class EhliyetKontrol {
+public class EhliyetKontrolu {
 	
 	public static void main(String[] args) {
 		

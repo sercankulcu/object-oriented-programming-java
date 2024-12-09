@@ -1,7 +1,7 @@
 package ifcondition; 
 import java.util.Scanner;
 
-public class MevsimAdi {
+public class MevsimAdlari {
 	
 	public static void main(String[] args) {
 		

@@ -2,7 +2,7 @@ package forloop;
 
 import java.util.Random;
 
-public class RastgeleSayiUret {
+public class RastgeleSayiUretme {
 
     public static void main(String[] args) {
 

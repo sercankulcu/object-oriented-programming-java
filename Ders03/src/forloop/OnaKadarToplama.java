@@ -1,6 +1,6 @@
 package forloop;
 
-public class ToplamOnaKadar {
+public class OnaKadarToplama {
     
     public static void main(String[] args) {
     	

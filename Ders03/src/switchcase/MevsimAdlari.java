@@ -1,7 +1,7 @@
 package switchcase; 
 import java.util.Scanner;
 
-public class MevsimHesaplama {
+public class MevsimAdlari {
 	
 	public static void main(String[] args) {
 		

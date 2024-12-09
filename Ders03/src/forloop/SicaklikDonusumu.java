@@ -1,6 +1,6 @@
 package forloop;
 
-public class SicaklikDonusum {
+public class SicaklikDonusumu {
 
     public static void main(String[] args) {
 
