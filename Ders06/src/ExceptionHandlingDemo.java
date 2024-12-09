@@ -18,6 +18,8 @@ public class ExceptionHandlingDemo {
 			System.out.println("The exception stack trace is: " + e.getStackTrace());
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Array Index Out Of Bounds Exception occured!");
+			System.out.println("The exception message is: " + e.getMessage());
+			System.out.println("The exception stack trace is: " + e.getStackTrace());
 		} finally {
 			System.out.println("Entered finally block!");
 		}
