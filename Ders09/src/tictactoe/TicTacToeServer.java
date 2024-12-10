@@ -8,141 +8,140 @@ import java.util.Scanner;
 import java.util.concurrent.Executors;
 
 /**
- * A server for a multi-player tic tac toe game. Loosely based on an example in
- * Deitel and Deitel’s “Java How to Program” book. For this project I created a
- * new application-level protocol called TTTP (for Tic Tac Toe Protocol), which
- * is entirely plain text. The messages of TTTP are:
- *
- * Client -> Server MOVE <n> QUIT
- *
- * Server -> Client WELCOME <char> VALID_MOVE OTHER_PLAYER_MOVED <n>
- * OTHER_PLAYER_LEFT VICTORY DEFEAT TIE MESSAGE <text>
+ * Cok oyunculu bir Tic Tac Toe oyunu icin sunucu.
+ * TTTP (Tic Tac Toe Protocol) adinda bir protokol kullanir.
  */
 public class TicTacToeServer {
 
-	public static void main(String[] args) throws Exception {
-		try (var listener = new ServerSocket(58901)) {
-			System.out.println("Tic Tac Toe Server is Running...");
-			var pool = Executors.newFixedThreadPool(200);
-			while (true) {
-				Game game = new Game();
-				pool.execute(game.new Player(listener.accept(), 'X'));
-				pool.execute(game.new Player(listener.accept(), 'O'));
-			}
-		}
-	}
+    public static void main(String[] args) throws Exception {
+    	
+        try (var listener = new ServerSocket(58901)) {
+            System.out.println("Tic Tac Toe Sunucusu Calisiyor...");
+            var pool = Executors.newFixedThreadPool(200); // Maksimum 200 oyuncu desteklenir
+            while (true) {
+                Game game = new Game();
+                // Iki oyuncuyu bagla: biri 'X', digeri 'O'
+                pool.execute(game.new Player(listener.accept(), 'X'));
+                pool.execute(game.new Player(listener.accept(), 'O'));
+            }
+        }
+    }
 }
 
 class Game {
 
-	// Board cells numbered 0-8, top to bottom, left to right; null if empty
-	private Player[] board = new Player[9];
+    // Tahta hucreleri 0-8 ile numaralandirilmis; bos hucreler null'dir
+    private Player[] board = new Player[9];
+    Player currentPlayer; // Su anki oyuncu
 
-	Player currentPlayer;
+    // Kazanma durumunu kontrol eder
+    public boolean hasWinner() {
+        return (board[0] != null && board[0] == board[1] && board[0] == board[2]) // Ust satir
+                || (board[3] != null && board[3] == board[4] && board[3] == board[5]) // Orta satir
+                || (board[6] != null && board[6] == board[7] && board[6] == board[8]) // Alt satir
+                || (board[0] != null && board[0] == board[3] && board[0] == board[6]) // Sol sutun
+                || (board[1] != null && board[1] == board[4] && board[1] == board[7]) // Orta sutun
+                || (board[2] != null && board[2] == board[5] && board[2] == board[8]) // Sag sutun
+                || (board[0] != null && board[0] == board[4] && board[0] == board[8]) // Capraz (sol ustten sag alta)
+                || (board[2] != null && board[2] == board[4] && board[2] == board[6]); // Capraz (sag ustten sol alta)
+    }
 
-	public boolean hasWinner() {
-		return (board[0] != null && board[0] == board[1] && board[0] == board[2])
-				|| (board[3] != null && board[3] == board[4] && board[3] == board[5])
-				|| (board[6] != null && board[6] == board[7] && board[6] == board[8])
-				|| (board[0] != null && board[0] == board[3] && board[0] == board[6])
-				|| (board[1] != null && board[1] == board[4] && board[1] == board[7])
-				|| (board[2] != null && board[2] == board[5] && board[2] == board[8])
-				|| (board[0] != null && board[0] == board[4] && board[0] == board[8])
-				|| (board[2] != null && board[2] == board[4] && board[2] == board[6]);
-	}
+    // Tahtanin tamamen dolup dolmadigini kontrol eder
+    public boolean boardFilledUp() {
+        return Arrays.stream(board).allMatch(p -> p != null); // Tum hucreler doluysa true doner
+    }
 
-	public boolean boardFilledUp() {
-		return Arrays.stream(board).allMatch(p -> p != null);
-	}
+    // Oyuncunun hamlesini isler
+    public synchronized void move(int location, Player player) {
+        if (player != currentPlayer) {
+            throw new IllegalStateException("Sira sizde degil"); // Hatali sirada hamle denemesi
+        } else if (player.opponent == null) {
+            throw new IllegalStateException("Henuz bir rakibiniz yok"); // Rakip baglanmadiysa
+        } else if (board[location] != null) {
+            throw new IllegalStateException("Bu hucre zaten dolu"); // Hucre doluysa
+        }
+        board[location] = currentPlayer; // Hucreye hamleyi yerlestir
+        currentPlayer = currentPlayer.opponent; // Sira rakibe gecer
+    }
 
-	public synchronized void move(int location, Player player) {
-		if (player != currentPlayer) {
-			throw new IllegalStateException("Not your turn");
-		} else if (player.opponent == null) {
-			throw new IllegalStateException("You don't have an opponent yet");
-		} else if (board[location] != null) {
-			throw new IllegalStateException("Cell already occupied");
-		}
-		board[location] = currentPlayer;
-		currentPlayer = currentPlayer.opponent;
-	}
+    /**
+     * Oyuncu sinifi, oyuncunun karakterini (X veya O) ve baglanti bilgilerini icerir.
+     */
+    class Player implements Runnable {
+    	
+        char mark; // Oyuncunun isareti ('X' veya 'O')
+        Player opponent; // Rakip oyuncu
+        Socket socket; // Oyuncunun baglantisi
+        Scanner input; // Gelen veri okuyucusu
+        PrintWriter output; // Giden veri yazicisi
 
-	/**
-	 * A Player is identified by a character mark which is either 'X' or 'O'. For
-	 * communication with the client the player has a socket and associated Scanner
-	 * and PrintWriter.
-	 */
-	class Player implements Runnable {
-		char mark;
-		Player opponent;
-		Socket socket;
-		Scanner input;
-		PrintWriter output;
+        public Player(Socket socket, char mark) {
+            this.socket = socket;
+            this.mark = mark;
+        }
 
-		public Player(Socket socket, char mark) {
-			this.socket = socket;
-			this.mark = mark;
-		}
+        @Override
+        public void run() {
+            try {
+                setup(); // Oyunu kur
+                processCommands(); // Gelen komutlari isle
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                if (opponent != null && opponent.output != null) {
+                    opponent.output.println("OTHER_PLAYER_LEFT"); // Rakibe oyuncunun ayrildigini bildir
+                }
+                try {
+                    socket.close(); // Oyuncunun baglantisini kapat
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
 
-		@Override
-		public void run() {
-			try {
-				setup();
-				processCommands();
-			} catch (Exception e) {
-				e.printStackTrace();
-			} finally {
-				if (opponent != null && opponent.output != null) {
-					opponent.output.println("OTHER_PLAYER_LEFT");
-				}
-				try {
-					socket.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
+        // Oyuncunun baglantisini kurar ve oyun icin hazirlar
+        private void setup() throws IOException {
+            input = new Scanner(socket.getInputStream());
+            output = new PrintWriter(socket.getOutputStream(), true);
+            output.println("WELCOME " + mark); // Oyuncuya hos geldin mesaji gonder
+            if (mark == 'X') {
+                currentPlayer = this; // Ilk hamle 'X' oyuncusuna verilir
+                output.println("MESSAGE Rakibin baglanmasi bekleniyor...");
+            } else {
+                opponent = currentPlayer; // Rakip 'X' oyuncusudur
+                opponent.opponent = this; // 'X' oyuncusuna rakip olarak 'O' atanir
+                opponent.output.println("MESSAGE Hamle sira sizde");
+            }
+        }
 
-		private void setup() throws IOException {
-			input = new Scanner(socket.getInputStream());
-			output = new PrintWriter(socket.getOutputStream(), true);
-			output.println("WELCOME " + mark);
-			if (mark == 'X') {
-				currentPlayer = this;
-				output.println("MESSAGE Waiting for opponent to connect");
-			} else {
-				opponent = currentPlayer;
-				opponent.opponent = this;
-				opponent.output.println("MESSAGE Your move");
-			}
-		}
+        // Oyuncunun gonderdigi komutlari dinler ve isler
+        private void processCommands() {
+            while (input.hasNextLine()) {
+                var command = input.nextLine();
+                if (command.startsWith("QUIT")) { // Oyuncu cikmak istediginde
+                    return;
+                } else if (command.startsWith("MOVE")) { // Oyuncunun hamle yaptigi durumda
+                    processMoveCommand(Integer.parseInt(command.substring(5)));
+                }
+            }
+        }
 
-		private void processCommands() {
-			while (input.hasNextLine()) {
-				var command = input.nextLine();
-				if (command.startsWith("QUIT")) {
-					return;
-				} else if (command.startsWith("MOVE")) {
-					processMoveCommand(Integer.parseInt(command.substring(5)));
-				}
-			}
-		}
-
-		private void processMoveCommand(int location) {
-			try {
-				move(location, this);
-				output.println("VALID_MOVE");
-				opponent.output.println("OPPONENT_MOVED " + location);
-				if (hasWinner()) {
-					output.println("VICTORY");
-					opponent.output.println("DEFEAT");
-				} else if (boardFilledUp()) {
-					output.println("TIE");
-					opponent.output.println("TIE");
-				}
-			} catch (IllegalStateException e) {
-				output.println("MESSAGE " + e.getMessage());
-			}
-		}
-	}
+        // Oyuncunun gonderdigi hamle komutunu isler
+        private void processMoveCommand(int location) {
+            try {
+                move(location, this); // Hamleyi isler
+                output.println("VALID_MOVE"); // Gecerli hamle mesaji
+                opponent.output.println("OPPONENT_MOVED " + location); // Rakibe hamleyi bildir
+                if (hasWinner()) {
+                    output.println("VICTORY"); // Kazanma durumu
+                    opponent.output.println("DEFEAT"); // Kaybetme durumu
+                } else if (boardFilledUp()) {
+                    output.println("TIE"); // Beraberlik durumu
+                    opponent.output.println("TIE");
+                }
+            } catch (IllegalStateException e) {
+                output.println("MESSAGE " + e.getMessage()); // Hata mesaji gonder
+            }
+        }
+    }
 }
