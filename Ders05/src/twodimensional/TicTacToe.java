@@ -29,6 +29,8 @@ public class TicTacToe {
 
 	// Tahtayi ekrana yazdir
 	public static void tahtayiGoster(char[][] tahta) {
+		System.out.print("\033[H\033[2J"); // Konsolu temizle
+		System.out.flush();
 		System.out.println("-------------");
 		for (int i = 0; i < 3; i++) {
 			System.out.print("| ");
