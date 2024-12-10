@@ -1,4 +1,4 @@
-package chat;
+package chat; 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -14,86 +14,70 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
-/**
- * A simple Swing-based client for the chat server. Graphically it is a frame
- * with a text field for entering messages and a textarea to see the whole
- * dialog.
- *
- * The client follows the following Chat Protocol. When the server sends
- * "SUBMITNAME" the client replies with the desired screen name. The server will
- * keep sending "SUBMITNAME" requests as long as the client submits screen names
- * that are already in use. When the server sends a line beginning with
- * "NAMEACCEPTED" the client is now allowed to start sending the server
- * arbitrary strings to be broadcast to all chatters connected to the server.
- * When the server sends a line beginning with "MESSAGE" then all characters
- * following this string should be displayed in its message area.
- */
 public class ChatClient {
 
-	String serverAddress;
-	Scanner in;
-	PrintWriter out;
-	JFrame frame = new JFrame("Chatter");
-	JTextField textField = new JTextField(50);
-	JTextArea messageArea = new JTextArea(16, 50);
+    String serverAddress; // Sunucu adresi
+    Scanner in; // Girdi akisi
+    PrintWriter out; // Cikti akisi
+    JFrame frame = new JFrame("Chatter"); // Chat penceresi
+    JTextField textField = new JTextField(50); // Mesaj girmek icin alan
+    JTextArea messageArea = new JTextArea(16, 50); // Mesajlari gosteren alan
 
-	/**
-	 * Constructs the client by laying out the GUI and registering a listener with
-	 * the textfield so that pressing Return in the listener sends the textfield
-	 * contents to the server. Note however that the textfield is initially NOT
-	 * editable, and only becomes editable AFTER the client receives the
-	 * NAMEACCEPTED message from the server.
-	 */
-	public ChatClient(String serverAddress) {
-		this.serverAddress = serverAddress;
+    // Constructor: ChatClient nesnesi olusturur
+    public ChatClient(String serverAddress) {
+        this.serverAddress = serverAddress;
 
-		textField.setEditable(false);
-		messageArea.setEditable(false);
-		frame.getContentPane().add(textField, BorderLayout.SOUTH);
-		frame.getContentPane().add(new JScrollPane(messageArea), BorderLayout.CENTER);
-		frame.pack();
+        textField.setEditable(false); // Mesaj girmek baslangicta kapali
+        messageArea.setEditable(false); // Mesajlari gormek icin alani degistirilemez
+        frame.getContentPane().add(textField, BorderLayout.SOUTH); // Mesaj girme alanini ekler
+        frame.getContentPane().add(new JScrollPane(messageArea), BorderLayout.CENTER); // Mesajlari gosterme alanini ekler
+        frame.pack();
 
-		// Send on enter then clear to prepare for next message
-		textField.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				out.println(textField.getText());
-				textField.setText("");
-			}
-		});
-	}
+        // Enter tusuna basildiginda mesaj gonderir, sonra textField'i temizler
+        textField.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                out.println(textField.getText()); // Mesaji server'a gonder
+                textField.setText(""); // Girdiyi temizle
+            }
+        });
+    }
 
-	private String getName() {
-		return JOptionPane.showInputDialog(frame, "Choose a screen name:", "Screen name selection",
-				JOptionPane.PLAIN_MESSAGE);
-	}
+    // Kullaniciya ekran ismi secmesi icin dialog penceresi gosterir
+    private String getName() {
+        return JOptionPane.showInputDialog(frame, "Choose a screen name:", "Screen name selection",
+                JOptionPane.PLAIN_MESSAGE);
+    }
 
-	private void run() throws IOException {
-		try (var socket = new Socket(serverAddress, 59001)) {
-			in = new Scanner(socket.getInputStream());
-			out = new PrintWriter(socket.getOutputStream(), true);
+    // Chat client'ini baslatan ana metod
+    private void run() throws IOException {
+        try (var socket = new Socket(serverAddress, 59001)) { // Sunucuya baglanir
+            in = new Scanner(socket.getInputStream()); // Sunucudan veri alir
+            out = new PrintWriter(socket.getOutputStream(), true); // Sunucuya veri gonderir
 
-			while (in.hasNextLine()) {
-				var line = in.nextLine();
-				if (line.startsWith("SUBMITNAME")) {
-					out.println(getName());
-				} else if (line.startsWith("NAMEACCEPTED")) {
-					this.frame.setTitle("Chatter - " + line.substring(13));
-					textField.setEditable(true);
-				} else if (line.startsWith("MESSAGE")) {
-					messageArea.append(line.substring(8) + "\n");
-				}
-			}
-		} finally {
-			frame.setVisible(false);
-			frame.dispose();
-		}
-	}
+            // Sunucudan gelen her satir icin islemleri yapar
+            while (in.hasNextLine()) {
+                var line = in.nextLine(); // Gelen satiri al
+                if (line.startsWith("SUBMITNAME")) { // Ekran ismi istegini alir
+                    out.println(getName()); // Kullaniciya ekran ismini sorar
+                } else if (line.startsWith("NAMEACCEPTED")) { // Isim kabul edildiginde
+                    this.frame.setTitle("Chatter - " + line.substring(13)); // Frame basligini gunceller
+                    textField.setEditable(true); // Mesaj girmeye izin verir
+                } else if (line.startsWith("MESSAGE")) { // Mesaj geldiyse
+                    messageArea.append(line.substring(8) + "\n"); // Mesaji ekler
+                }
+            }
+        } finally {
+            frame.setVisible(false); // Frame'i gizler
+            frame.dispose(); // Frame'i kapatir
+        }
+    }
 
-	public static void main(String[] args) throws Exception {
+    // Programi baslatan main metod
+    public static void main(String[] args) throws Exception {
 
-		var client = new ChatClient("localhost");
-		client.frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-		client.frame.setVisible(true);
-		client.run();
-	}
+        var client = new ChatClient("localhost"); // Client'i olustur
+        client.frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // Cikis yapildiginda programi kapat
+        client.frame.setVisible(true); // Frame'i gorunur hale getir
+        client.run(); // Chat client'ini calistir
+    }
 }
