@@ -1,4 +1,4 @@
-package capitalize;
+package capitalize; 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
@@ -6,55 +6,52 @@ import java.net.Socket;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 
-/**
- * A server program which accepts requests from clients to capitalize strings.
- * When a client connects, a new thread is started to handle it. Receiving
- * client data, capitalizing it, and sending the response back is all done on
- * the thread, allowing much greater throughput because more clients can be
- * handled concurrently.
- */
 public class CapitalizeServer {
 
-	/**
-	 * Runs the server. When a client connects, the server spawns a new thread to do
-	 * the servicing and immediately returns to listening. The application limits
-	 * the number of threads via a thread pool (otherwise millions of clients could
-	 * cause the server to run out of resources by allocating too many threads).
-	 */
 	public static void main(String[] args) throws Exception {
+		// 59898 portunda dinlemeye baslar
 		try (var listener = new ServerSocket(59898)) {
-			System.out.println("The capitalization server is running...");
+			System.out.println("Buyuk harfe cevirme sunucusu calisiyor...");
+			
+			// Thread havuzu olusturulur, en fazla 20 thread calistirilabilir
 			var pool = Executors.newFixedThreadPool(20);
+			
+			// Sonsuz dongu ile her baglantiyi kabul eder ve isler
 			while (true) {
-				pool.execute(new Capitalizer(listener.accept()));
+				pool.execute(new Capitalizer(listener.accept())); // Yeni bir baglanti alinir ve yeni thread ile islenir
 			}
 		}
 	}
 
+	// Capitalizer sinifi, her bir istemciyi islemek icin calisan bir thread'i temsil eder
 	private static class Capitalizer implements Runnable {
 		private Socket socket;
 
+		// Constructor: Istemci soketini alir
 		Capitalizer(Socket socket) {
 			this.socket = socket;
 		}
 
 		@Override
 		public void run() {
-			System.out.println("Connected: " + socket);
-			try (var in = new Scanner(socket.getInputStream())) {
-				var out = new PrintWriter(socket.getOutputStream(), true);
+			System.out.println("Baglantili: " + socket);
+			try (var in = new Scanner(socket.getInputStream())) { // Istemciden veri almak icin scanner
+				var out = new PrintWriter(socket.getOutputStream(), true); // Istemciye veri gondermek icin printwriter
+				
+				// Istemciden gelen her satir alinir ve buyuk harfe cevrilir
 				while (in.hasNextLine()) {
-					out.println(in.nextLine().toUpperCase());
+					out.println(in.nextLine().toUpperCase()); // Veriyi buyuk harfe cevirip gonderir
 				}
 			} catch (Exception e) {
-				System.out.println("Error:" + socket);
+				System.out.println("Hata: " + socket);
 			} finally {
+				// Soket kapatilir
 				try {
 					socket.close();
 				} catch (IOException e) {
-					System.out.println("Error:" + socket);
+					System.out.println("Hata: " + socket);
 				}
-				System.out.println("Closed: " + socket);
+				System.out.println("Kapatildi: " + socket);
 			}
 		}
 	}
