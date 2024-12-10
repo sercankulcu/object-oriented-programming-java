@@ -1,3 +1,4 @@
+package capitalize;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
