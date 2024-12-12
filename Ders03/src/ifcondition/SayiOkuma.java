@@ -15,24 +15,24 @@ public class SayiOkuma {
         System.out.println(sayiOkunusu(300)); 
     }
 
-    // Sayının okunuşunu döndüren fonksiyon
+    // Sayinin okunusunu donduren fonksiyon
     public static String sayiOkunusu(int sayi) {
-        // Eğer sayı 0 ise "sifir" döndürülür
+        // Eger sayi 0 ise "sifir" dondurulur
         if (sayi == 0) return "sifir";
 
-        // Sonuç metnini tutacak değişken
+        // Sonuc metnini tutacak degisken
         String sonuc = "";
 
-        // Binler basamağını ayırma
+        // Binler basamagini ayirma
         int bin = sayi / 1000;
-        // Yüzler basamağını ayırma
+        // Yuzler basamagini ayirma
         int yuz = (sayi / 100) % 10;
-        // Onlar basamağını ayırma
+        // Onlar basamagini ayirma
         int on = (sayi / 10) % 10;
-        // Birler basamağını ayırma
+        // Birler basamagini ayirma
         int bir = sayi % 10;
 
-        // Binler basamağı varsa eklenir
+        // Binler basamagi varsa eklenir
         if (bin > 0) {
             if (bin == 1) {
                 sonuc += "bin ";
@@ -55,7 +55,7 @@ public class SayiOkuma {
             }
         }
 
-        // Yüzler basamağı varsa eklenir
+        // Yuzler basamagi varsa eklenir
         if (yuz > 0) {
             if (yuz == 1) {
                 sonuc += "yuz ";
@@ -78,7 +78,7 @@ public class SayiOkuma {
             }
         }
 
-        // Onlar basamağı varsa eklenir
+        // Onlar basamagi varsa eklenir
         if (on > 0) {
             if (on == 1) {
                 sonuc += "on ";
@@ -101,7 +101,7 @@ public class SayiOkuma {
             }
         }
 
-        // Birler basamağı varsa eklenir
+        // Birler basamagi varsa eklenir
         if (bir > 0) {
             if (bir == 1) {
                 sonuc += "bir";
@@ -124,7 +124,6 @@ public class SayiOkuma {
             }
         }
 
-        // Sonuç string'ini döndürürken, başındaki ve sonundaki boşlukları temizler
-        return sonuc.trim();
+        return sonuc;
     }
 }
