@@ -5,11 +5,11 @@ import java.awt.Color;
 import java.awt.Rectangle;
 
 public class Top {
-	Rectangle topRect;
+	Rectangle topKonum;
 	Color renk;  // Topun rengi
 
-	public Top(int x, int y, int width, int height, Color renk) {
-		this.topRect = new Rectangle(x, y, width, height);
+	public Top(int x, int y, int genislik, int yukseklik, Color renk) {
+		this.topKonum = new Rectangle(x, y, genislik, yukseklik);
 		this.renk = renk;
 	}
 }

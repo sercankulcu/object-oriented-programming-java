@@ -21,14 +21,14 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
     private boolean atesEt = false;  // Ates etme durumu
 
     // Rastgele sayi ureteci
-    private Random random;
+    private Random rastgele;
 
     public TankSavarOyunu() {
         setPreferredSize(new Dimension(PANEL_WIDTH, PANEL_HEIGHT));
         setBackground(Color.GRAY);
         tanklar = new ArrayList<>();
         toplar = new ArrayList<>();
-        random = new Random();
+        rastgele = new Random();
 
         // Zamanlayici (Oyunun surekli guncellenmesi icin)
         Timer zamanlayici = new Timer(1000 / 60, this);  // 60 FPS
@@ -38,9 +38,9 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
         Timer tankZamanlayici = new Timer(1000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int x = random.nextInt(PANEL_WIDTH - 50); // Tanklarin x pozisyonu
+                int x = rastgele.nextInt(PANEL_WIDTH - 50); // Tanklarin x pozisyonu
                 int y = 0; // Tanklarin y pozisyonu en ustte olacak sekilde 0
-                int tankType = random.nextInt(2);  // Rastgele tank turu sec (0: T-90MS, 1: Leopard 2A4)
+                int tankType = rastgele.nextInt(2);  // Rastgele tank turu sec (0: T-90MS, 1: Leopard 2A4)
                 if (tankType == 0) {
                     tanklar.add(new T90MS(x, y));  // T-90MS tanki
                 } else {
@@ -51,11 +51,11 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
         tankZamanlayici.start();
 
         // Oyun basinda yalnizca 1 tane tanksavar olusturulur
-        int x = random.nextInt(PANEL_WIDTH - 50); // Tanksavarin yerlestirilecegi x pozisyonu
+        int x = rastgele.nextInt(PANEL_WIDTH - 50); // Tanksavarin yerlestirilecegi x pozisyonu
         int y = PANEL_HEIGHT - 60;  // Tanksavari ekranin alt kismina yerlestir
 
         // Random bir tanksavar turu sec (0: Jawelin, 1: Tow2A)
-        int tanksavarType = random.nextInt(2);
+        int tanksavarType = rastgele.nextInt(2);
         if (tanksavarType == 0) {
             tanksavar = new Jawelin(x, y);  // Jawelin tanksavari
         } else {
@@ -103,14 +103,14 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
 
         // Tanklarin hareketi
         for (Tank tank : tanklar) {
-            tank.tankRect.y += tank.hiz;  // Tanklari hizlarina gore asagiya hareket ettir
+            tank.tankKonum.y += tank.hiz;  // Tanklari hizlarina gore asagiya hareket ettir
         }
 
         // Toplarin hareketi
         ArrayList<Top> toplarSilinecek = new ArrayList<>();
         for (Top top : toplar) {
-            top.topRect.y -= 10;  // Topu yukariya hareket ettir
-            if (top.topRect.y < 0) {
+            top.topKonum.y -= 10;  // Topu yukariya hareket ettir
+            if (top.topKonum.y < 0) {
                 toplarSilinecek.add(top);  // Top ekranin disina cikarsa sil
             }
         }
@@ -120,9 +120,9 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
         if (atesEt) {
             // Tanksavara uygun topu ekle
         	if (tanksavar instanceof Jawelin) {
-        		toplar.add(new Top37mm(tanksavar.x + tanksavar.width / 2 - 5, tanksavar.y - 20));  // Topu top listesine ekle
+        		toplar.add(new Top37mm(tanksavar.x + tanksavar.genislik / 2 - 5, tanksavar.y - 20));  // Topu top listesine ekle
         	} else if (tanksavar instanceof Tow2A) {
-        		toplar.add(new Top57mm(tanksavar.x + tanksavar.width / 2 - 5, tanksavar.y - 20));  // Topu top listesine ekle
+        		toplar.add(new Top57mm(tanksavar.x + tanksavar.genislik / 2 - 5, tanksavar.y - 20));  // Topu top listesine ekle
         	}
             atesEt = false;  // Ates ettikten sonra ates etme durumu sifirlanir
         }
@@ -132,7 +132,7 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
 
         for (Top top : toplar) {
             for (Tank tank : tanklar) {
-                if (top.topRect.intersects(tank.tankRect)) {  // Carpisma tespiti
+                if (top.topKonum.intersects(tank.tankKonum)) {  // Carpisma tespiti
                     tanklarSilinecek.add(tank);  // Carpisan tanki silmek icin isaretle
                     toplarSilinecek.add(top);  // Carpisan topu silmek icin isaretle
                 }
@@ -154,17 +154,17 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
         // Tanklari ciz
         for (Tank tank : tanklar) {
             g.setColor(tank.renk);
-            g.fillRect(tank.tankRect.x, tank.tankRect.y, tank.tankRect.width, tank.tankRect.height);
+            g.fillRect(tank.tankKonum.x, tank.tankKonum.y, tank.tankKonum.width, tank.tankKonum.height);
         }
 
         // Tanksavari ciz
         g.setColor(tanksavar.renk);
-        g.fillRect(tanksavar.x, tanksavar.y, tanksavar.width, tanksavar.height);
+        g.fillRect(tanksavar.x, tanksavar.y, tanksavar.genislik, tanksavar.yukseklik);
 
         // Toplari ciz
         for (Top top : toplar) {
             g.setColor(top.renk);  // Toplarin kendine ait rengini kullan
-            g.fillRect(top.topRect.x, top.topRect.y, top.topRect.width, top.topRect.height);
+            g.fillRect(top.topKonum.x, top.topKonum.y, top.topKonum.width, top.topKonum.height);
         }
     }
 

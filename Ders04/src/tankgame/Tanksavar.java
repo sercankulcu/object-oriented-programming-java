@@ -4,14 +4,14 @@ package tankgame;
 import java.awt.Color;
 
 public abstract class Tanksavar {
-	int x, y, width, height;
+	int x, y, genislik, yukseklik;
 	Color renk;
 
 	public Tanksavar(int x, int y, Color renk) {
 		this.x = x;
 		this.y = y;
-		this.width = 40;
-		this.height = 30;
+		this.genislik = 40;
+		this.yukseklik = 30;
 		this.renk = renk;
 	}
 }
