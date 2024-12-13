@@ -14,7 +14,7 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
     // Tanklar ve top listeleri
     private ArrayList<Tank> tanklar;
     private ArrayList<Top> toplar;
-    private Tanksavar tanksavar;  // Sadece 1 tane tanksavar olacak
+    private Tanksavar tanksavar;  // Sadece 1 tane tanksavar 
 
     // Oyun durumu
     private boolean sol = false, sag = false;
@@ -31,11 +31,11 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
         random = new Random();
 
         // Zamanlayici (Oyunun surekli guncellenmesi icin)
-        Timer gameTimer = new Timer(1000 / 60, this);  // 60 FPS
-        gameTimer.start();
+        Timer zamanlayici = new Timer(1000 / 60, this);  // 60 FPS
+        zamanlayici.start();
 
         // Her saniye yeni tank uretecek zamanlayici
-        Timer tankTimer = new Timer(1000, new ActionListener() {
+        Timer tankZamanlayici = new Timer(1000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int x = random.nextInt(PANEL_WIDTH - 50); // Tanklarin x pozisyonu
@@ -48,10 +48,10 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
                 }
             }
         });
-        tankTimer.start();
+        tankZamanlayici.start();
 
-        // Oyun basinda yalnizca 1 tane tanksavar olusturuluyor
-        int x = random.nextInt(PANEL_WIDTH - 50); // Tanksavari yerlestirecegimiz x pozisyonu
+        // Oyun basinda yalnizca 1 tane tanksavar olusturulur
+        int x = random.nextInt(PANEL_WIDTH - 50); // Tanksavarin yerlestirilecegi x pozisyonu
         int y = PANEL_HEIGHT - 60;  // Tanksavari ekranin alt kismina yerlestir
 
         // Random bir tanksavar turu sec (0: Jawelin, 1: Tow2A)
@@ -62,7 +62,7 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
             tanksavar = new Tow2A(x, y);  // Tow2A tanksavari
         }
 
-        // Klavye girisleri icin dinleyici
+        // Klavye girdileri icin dinleyici
         addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -72,7 +72,7 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
                 } else if (key == KeyEvent.VK_RIGHT) {
                     sag = true;
                 } else if (key == KeyEvent.VK_SPACE && !atesEt) {
-                    atesEt = true;  // Space tusuna basildiginda ates etme islemi baslasin
+                    atesEt = true;  // Space tusuna basildiginda ates etme islemi baslar
                 }
             }
 
@@ -84,7 +84,7 @@ public class TankSavarOyunu extends JPanel implements ActionListener {
                 } else if (key == KeyEvent.VK_RIGHT) {
                     sag = false;
                 } else if (key == KeyEvent.VK_SPACE) {
-                    atesEt = false;  // Space tusu birakildiginda ates etme islemi bitiyor
+                    atesEt = false;  // Space tusu birakildiginda ates etme islemi biter
                 }
             }
         });
