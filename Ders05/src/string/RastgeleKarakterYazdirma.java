@@ -37,7 +37,7 @@ public class RastgeleKarakterYazdirma {
         boolean[] secilenindeksler = new boolean[kelime.length()];
         for (int i = 0; i < karakterSayisi; i++) {
             int indeks;
-            // Ayni karakterin tekrar secilmemesi icin döngu
+            // Ayni karakterin tekrar secilmemesi icin dongu
             do {
                 indeks = random.nextInt(kelime.length());
             } while (secilenindeksler[indeks]);
@@ -46,7 +46,7 @@ public class RastgeleKarakterYazdirma {
             System.out.println("indeks " + indeks + ": " + kelime.charAt(indeks));
         }
 
-        // Kullaniciya istatistik göster
+        // Kullaniciya istatistik goster
         System.out.println("\nKelimenin uzunlugu: " + kelime.length());
         System.out.println("Secilen karakter sayisi: " + karakterSayisi);
     }

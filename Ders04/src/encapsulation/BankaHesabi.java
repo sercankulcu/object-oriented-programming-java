@@ -5,7 +5,7 @@ public class BankaHesabi {
 
 	private int hesapNumarasi; // Hesap numarasi
 	private double bakiye; // Hesap bakiyesi
-	private String hesapTuru; // Hesap turu (örn. "Vadesiz", "Vadeli")
+	private String hesapTuru; // Hesap turu (orn. "Vadesiz", "Vadeli")
 
 	// BankaHesabi sinifinin yapici metodu
 	public BankaHesabi(int hesapNumarasi, double bakiye, String hesapTuru) {
@@ -14,17 +14,17 @@ public class BankaHesabi {
 		this.hesapTuru = hesapTuru;
 	}
 
-	// Hesap numarasini dönduren metod
+	// Hesap numarasini donduren metod
 	public int getHesapNumarasi() {
 		return hesapNumarasi;
 	}
 
-	// Hesap bakiyesini dönduren metod
+	// Hesap bakiyesini donduren metod
 	public double getBakiye() {
 		return bakiye;
 	}
 
-	// Hesap turunu dönduren metod
+	// Hesap turunu donduren metod
 	public String getHesapTuru() {
 		return hesapTuru;
 	}

@@ -15,7 +15,7 @@ public class Ziplama {
     
     Scanner sc = new Scanner(System.in);
 
-    // Kullanıcıdan ilk hizi girmesi istenir
+    // Kullanicidan ilk hizi girmesi istenir
     System.out.print("Ilk hizi giriniz: ");
     double hiz = sc.nextDouble();
     sc.close();
@@ -26,7 +26,7 @@ public class Ziplama {
     // Baslangic zamani 0 olarak ayarlanir
     double zaman = 0;
 
-    // Ziplamalari saymak icin sayaç
+    // Ziplamalari saymak icin sayac
     int ziplama = 0;
 
     // Topun besinci ziplamasina kadar simule edilir

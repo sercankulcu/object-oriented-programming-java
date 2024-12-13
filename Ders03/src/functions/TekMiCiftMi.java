@@ -30,6 +30,6 @@ public class TekMiCiftMi {
         // 'tekMiCiftMi' metodunu cagirarak sayinin tek mi yoksa cift mi oldugunu kontrol et
         nesne.tekMiCiftMi(sayi);
         
-        okuyucu.close();  // Kaynak sızıntılarını onlemek icin Scanner nesnesi kapatilir
+        okuyucu.close();  // Kaynak sizintilarini onlemek icin Scanner nesnesi kapatilir
     }
 }

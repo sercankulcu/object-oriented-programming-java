@@ -29,7 +29,7 @@ public class Hayvan {
 		return saglik;
 	}
 
-	// Hayvani konuşturma metodu
+	// Hayvani konusturma metodu
 	public void konus() {
 		System.out.println("Bu hayvan konusur.");
 	}

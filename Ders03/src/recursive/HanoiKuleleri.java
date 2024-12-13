@@ -12,7 +12,7 @@ public class HanoiKuleleri {
 
     // Hanoi Kuleleri bulmacasini cozen rekursif metod
     public static void coz(int diskSayisi, char kaynak, char hedef, char yardimci) {
-        // Eğer sadece bir disk varsa
+        // Eger sadece bir disk varsa
         if (diskSayisi == 1) {
             // Ustteki diski kaynak'tann hedef'e tasi
             System.out.println("Disk " + diskSayisi + " direk " + kaynak + "'den direk " + hedef + "'e tasi.");

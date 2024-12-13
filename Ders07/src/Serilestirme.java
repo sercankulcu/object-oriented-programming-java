@@ -2,7 +2,7 @@ import java.io.*;
 
 /*
  * 
- * Bu ornekte, Calisan adinda bir sinif Serializable arayuzunu gerçeklemektedir.
+ * Bu ornekte, Calisan adinda bir sinif Serializable arayuzunu gerceklemektedir.
  * Bu sayede Calisan sinifindan olusturulan bir nesne ObjectOutputStream sinifi 
  * kullanilarak bir dosyaya serilestirilebilir. Daha sonra bu nesne, 
  * ObjectInputStream sinifi kullanilarak deserialization yoluyla dosyadan okunabilir.

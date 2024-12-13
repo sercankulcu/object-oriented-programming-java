@@ -79,7 +79,7 @@ public class DiziyiRastgeleDoldur {
         int maksimumFrekans = 1;
         int mevcutFrekans = 1;
 
-        // Sirali dizide tek döngu ile elemanlari kontrol et
+        // Sirali dizide tek dongu ile elemanlari kontrol et
         for (int i = 1; i < dizi.length; i++) {
             if (dizi[i] == dizi[i - 1]) {
                 mevcutFrekans++;  // Ayni elemanla karsilasildiginda frekansi artir

@@ -15,12 +15,12 @@ public class Client {
         BufferedReader reader = null;
 
         try {
-            // Sunucuya baglanmaya çalis
-            System.out.println("Sunucuya baglanmaya çalisiliyor...");
+            // Sunucuya baglanmaya calis
+            System.out.println("Sunucuya baglanmaya calisiliyor...");
             socket = new Socket("localhost", 4444);
             System.out.println("Sunucuya basariyla baglanildi!");
 
-            // Sunucudan ve kullanicidan veri almak için
+            // Sunucudan ve kullanicidan veri almak icin
             input = new DataInputStream(socket.getInputStream());
             output = new DataOutputStream(socket.getOutputStream());
             reader = new BufferedReader(new InputStreamReader(System.in));
@@ -30,7 +30,7 @@ public class Client {
 
             // Kullanici "stop" yazana kadar donguyu devam ettir
             while (!str.equals("stop")) {
-                System.out.print("Sunucuya gondermek için bir mesaj girin: ");
+                System.out.print("Sunucuya gondermek icin bir mesaj girin: ");
                 str = reader.readLine(); // Kullanici girdisini oku
                 output.writeUTF(str); // Sunucuya mesaj gonder
                 output.flush(); // Gonderilen mesajlari temizle

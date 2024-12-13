@@ -63,7 +63,7 @@ public class Postane {
 		if (kisi.getYas() > 18) {
 			System.out.println(kisi.getIsim() + " 18 yasindan buyuk.");
 		} else {
-			System.out.println(kisi.getIsim() + " 18 yasindan kuçuk.");
+			System.out.println(kisi.getIsim() + " 18 yasindan kucuk.");
 		}
 	}
 }

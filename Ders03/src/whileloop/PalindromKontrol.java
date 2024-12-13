@@ -16,7 +16,7 @@ public class PalindromKontrol {
 		while (sayi > 0) {
 			int rakam = sayi % 10;  // Sayinin son rakamini al
 			tersSayi = (tersSayi * 10) + rakam;  // Ters sayiyi olustur
-			sayi /= 10;  // Sayiyi bir basamak kuçult
+			sayi /= 10;  // Sayiyi bir basamak kucult
 		}
 		// Orijinal sayi ile ters sayiyi karsilastir
 		return orijinalSayi == tersSayi;

@@ -55,7 +55,7 @@ public class SekenTop extends JPanel implements ActionListener {
         x += dx;
         y += dy;
 
-        // Top pencerenin sol/sağ kenarina carparsa yonu ters cevir
+        // Top pencerenin sol/sag kenarina carparsa yonu ters cevir
         if (x < 0 || x > GENiSLiK - 60) {
             dx *= -1;
         }

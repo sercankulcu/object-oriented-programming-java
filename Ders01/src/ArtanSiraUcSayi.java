@@ -12,7 +12,7 @@ public class ArtanSiraUcSayi {
 		System.out.print("ikinci sayiyi girin: ");
 		int sayi2 = scanner.nextInt();
 
-		System.out.print("Üçüncü sayiyi girin: ");
+		System.out.print("Ucuncu sayiyi girin: ");
 		int sayi3 = scanner.nextInt();
 
 		scanner.close();

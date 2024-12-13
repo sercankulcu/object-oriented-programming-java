@@ -5,25 +5,25 @@ public class HesapMakinesi {
     // Hafiza degiskeni
     private double hafiza;
 
-    // Toplama işlemi yapan metod
+    // Toplama islemi yapan metod
     public double topla(int a, int b) {
         hafiza = a + b; // Sonucu hafizada sakla
         return hafiza;
     }
 
-    // Cikarma işlemi yapan metod
+    // Cikarma islemi yapan metod
     public double cikart(int a, int b) {
         hafiza = a - b; // Sonucu hafizada sakla
         return hafiza;
     }
 
-    // Carpma işlemi yapan metod
+    // Carpma islemi yapan metod
     public double carp(int a, int b) {
         hafiza = a * b; // Sonucu hafizada sakla
         return hafiza;
     }
 
-    // Bolme işlemi yapan metod
+    // Bolme islemi yapan metod
     public double bol(int a, int b) {
         if (b != 0) {
             hafiza = (double) a / b; // Sonucu hafizada sakla

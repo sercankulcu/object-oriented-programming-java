@@ -15,7 +15,7 @@ public class IsimlendirmeKurallari {
         // Sabit degiskenler icin tum harfler buyuk yazilir
         final double PI = 3.14159; // Gecerli: Sabit degiskenler buyuk harf ile yazilir
 
-        // Java'da degisken isimlerinde özel karakterler ve bosluk kullanilamaz
+        // Java'da degisken isimlerinde ozel karakterler ve bosluk kullanilamaz
         // int 2yas; // Gecersiz: Degisken adi sayi ile baslayamaz
         // String @isimSoyisim; // Gecersiz: Degisken adi ozel karakter ile baslayamaz
         // double maas hesabi; // Gecersiz: Degisken adi bosluk iceremez
@@ -32,7 +32,7 @@ public class IsimlendirmeKurallari {
         String ogrenciAdSoyad = "Ali Veli"; // Gecerli: Camel case kurallarina uygun
         double toplamMaas = 5000.0; // Gecerli: Camel case ile yazilan degisken ismi
 
-        // Ancak bazı durumlarda, sabit degiskenler icin buyuk harf kullanilir
+        // Ancak bazi durumlarda, sabit degiskenler icin buyuk harf kullanilir
         final int MAX_SAYI = 100; // Gecerli: Sabit degiskenler buyuk harf ile yazilir
     }
 }

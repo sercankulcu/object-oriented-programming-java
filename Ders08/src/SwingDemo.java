@@ -27,7 +27,7 @@ public class SwingDemo {
         label.setBorder(new EmptyBorder(10, 0, 20, 0)); // Etiketin ustune ve altina bosluk ekle
 
         // Kullanicidan metin almak icin bir JTextField (metin alani) olustur
-        JTextField textField = new JTextField(15); // 15 karakter uzunluğunda bir alan
+        JTextField textField = new JTextField(15); // 15 karakter uzunlugunda bir alan
         textField.setToolTipText("Bir mesaj yazin");
         textField.setAlignmentX(Component.CENTER_ALIGNMENT); // Ortaya yerlestir
         textField.setFont(new Font("Arial", Font.PLAIN, 16)); // Fontu ayarla

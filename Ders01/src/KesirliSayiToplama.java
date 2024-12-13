@@ -4,7 +4,7 @@ public class KesirliSayiToplama {
 
 	public static void main(String[] args) {
 
-		// Kullanici girdisini okumak için bir Scanner nesnesi oluştur
+		// Kullanici girdisini okumak icin bir Scanner nesnesi olustur
 		Scanner tarayici = new Scanner(System.in);
 		// Kullanicidan sayiyi girmesini iste
 		System.out.println("Birinci sayiyi giriniz: ");

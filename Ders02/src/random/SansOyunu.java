@@ -7,8 +7,8 @@ public class SansOyunu  {
 	
 	public static void main(String[] args) {
 		
-		Scanner scanner = new Scanner(System.in); // Kullanicidan veri almak için Scanner nesnesi oluştur
-		Random random = new Random(); // Rastgele sayi uretmek için Random nesnesi oluştur
+		Scanner scanner = new Scanner(System.in); // Kullanicidan veri almak icin Scanner nesnesi olustur
+		Random random = new Random(); // Rastgele sayi uretmek icin Random nesnesi olustur
 
 		System.out.println("0 ile 100 arasinda bir sayi giriniz:"); // Kullanicidan bir sayi girmesini iste
 		int girdi = scanner.nextInt(); // Kullanicinin girdigi sayiyi al

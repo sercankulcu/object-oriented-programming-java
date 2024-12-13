@@ -20,7 +20,7 @@ public class KlasorIslemleri {
 		List<File> tumDosyalar = new ArrayList<>();
 		File[] liste = new File(yol).listFiles();
 
-		if (liste != null) { // Erişim hatasi durumunda liste null olabilir
+		if (liste != null) { // Erisim hatasi durumunda liste null olabilir
 			for (File dosya : liste) {
 				if (dosya.isDirectory()) {
 					tumDosyalar.addAll(tumDosyalariListele(dosya.getAbsolutePath()));
@@ -122,7 +122,7 @@ public class KlasorIslemleri {
 			System.out.println("Dosya olusturma hatasi: " + e.getMessage());
 		}
 
-		// YeniKlasor'ü ve içindeki dosyayı sil
+		// YeniKlasor'u ve icindeki dosyayi sil
 		File yeniKlasor = new File(yeniKlasorYolu);
 		if (klasoruSil(yeniKlasor)) {
 			System.out.println("YeniKlasor ve icindekiler silindi.");

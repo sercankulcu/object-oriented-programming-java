@@ -45,7 +45,7 @@ public class HesapMakinesi {
                     }
                     break;
                 default:
-                    // Geçersiz islec durumunda sonuc 0 olarak atanir
+                    // Gecersiz islec durumunda sonuc 0 olarak atanir
                     sonuc = 0;
                     break;
                 }

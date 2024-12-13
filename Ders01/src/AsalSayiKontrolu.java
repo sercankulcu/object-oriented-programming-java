@@ -6,7 +6,7 @@ public class AsalSayiKontrolu {
         
         Scanner scanner = new Scanner(System.in);
 
-        // Kullanıcıdan bir sayi alinmasi
+        // Kullanicidan bir sayi alinmasi
         System.out.print("Bir sayi girin: ");
         int sayi = scanner.nextInt();
 

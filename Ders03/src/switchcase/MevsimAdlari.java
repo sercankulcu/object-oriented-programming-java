@@ -13,7 +13,7 @@ public class MevsimAdlari {
 
 		String mevsim;
 
-		// Ay numarasina göre mevsimi belirle
+		// Ay numarasina gore mevsimi belirle
 		switch (ay) {
 		case 3:
 		case 4:
@@ -36,7 +36,7 @@ public class MevsimAdlari {
 			mevsim = "Kis";  // 12, 1 ve 2. aylar kis mevsimidir
 			break;
 		default:
-			mevsim = "Gecersiz ay";  // Geçersiz bir ay numarasi girilirse
+			mevsim = "Gecersiz ay";  // Gecersiz bir ay numarasi girilirse
 			break;
 		}
 

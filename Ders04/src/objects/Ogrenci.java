@@ -61,7 +61,7 @@ public class Ogrenci {
         return "Ogrenci [ad=" + ad + ", numara=" + numara + ", dersler=" + dersler + ", notlar=" + notlar + "]";
     }
 
-    // Ana metod (main method) içinde kullanimi
+    // Ana metod (main method) icinde kullanimi
     public static void main(String[] args) {
 
         // Ogrenci nesneleri olusturuluyor

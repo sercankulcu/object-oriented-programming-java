@@ -1,5 +1,5 @@
 package functions; 
-import java.util.Scanner;  // Kullanıcıdan girdi almak için Scanner sınıfını projeye aktar.
+import java.util.Scanner;  // Kullanicidan girdi almak icin Scanner sinifini projeye aktar.
 
 public class AsalSayi {
     
@@ -36,14 +36,14 @@ public class AsalSayi {
 
     public static void main(String[] args) {
         
-        // Kullanıcıdan girdi almak için Scanner sınıfından nesne oluştur
+        // Kullanicidan girdi almak icin Scanner sinifindan nesne olustur
         Scanner okuyucu = new Scanner(System.in);
         
-        // Kullanıcıdan bir sayı girmesini iste
+        // Kullanicidan bir sayi girmesini iste
         System.out.println("Lutfen bir sayi giriniz");
-        int sayi = okuyucu.nextInt();  // Kullanıcının girdiği sayı alınır
+        int sayi = okuyucu.nextInt();  // Kullanicinin girdigi sayi alinir
         
-        // AsalSayi sınıfından bir nesne oluştur
+        // AsalSayi sinifindan bir nesne olustur
         AsalSayi bulucu = new AsalSayi();
         
         // Girilen sayinin asal olup olmadigini kontrol et ve sonucu yazdir

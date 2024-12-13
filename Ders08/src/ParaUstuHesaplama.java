@@ -47,9 +47,9 @@ public class ParaUstuHesaplama extends JFrame {
 		try {
 			var miktar = Integer.parseInt(metin.getText(0, metin.getLength())); // Miktari al
 			int[] dizi = {50, 25, 10, 5, 1}; // Kurus degerleri
-			rapor.setText(miktar + " kurus yapmak için kullanilacaklar:\n"); // Raporun basligini yaz
-			for(int eleman: dizi) { // Her kurus degeri için
-				rapor.append(miktar / eleman + " " + eleman + " kurus\n"); // Kaç tane kullanilacagini yaz
+			rapor.setText(miktar + " kurus yapmak icin kullanilacaklar:\n"); // Raporun basligini yaz
+			for(int eleman: dizi) { // Her kurus degeri icin
+				rapor.append(miktar / eleman + " " + eleman + " kurus\n"); // Kac tane kullanilacagini yaz
 				miktar %= eleman; // Kalan miktari hesapla
 			}
 		} catch (NumberFormatException e) {
@@ -65,7 +65,7 @@ public class ParaUstuHesaplama extends JFrame {
 			var frame = new ParaUstuHesaplama();
 			frame.setTitle("Para ustu Hesaplama"); // Pencere basligini ayarla
 			frame.pack(); // Pencereyi boyutlandir
-			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // Çikis islemi
+			frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // Cikis islemi
 			frame.setVisible(true); // Pencereyi gorunur yap
 		});
 	}

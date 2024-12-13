@@ -24,21 +24,21 @@ public class RasyonelSayi {
 			b = a % b;
 			a = temp;
 		}
-		return a;   // En buyuk ortak boleni döndürür
+		return a;   // En buyuk ortak boleni dondurur
 	}
 
 	// Iki rasyonel sayiyi toplayan metod
 	public RasyonelSayi topla(RasyonelSayi digerSayi) {
 		int yeniPay = (this.pay * digerSayi.payda) + (digerSayi.pay * this.payda);  // Iki rasyonel sayiyi toplar
 		int yeniPayda = this.payda * digerSayi.payda;
-		return new RasyonelSayi(yeniPay, yeniPayda);   // Yeni rasyonel sayiyi döndürür
+		return new RasyonelSayi(yeniPay, yeniPayda);   // Yeni rasyonel sayiyi dondurur
 	}
 
-	// Iki rasyonel sayiyi çarpan metod
+	// Iki rasyonel sayiyi carpan metod
 	public RasyonelSayi carp(RasyonelSayi digerSayi) {
-		int yeniPay = this.pay * digerSayi.pay;   // Iki rasyonel sayiyi çarpar
+		int yeniPay = this.pay * digerSayi.pay;   // Iki rasyonel sayiyi carpar
 		int yeniPayda = this.payda * digerSayi.payda;
-		return new RasyonelSayi(yeniPay, yeniPayda);   // Yeni rasyonel sayiyi döndürür
+		return new RasyonelSayi(yeniPay, yeniPayda);   // Yeni rasyonel sayiyi dondurur
 	}
 
 	// Rasyonel sayiyi metinsel olarak temsil eden metod
@@ -59,9 +59,9 @@ public class RasyonelSayi {
 		RasyonelSayi toplam = sayi1.topla(sayi2);  
 		System.out.println("Rasyonel sayilarin toplami: " + toplam);
 
-		// Rasyonel sayilarin çarpimi
+		// Rasyonel sayilarin carpimi
 		RasyonelSayi carpim = sayi1.carp(sayi2);  
-		System.out.println("Rasyonel sayilarin çarpimi: " + carpim);
+		System.out.println("Rasyonel sayilarin carpimi: " + carpim);
 
 		// Pay ve payda degerlerinin kontrol edilmesi
 		System.out.println("Sayi 1 - Pay: " + sayi1.pay + ", Payda: " + sayi1.payda);
@@ -72,7 +72,7 @@ public class RasyonelSayi {
 			System.out.println("Sayi 1 negatif degerlere sahip.");
 		}
 
-		// Toplam ve çarpim sayilarinin basitlestirilmis halleri
+		// Toplam ve carpim sayilarinin basitlestirilmis halleri
 		RasyonelSayi basitToplam = new RasyonelSayi(toplam.pay, toplam.payda);
 		RasyonelSayi basitCarpim = new RasyonelSayi(carpim.pay, carpim.payda);
 
@@ -91,7 +91,7 @@ public class RasyonelSayi {
 		
 		sayi1.basitlestir();
 		sayi2.basitlestir();
-		// Kullanıcıya basitlestirilmis hali gösterme
+		// Kullaniciya basitlestirilmis hali gosterme
 		System.out.println("Sayi 1'in basitlestirilmis hali: " + sayi1);
 		System.out.println("Sayi 2'nin basitlestirilmis hali: " + sayi2);
 	}

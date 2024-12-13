@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.Scanner;
 
 /*
- * Bu kod, Java'da soketler kullanarak temel bir sohbet uygulamasının örneğidir:
+ * Bu kod, Java'da soketler kullanarak temel bir sohbet uygulamasinin ornegidir:
  * 
  * */
 
@@ -27,7 +27,7 @@ public class ChatIstemci {
             // Mesaji sunucuya gonder
             sunucuyaGidenVeri.writeUTF(mesaj);
 
-            // Sunucudan gelen mesajı oku
+            // Sunucudan gelen mesaji oku
             mesaj = sunucudanGelenVeri.readUTF();
 
             // Mesaji ekranda goster

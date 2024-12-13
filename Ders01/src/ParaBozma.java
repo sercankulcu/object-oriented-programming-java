@@ -11,7 +11,7 @@ public class ParaBozma {
 
 		Scanner sc = new Scanner(System.in);
 
-		// Kullanıcıdan bozuk para miktarini girmesi istenir
+		// Kullanicidan bozuk para miktarini girmesi istenir
 		System.out.print("Bozuk para miktarini giriniz: ");
 		double para = sc.nextDouble();
 		sc.close();

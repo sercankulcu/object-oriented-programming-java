@@ -28,12 +28,12 @@ public class ShortVeriTuruOrnegi {
         short kalan = (short) (sayi2 % sayi1); // Modulus islemi
         System.out.println("Kalan: " + kalan);
 
-        // Short veri turu ile artırma ve azaltma islemleri
+        // Short veri turu ile artirma ve azaltma islemleri
         short arttirma = (short) (sayi1 + 1); // 1 ekleyerek sayiyi arttir
         short azaltma = (short) (sayi2 - 1); // 1 cikararak sayiyi azalt
 
-        System.out.println("Arttirilmis Sayı1: " + arttirma);
-        System.out.println("Azaltılmis Sayı2: " + azaltma);
+        System.out.println("Arttirilmis Sayi1: " + arttirma);
+        System.out.println("Azaltilmis Sayi2: " + azaltma);
 
         // Short veri turu ile pozitif ve negatif degerleri kontrol etme
         if (sayi1 > 0) {

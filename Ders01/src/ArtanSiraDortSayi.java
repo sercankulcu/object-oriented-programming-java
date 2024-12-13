@@ -12,15 +12,15 @@ public class ArtanSiraDortSayi {
 		System.out.print("ikinci sayiyi girin: ");
 		int sayi2 = scanner.nextInt();
 
-		System.out.print("uçuncu sayiyi girin: ");
+		System.out.print("ucuncu sayiyi girin: ");
 		int sayi3 = scanner.nextInt();
 
-		System.out.print("Dörduncu sayiyi girin: ");
+		System.out.print("Dorduncu sayiyi girin: ");
 		int sayi4 = scanner.nextInt();
 
 		scanner.close();
 
-		// Basit karşilaştirmalar kullanarak sayilari siralama
+		// Basit karsilastirmalar kullanarak sayilari siralama
 		int gecici;
 
 		// sayi1 ve sayi2'yi gerekirse takas et

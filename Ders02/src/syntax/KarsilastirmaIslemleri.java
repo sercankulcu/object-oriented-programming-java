@@ -49,7 +49,7 @@ public class KarsilastirmaIslemleri {
 		System.out.println("Lutfen adinizi girin:");
 		String kullaniciismi = scanner.next();
 
-		// Kullanici ismi ile karsilastirma (orneğin, 'Ali' ile)
+		// Kullanici ismi ile karsilastirma (ornegin, 'Ali' ile)
 		boolean isimKontrol = kullaniciismi.equals("Ali"); // Kullanicinin ismi 'Ali' ile mi esit?
 		System.out.println("Adiniz Ali mi? " + isimKontrol);
 
@@ -59,9 +59,9 @@ public class KarsilastirmaIslemleri {
 
 		// Kullanici sayisi ile karsilastirma
 		boolean sayiBuyuk = (kullaniciSayisi > 5); // Girilen sayi 5'ten buyuk mu?
-		boolean sayiKucuk = (kullaniciSayisi < 15); // Girilen sayi 15'ten kuçuk mu?
+		boolean sayiKucuk = (kullaniciSayisi < 15); // Girilen sayi 15'ten kucuk mu?
 		System.out.println("Girilen sayi 5'ten buyuk mu? " + sayiBuyuk); // true/false
-		System.out.println("Girilen sayi 15'ten kuçuk mu? " + sayiKucuk); // true/false
+		System.out.println("Girilen sayi 15'ten kucuk mu? " + sayiKucuk); // true/false
 
 		// Karakter karsilastirma
 		System.out.println("Lutfen bir karakter girin:");

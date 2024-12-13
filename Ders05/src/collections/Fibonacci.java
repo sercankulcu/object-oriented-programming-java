@@ -13,7 +13,7 @@ public class Fibonacci {
         liste.add(1);
         // Fibonacci dizisini iteratif olarak hesapla
         for (int i = 2; i < sayi + 1; i++) {
-            // Önceki iki sayinin toplamini listeye ekle
+            // Onceki iki sayinin toplamini listeye ekle
             liste.add(liste.get(i - 2) + liste.get(i - 1));
         }
         // Istenen Fibonacci sayisini geri dondur

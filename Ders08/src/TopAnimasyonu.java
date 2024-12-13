@@ -15,7 +15,7 @@ public class TopAnimasyonu extends JFrame {
 
 	private static final long serialVersionUID = 3305372670620496856L;
 	private static final int GENISLIK = 600; // Pencere genisligi
-	private static final int YUKSEKLİK = 400; // Pencere yuksekligi
+	private static final int YUKSEKLIK = 400; // Pencere yuksekligi
 	private static final int TOP_YARICAPI = 20; // Top yaricapi
 	Random rastgele = new Random(); // Rastgele sayilar uretmek icin
 
@@ -44,7 +44,7 @@ public class TopAnimasyonu extends JFrame {
 			if (x <= 0 || x >= GENISLIK - 2 * TOP_YARICAPI + 10) {
 				xYon *= -1; // X yonunu ters cevir
 			}
-			if (y <= 0 || y >= YUKSEKLİK - 2 * TOP_YARICAPI + 10) {
+			if (y <= 0 || y >= YUKSEKLIK - 2 * TOP_YARICAPI + 10) {
 				yYon *= -1; // Y yonunu ters cevir
 			}
 		}
@@ -52,7 +52,7 @@ public class TopAnimasyonu extends JFrame {
 
 	public TopAnimasyonu() {
 		setTitle("Top Animasyonu"); // Pencere basligi
-		setSize(GENISLIK, YUKSEKLİK); // Pencere boyutunu ayarla
+		setSize(GENISLIK, YUKSEKLIK); // Pencere boyutunu ayarla
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); // Pencereyi kapatmak icin
 
 		// Toplari olustur
@@ -73,7 +73,7 @@ public class TopAnimasyonu extends JFrame {
 	private void topOlustur() {
 		for (int i = 0; i < 5; i++) {
 			// Rastgele yer ve yon ile 5 top olustur
-			toplar.add(new Top(rastgele.nextInt(getWidth() - 2 * TOP_YARICAPI), rastgele.nextInt(YUKSEKLİK - 2 * TOP_YARICAPI),
+			toplar.add(new Top(rastgele.nextInt(getWidth() - 2 * TOP_YARICAPI), rastgele.nextInt(YUKSEKLIK - 2 * TOP_YARICAPI),
 					rastgele.nextInt(5) + 1, rastgele.nextInt(5) + 1));
 		}
 	}
