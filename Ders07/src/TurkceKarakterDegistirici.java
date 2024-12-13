@@ -5,27 +5,27 @@ import java.util.List;
 
 public class TurkceKarakterDegistirici {
 
-    // Dosyaların ve klasörlerin rekürsif olarak kontrol edilmesi için metod
+    // Dosyalarin ve klasorlerin rekursif olarak kontrol edilmesi icin metod
     public static void dosyalariTarama(File klasor) {
-        // Klasördeki tüm dosyaları ve alt klasörleri al
+        // Klasordeki tum dosyalari ve alt klasorleri al
         File[] dosyalar = klasor.listFiles();
 
         if (dosyalar != null) {
-            // Her bir dosya veya klasör üzerinde işlem yap
+            // Her bir dosya veya klasor uzerinde islem yap
             for (File dosya : dosyalar) {
-                // Eğer bu bir klasörse, rekürsif olarak içine gir
+                // Eger bu bir klasorse, rekursif olarak icine gir
                 if (dosya.isDirectory()) {
-                    dosyalariTarama(dosya);  // Rekürsif çağrı
+                    dosyalariTarama(dosya);  // Rekursif cagri
                 } else if (dosya.isFile() && dosya.getName().endsWith(".java") && !dosya.getName().startsWith("Turkce")) {
                     try {
-                        // Dosyanın içeriğini satır satır oku
+                        // Dosyanin icerigini satir satir oku
                         List<String> satirlar = Files.readAllLines(dosya.toPath(), StandardCharsets.UTF_8);
                         boolean degisiklikYapildi = false;
 
-                        // Her satırı kontrol et
+                        // Her satiri kontrol et
                         for (int i = 0; i < satirlar.size(); i++) {
                             String orijinalSatir = satirlar.get(i);
-                            // Türkçe karakterleri değiştirmek için satırı düzenle
+                            // Turkce karakterleri degistirmek icin satiri duzenle
                             String degistirilmisSatir = orijinalSatir
                                 .replace("ü", "u")
                                 .replace("Ü", "U")
@@ -40,21 +40,21 @@ public class TurkceKarakterDegistirici {
                                 .replace("ö", "o")
                                 .replace("Ö", "O");
 
-                            // Eğer satırda bir değişiklik yapıldıysa
+                            // Eger satirda bir degisiklik yapildiysa
                             if (!orijinalSatir.equals(degistirilmisSatir)) {
-                                satirlar.set(i, degistirilmisSatir);  // Satırı değiştirdik
-                                // Değişiklik yapılan satırı ekrana yazdır
-                                System.out.println("Dosya: " + dosya.getAbsolutePath() + " - Satır " + (i + 1) + " değiştirildi.");
+                                satirlar.set(i, degistirilmisSatir);  // Satiri degistirdik
+                                // Degisiklik yapilan satiri ekrana yazdir
+                                System.out.println("Dosya: " + dosya.getAbsolutePath() + " - Satir " + (i + 1) + " degistirildi.");
                                 degisiklikYapildi = true;
                             }
                         }
 
-                        // Eğer herhangi bir değişiklik yapılmışsa, dosyayı güncelle
+                        // Eger herhangi bir degisiklik yapilmissa, dosyayi guncelle
                         if (degisiklikYapildi) {
                             Files.write(dosya.toPath(), satirlar, StandardCharsets.UTF_8);
                         }
                     } catch (IOException e) {
-                        // Hata durumunda ekrana hata mesajı yazdır
+                        // Hata durumunda ekrana hata mesaji yazdir
                         System.out.println("Hata: " + e.getMessage());
                     }
                 }
@@ -63,9 +63,9 @@ public class TurkceKarakterDegistirici {
     }
 
     public static void main(String[] args) {
-        // Bulunduğunuz dizinin bir üst dizini
+        // Bulundugunuz dizinin bir ust dizini
         File klasor = new File(System.getProperty("user.dir")).getParentFile();
-        // Üst dizindeki dosyaları ve klasörleri taramak için metodu çağır
+        // ust dizindeki dosyalari ve klasorleri taramak icin metodu cagir
         dosyalariTarama(klasor);
     }
 }
