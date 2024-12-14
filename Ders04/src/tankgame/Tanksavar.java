@@ -6,6 +6,7 @@ import java.awt.Color;
 public abstract class Tanksavar {
 	int x, y, genislik, yukseklik;
 	Color renk;
+	Top top;
 
 	public Tanksavar(int x, int y, Color renk) {
 		this.x = x;
@@ -14,4 +15,6 @@ public abstract class Tanksavar {
 		this.yukseklik = 30;
 		this.renk = renk;
 	}
+	
+	public abstract Top topAt();
 }
