@@ -1,4 +1,4 @@
-package array;
+package twodimensional;
 
 import javax.swing.*;
 import java.awt.*;
