@@ -10,6 +10,8 @@ public class ChatSunucu {
 
 			// Bir baglanti istegi bekle
 			Socket soket = sunucuSoketi.accept();
+			
+			System.out.println("Istemci baglandi");
 
 			// Veri alisverisi icin girdi ve cikti akislari olustur
 			DataInputStream istemcidenGelenVeri = new DataInputStream(soket.getInputStream());
