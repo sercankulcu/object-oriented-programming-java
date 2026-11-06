@@ -1,130 +1,67 @@
 # Object-Oriented Programming in Java
 
-Welcome to the **Object-Oriented Programming in Java** repository! This project provides clear and concise Java implementations of core object-oriented programming (OOP) concepts. It serves as an educational resource for students, beginners, and developers looking to understand and apply OOP principles in Java.
+Java code examples for the undergraduate **Object-Oriented Programming with Java (Java ile Nesneye Dayalı Programlama)** course at Giresun University. Each `BolumNN/src` folder holds chapter NN of the course and contains the code shown on that chapter's slides as small runnable programs. Class, method and variable names follow the slides, so each program's output can be compared directly with the slide examples.
 
-## Overview
+Course page and slides: <https://sercankulcu.github.io/teaching/object-oriented-programming-with-java>
 
-This repository contains Java code examples demonstrating fundamental OOP concepts, including encapsulation, inheritance, polymorphism, and abstraction. Each concept is implemented in a separate Java file, designed to be simple, readable, and easy to understand. The code is ideal for learning purposes or as a reference for building object-oriented applications.
+## Chapters
 
-## Introduction to Java Programming
+| Folder | Chapter | Programs |
+|---|---|---|
+| `Bolum01` | Computers, Computation and Algorithms | First program, number systems, characters, a toy computer and instruction encoding, Babylonian square root, Euclid, flowchart and pseudocode examples (sequence, selection, loops, sentinel value, nested loops, subprograms, desk checking) |
+| `Bolum02` | Programming and Java Syntax | Programming paradigms, syntax and semantics, compile errors, bytecode, variables, limits and overflow, literals and constants, type conversion, `char` and `int`, increment/decrement, operators |
+| `Bolum03` | Control Structures, Methods, Arrays, Strings, Recursion | `if`/`switch`, loops, `do-while` input, methods, overloading, scope and shadowing, arrays and array algorithms, mean/median/mode, multidimensional arrays, transpose, tic-tac-toe, string basics, comparison and formatting, recursion and Towers of Hanoi |
+| `Bolum04` | Objects and Classes, Encapsulation, Inheritance, Polymorphism, Abstract Classes | One package per slide deck: `nesnesinif`, `sarmalama`, `kalitim`, `cokbicimlilik`, `soyutsiniflar`; the package examples from the slides (`banka`, `canli`, `evcil`, `tr.edu.giresun.banka`, `uygulama`) |
+| `Bolum05` | Collections | `Collection` methods, lists, queues, sets, maps, iterators, sorting, `Collections` algorithms, streams, immutable collections, common mistakes |
+| `Bolum06` | Exceptions | Exception hierarchy, `try`/`catch`/`finally`, `throw`/`throws`, checked and unchecked exceptions, try-with-resources, custom exceptions, stack traces, propagation |
+| `Bolum07` | Testing and Debugging | Manual tests, JUnit 5 tests (assertions, exceptions, parameterized tests, lifecycle, property tests) and the `TestleriCalistir` runner, debugging, `jdb`, profiling, lint warnings |
+| `Bolum08` | Input and Output | Byte and character streams, buffering, `Scanner` and `PrintWriter`, encodings, random access, serialization, NIO files, channels and buffers, selectors |
+| `Bolum09` | Graphics and User Interfaces | Drawing with `Graphics`, `Point` and `Color`, frames and panels, layout managers, buttons, labels and text fields, mouse events, `invokeLater` |
+| `Bolum10` | Threads | Creating threads, thread states, `join`, interruption, daemon threads, race conditions, `synchronized`, `volatile`, atomics, locks, deadlock, producer-consumer, `CountDownLatch`, `CyclicBarrier`, `Semaphore`, `Exchanger`, thread pools, `CompletableFuture`, `ThreadLocal` |
+| `Bolum11` | Database Programming | JDBC steps with SQLite: creating tables, insert/select/update/delete, `PreparedStatement` and SQL injection, joins and grouping, transactions, batch updates, generated keys, mapping rows to objects |
 
-Before diving into object-oriented programming, it’s helpful to understand some fundamental Java programming concepts. This section covers the basics of variables, functions (methods), loops, and if-else statements, which are essential for working with the OOP examples in this repository.
+## Running the examples
 
-### Variables
-Variables in Java are used to store data. Each variable has a type, a name, and a value. Common types include `int` (integers), `double` (floating-point numbers), `String` (text), and `boolean` (true/false).
+Requires **JDK 21**.
 
-```java
-int age = 25;           // Integer variable
-double price = 19.99;   // Floating-point variable
-String name = "Alice";  // String variable
-boolean isStudent = true; // Boolean variable
+Every program has a `main` method and no program waits for keyboard input: programs that demonstrate `Scanner` read from a fixed string, and random numbers use a fixed seed. Code that does not compile on the slides is kept as comments next to a corrected version; runtime errors are caught and their messages printed. Programs that write files delete them before they finish. To compile and run one chapter:
+
+```bash
+cd Bolum05/src
+javac -d ../bin *.java
+java -cp ../bin MapOrnekleri
 ```
 
-### Functions (Methods)
-In Java, functions are called **methods** and are defined within classes. A method performs a specific task and can take parameters and return values.
+- **`Bolum04`** uses packages, so compile every file under `src` and run classes by their full name:
 
-```java
-public class Example {
-    // Method to calculate square of a number
-    public int square(int number) {
-        return number * number;
-    }
-}
-```
+  ```bash
+  javac -d ../bin $(find . -name '*.java')
+  java -cp ../bin kalitim.ToStringMetodu
+  ```
 
-### Loops
-Loops allow you to repeat code. Java supports `for`, `while`, and `do-while` loops.
+- **`Bolum07`** needs the JUnit 5 jars in `Bolum07/lib`. `TestleriCalistir` runs every test class and prints a summary. Some tests on the slides fail on purpose; the summary lists them.
 
-```java
-// For loop: Print numbers 1 to 5
-for (int i = 1; i <= 5; i++) {
-    System.out.println(i);
-}
+  ```bash
+  javac -cp "../lib/*" -d ../bin *.java
+  java -cp "../bin;../lib/*" TestleriCalistir
+  ```
 
-// While loop: Same as above
-int i = 1;
-while (i <= 5) {
-    System.out.println(i);
-    i++;
-}
-```
+  On macOS and Linux, use `:` instead of `;` in the classpath.
 
-### If-Else Statements
-If-else statements control the flow of execution based on conditions.
+- **`Bolum09`** programs that start with the comment `// GUI` open a window. The other programs in the folder print their results to the console.
 
-```java
-int score = 85;
-if (score >= 90) {
-    System.out.println("Grade: A");
-} else if (score >= 80) {
-    System.out.println("Grade: B");
-} else {
-    System.out.println("Grade: C or below");
-}
-```
+- **`Bolum11`** uses the SQLite JDBC driver in `Bolum11/lib`, for example:
 
-These concepts are the building blocks for the OOP examples in this repository. Refer to Java documentation or tutorials for more details.
+  ```bash
+  java -cp "../bin;../lib/*" SelectSorgusu
+  ```
 
-## Implemented OOP Concepts
+  The MySQL example only shows the connection code and reports that no server is available.
 
-The following OOP concepts are covered in this repository:
+Each folder is also an Eclipse project (`File > Import > Existing Projects into Workspace`). The library jars are already on the project classpath.
 
-- **Encapsulation**: Bundling data and methods within a class, with access control using private fields and public methods (e.g., getter/setter methods).
-- **Inheritance**: Creating class hierarchies where subclasses inherit properties and behaviors from a parent class.
-- **Polymorphism**: Implementing method overriding and overloading to allow flexible behavior based on object types.
-- **Abstraction**: Using abstract classes and interfaces to define common behaviors without implementation details.
-- **Classes and Objects**: Defining classes and creating instances to model real-world entities.
-- **Composition**: Building complex objects by combining simpler ones (e.g., "has-a" relationships).
-
-Each concept is implemented in a separate file under the `src/` directory, often with example classes to demonstrate usage.
-
-## Getting Started
-
-### Prerequisites
-- **Java Development Kit (JDK)**: Version 8 or higher.
-- A Java IDE (e.g., IntelliJ IDEA, Eclipse) or a text editor with a Java compiler.
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sercankulcu/object-oriented-programming-java.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd object-oriented-programming-java
-   ```
-3. Compile the desired Java file(s) using a Java compiler or IDE:
-   ```bash
-   javac src/<Example>.java
-   ```
-   Note: Most files are standalone examples without a `main` method. You may need to create a test class to run the code.
-
-### Usage
-Each OOP concept is implemented as a Java class or set of classes. To use an example:
-
-1. Import the desired class into your Java project.
-2. Create instances or call methods to explore the OOP concept. For example:
-   ```java
-   // Example of inheritance
-   Animal animal = new Dog();
-   animal.makeSound(); // Demonstrates polymorphism
-   ```
-3. Refer to the source code in `src/` for detailed implementations and comments.
-
-## Contributing
-Contributions are welcome! If you'd like to add new OOP examples, improve existing code, or fix bugs, please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m "Add your feature"`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a pull request.
-
-Please ensure your code follows Java coding conventions and includes clear comments or documentation.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Comments and identifiers are in Turkish, written without Turkish characters so the files compile with any platform encoding.
 
 ## Contact
-For questions or suggestions, feel free to contact the repository owner, [Sercan Kulcu](https://github.com/sercankulcu), or open an issue on GitHub.
 
-Happy coding!
+For questions or suggestions, contact [Sercan Külcü](https://github.com/sercankulcu) or open an issue on GitHub.
