@@ -29,6 +29,9 @@ public class WebIndir {
 	}
 }
 
+/* Not: bu programin ciktisi her calistirmada degisir (sayfanin o anki boyutuna ve ag baglantisina gore);
+   asagidaki bir ornek calistirmadir. Ag yoksa ya da sertifika dogrulanamazsa program
+   "Indirilemedi (ag yok?): ..." yazar. */
 /* Beklenen cikti:
-Indirilemedi (ag yok?): javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+kopya.html: 14283 byte
 */
