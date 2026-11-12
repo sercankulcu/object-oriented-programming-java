@@ -18,3 +18,9 @@ public class TamponOrnek {
 		System.out.println();                             // Merhaba, Java!
 	}
 }
+
+/* Beklenen cikti:
+put sonrasi  : java.nio.HeapByteBuffer[pos=14 lim=1024 cap=1024]
+flip sonrasi : java.nio.HeapByteBuffer[pos=0 lim=14 cap=1024]
+Merhaba, Java!
+*/

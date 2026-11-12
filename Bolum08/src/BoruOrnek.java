@@ -35,3 +35,7 @@ public class BoruOrnek {
 		// Merhaba, boru!
 	}
 }
+
+/* Beklenen cikti:
+Merhaba, boru!
+*/

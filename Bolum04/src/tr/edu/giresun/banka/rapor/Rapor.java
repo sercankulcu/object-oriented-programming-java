@@ -14,3 +14,7 @@ public class Rapor {
 		System.out.println(new Rapor().hesapla());   // 20.0
 	}
 }
+
+/* Beklenen cikti:
+20.0
+*/

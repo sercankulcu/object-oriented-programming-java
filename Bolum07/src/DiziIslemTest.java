@@ -21,3 +21,13 @@ class DiziIslemTest {
 		// KALDI: tumuNegatifDizi() -> expected: <-2> but was: <0>
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] DiziIslemTest > pozitifDizi()
+[KALDI] DiziIslemTest > tumuNegatifDizi()
+---- Ozet ----
+Bulunan test : 2
+Gecen        : 1
+Kalan        : 1
+  KALDI: tumuNegatifDizi() -> expected: <-2> but was: <0>
+*/

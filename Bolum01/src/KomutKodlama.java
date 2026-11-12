@@ -12,3 +12,8 @@ public class KomutKodlama {
 				+ " " + kaynak1 + " " + kaynak2);  // 0 3 0 2
 	}
 }
+
+/* Beklenen cikti:
+50
+0 3 0 2
+*/

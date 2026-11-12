@@ -25,3 +25,13 @@ public class Sizinti {
 		onbellek.clear();
 	}
 }
+
+/* Beklenen cikti:
+20 istek islendi
+40 istek islendi
+60 istek islendi
+80 istek islendi
+100 istek islendi
+120 istek islendi
+Onbellekte 120 MB tutuluyor
+*/

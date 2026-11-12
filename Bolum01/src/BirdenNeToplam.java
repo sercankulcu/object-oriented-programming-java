@@ -24,3 +24,11 @@ public class BirdenNeToplam {
 		calistir(new Scanner("-3"));  // n: Toplam: 0
 	}
 }
+
+/* Beklenen cikti:
+n: Toplam: 15
+n: Toplam: 0
+n: Toplam: 1
+n: Toplam: 10
+n: Toplam: 0
+*/

@@ -25,3 +25,11 @@ public class Tuzaklar {
 		}
 	}
 }
+
+/* Beklenen cikti:
+6
+true
+false
+true
+java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because "<local7>" is null
+*/

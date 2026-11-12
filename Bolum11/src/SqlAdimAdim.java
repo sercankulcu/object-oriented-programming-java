@@ -50,3 +50,10 @@ public class SqlAdimAdim {
 		}
 	}
 }
+
+/* Beklenen cikti:
+kisit ihlali
+kisit ihlali
+kisit ihlali
+2 Ayse Demir ayse@example.com
+*/

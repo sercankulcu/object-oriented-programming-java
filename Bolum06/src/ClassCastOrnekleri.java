@@ -74,3 +74,13 @@ public class ClassCastOrnekleri {
 		instanceofIleOnleme();
 	}
 }
+
+/* Beklenen cikti:
+class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+class [Ljava.lang.String; cannot be cast to class [Ljava.lang.Integer; ([Ljava.lang.String; and [Ljava.lang.Integer; are in module java.base of loader 'bootstrap')
+obj bir Integer degil
+Merhaba
+*/

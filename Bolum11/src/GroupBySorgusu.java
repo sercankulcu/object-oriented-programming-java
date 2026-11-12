@@ -30,3 +30,8 @@ public class GroupBySorgusu {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Ali: 3 siparis, 200 TL
+Can: 1 siparis, 200 TL
+*/

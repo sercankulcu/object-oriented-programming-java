@@ -29,3 +29,19 @@ class NotTest {
 		// ... [8] 100, AA ve aralikDisiPuanReddedilir() dahil 9 test, 9 gecti
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] sinirDegerleri(int, String) > [1] 0, FF
+[GECTI] sinirDegerleri(int, String) > [2] 49, FF
+[GECTI] sinirDegerleri(int, String) > [3] 50, CC
+[GECTI] sinirDegerleri(int, String) > [4] 59, CC
+[GECTI] sinirDegerleri(int, String) > [5] 60, CB
+[GECTI] sinirDegerleri(int, String) > [6] 89, BA
+[GECTI] sinirDegerleri(int, String) > [7] 90, AA
+[GECTI] sinirDegerleri(int, String) > [8] 100, AA
+[GECTI] NotTest > aralikDisiPuanReddedilir()
+---- Ozet ----
+Bulunan test : 9
+Gecen        : 9
+Kalan        : 0
+*/

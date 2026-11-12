@@ -15,3 +15,8 @@ public class TamponUmlaut {
 		System.out.println(StandardCharsets.UTF_8.decode(b));  // dogru: Dunya (u-umlaut ile)
 	}
 }
+
+/* Beklenen cikti:
+Dￃﾼnya
+Dünya
+*/

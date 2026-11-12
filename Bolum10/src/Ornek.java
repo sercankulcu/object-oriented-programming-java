@@ -26,3 +26,7 @@ public class Ornek {
 		System.out.println("Sonuc: " + o.sayac);   // Sonuc: 200000
 	}
 }
+
+/* Beklenen cikti:
+Sonuc: 200000
+*/

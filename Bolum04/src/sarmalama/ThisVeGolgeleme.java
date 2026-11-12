@@ -36,3 +36,8 @@ public class ThisVeGolgeleme {
 		System.out.println(k.getEn());       // 0
 	}
 }
+
+/* Beklenen cikti:
+20
+0
+*/

@@ -30,3 +30,7 @@ public class Takim {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Mert -> Giresunspor
+*/

@@ -64,3 +64,11 @@ public class YapiciDogrulama {
 		System.out.println(a.getKelvin() + " " + b);  // 300.0 null
 	}
 }
+
+/* Beklenen cikti:
+1 100.0 Vadeli
+Baslangic bakiyesi negatif olamaz
+Bilinmeyen hesap turu: Kredi
+Reddedildi: Kelvin negatif olamaz
+300.0 null
+*/

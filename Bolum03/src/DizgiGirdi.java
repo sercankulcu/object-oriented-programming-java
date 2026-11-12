@@ -51,3 +51,12 @@ public class DizgiGirdi {
 		tuzakCozumu("19\nAy\u015fe\n");
 	}
 }
+
+/* Beklenen cikti:
+bir metin giriniz
+bilgisayar
+ve
+ programlamaya giriş
+Yaş: Ad: [] 19
+Yaş: Ad: [Ayşe] 19
+*/

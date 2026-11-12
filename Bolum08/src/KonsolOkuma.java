@@ -16,3 +16,8 @@ public class KonsolOkuma {
 		// Girdi ekranda yankilanmadigi icin ilk satir "Adiniz: Yasiniz: Merhaba Ayse Yilmaz!" olur.
 	}
 }
+
+/* Beklenen cikti:
+Adiniz: Yasiniz: Merhaba Ayse Yilmaz!
+Seneye 20 yasindasin.
+*/

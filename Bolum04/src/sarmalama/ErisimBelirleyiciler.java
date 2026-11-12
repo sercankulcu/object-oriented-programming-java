@@ -38,3 +38,9 @@ public class ErisimBelirleyiciler {
 		Test.main(args);                         // 0
 	}
 }
+
+/* Beklenen cikti:
+0
+null
+0
+*/

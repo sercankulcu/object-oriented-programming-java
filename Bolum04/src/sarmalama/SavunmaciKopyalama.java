@@ -28,3 +28,7 @@ public class SavunmaciKopyalama {
 		System.out.println(k.ortalama());   // 80.0
 	}
 }
+
+/* Beklenen cikti:
+80.0
+*/

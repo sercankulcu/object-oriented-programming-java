@@ -41,3 +41,9 @@ public class ErisimMetotlari {
 		System.out.println(s.getSaat() + " " + s.getDakika() + " " + s.getSaniye());  // 9 5 30
 	}
 }
+
+/* Beklenen cikti:
+09:05:30
+09:05:30
+9 5 30
+*/

@@ -28,3 +28,8 @@ public class KanalOku {
 		Files.delete(Paths.get("dosya.txt"));
 	}
 }
+
+/* Beklenen cikti:
+17 byte okundu
+NIO kanal ornegi
+*/

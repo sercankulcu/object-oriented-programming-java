@@ -84,3 +84,11 @@ public class EgriIzleme {
 		// drawLine(50, 95, 70, 95)
 	}
 }
+
+/* Beklenen cikti:
+drawLine(40, 120, 40, 120)
+drawLine(40, 120, 60, 60)
+drawLine(60, 60, 80, 120)
+drawLine(50, 95, 50, 95)
+drawLine(50, 95, 70, 95)
+*/

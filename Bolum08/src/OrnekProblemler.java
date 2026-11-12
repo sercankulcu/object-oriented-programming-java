@@ -72,3 +72,13 @@ public class OrnekProblemler {
 		problem4();
 	}
 }
+
+/* Beklenen cikti:
+6
+8
+cdef
+1 3 2
+2 10
+0 10 2
+20 40 16
+*/

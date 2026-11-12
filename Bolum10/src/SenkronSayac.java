@@ -24,3 +24,7 @@ public class SenkronSayac {
 		System.out.println("Sonuc: " + sayac.getDeger());   // Sonuc: 200000
 	}
 }
+
+/* Beklenen cikti:
+Sonuc: 200000
+*/

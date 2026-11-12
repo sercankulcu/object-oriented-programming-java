@@ -51,3 +51,19 @@ public class DinamikBaglama {
 		// Miyav!
 	}
 }
+
+/* Beklenen cikti:
+Kopek kosuyor
+Hav hav!
+Hayvan uyuyor
+Kopek kosuyor
+Hayvan uyuyor
+cokbicimlilik.OrnekHiyerarsi$Kopek@5305068a
+Hav hav!
+Miyav!
+Hayvan sesi
+Kopek kosuyor
+Hav hav!
+Hayvan kosuyor
+Miyav!
+*/

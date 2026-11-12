@@ -50,3 +50,11 @@ public class YapicidanCagri {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Bilesen kuruluyor
+Etiket: null
+Etiket kuruldu
+Etiket: Merhaba
+java.lang.NullPointerException: Cannot invoke "String.length()" because "this.metin" is null
+*/

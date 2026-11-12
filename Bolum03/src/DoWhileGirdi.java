@@ -15,3 +15,7 @@ public class DoWhileGirdi {
 		klavye.close();
 	}
 }
+
+/* Beklenen cikti:
+1-10 arasi bir sayi girin: 1-10 arasi bir sayi girin: 1-10 arasi bir sayi girin: Kabul edilen sayi: 7
+*/

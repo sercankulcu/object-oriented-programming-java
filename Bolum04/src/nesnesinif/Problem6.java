@@ -19,3 +19,8 @@ public class Problem6 {
 		System.out.println(a.x == b.x);    // true
 	}
 }
+
+/* Beklenen cikti:
+false
+true
+*/

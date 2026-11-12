@@ -32,3 +32,8 @@ public class ArabaMotorIzleme {
 		// Hiz: 50
 	}
 }
+
+/* Beklenen cikti:
+Motor: 90 BG
+Hiz: 50
+*/

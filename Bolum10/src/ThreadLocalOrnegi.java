@@ -27,3 +27,9 @@ public class ThreadLocalOrnegi {
 		// main: null
 	}
 }
+
+/* Beklenen cikti:
+thread1: Deger 1
+thread2: Deger 2
+main: null
+*/

@@ -7,3 +7,8 @@ public class ElleTest {
 		// Dogru mu? Ekrana bakip kendimiz karar veriyoruz.
 	}
 }
+
+/* Beklenen cikti:
+topla(2, 3) = 5
+carp(2, -3) = -6
+*/

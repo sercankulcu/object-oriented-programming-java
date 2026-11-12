@@ -76,3 +76,12 @@ public class OrnekProblemler {
 		}
 	}
 }
+
+/* Beklenen cikti:
+ACD 2
+IAE
+a1 b1 yakalandi! son
+1109
+F
+java.lang.RuntimeException: X
+*/

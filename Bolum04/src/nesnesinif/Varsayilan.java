@@ -19,3 +19,9 @@ public class Varsayilan {
 		System.out.println((int) n.harf);              // 0
 	}
 }
+
+/* Beklenen cikti:
+0 0.0
+false null
+0
+*/

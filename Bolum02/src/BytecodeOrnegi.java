@@ -40,3 +40,8 @@ public class BytecodeOrnegi {
 		yigin(args);
 	}
 }
+
+/* Beklenen cikti:
+5
+12
+*/

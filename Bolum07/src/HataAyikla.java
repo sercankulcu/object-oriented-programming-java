@@ -17,3 +17,7 @@ public class HataAyikla {
 		System.out.println("En yuksek: " + sonuc);   // En yuksek: 0
 	}
 }
+
+/* Beklenen cikti:
+En yuksek: 0
+*/

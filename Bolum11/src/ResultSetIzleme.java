@@ -42,3 +42,9 @@ public class ResultSetIzleme {
 		Files.deleteIfExists(Path.of("okuma.db"));
 	}
 }
+
+/* Beklenen cikti:
+1 - Ahmet Yilmaz
+2 - Ayse Demir
+Okuma bitti.
+*/

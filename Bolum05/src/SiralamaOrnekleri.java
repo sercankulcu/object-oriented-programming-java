@@ -80,3 +80,13 @@ public class SiralamaOrnekleri {
 		karistirma();
 	}
 }
+
+/* Beklenen cikti:
+[Ali, Ayse, Banu, Cem]
+[Cem, Banu, Ayse, Ali]
+[Ali, Ayse, Banu, Cem]
+[Banu:60, Cem:72, Ayse:95]
+[Ayse:95, Banu:60, Cem:72]
+[Banu:60, Cem:72, Ayse:95]
+[Deniz, Banu, Ali, Cem]
+*/

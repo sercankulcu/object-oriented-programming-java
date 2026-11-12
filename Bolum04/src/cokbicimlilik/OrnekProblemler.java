@@ -100,3 +100,18 @@ public class OrnekProblemler {
 									// uzunluk 3
 	}
 }
+
+/* Beklenen cikti:
+B.yaz
+A.yaz
+B.yaz
+true
+(3) ClassCastException
+Kedi tirmaliyor
+Hav hav!
+Alt.f(Object)
+Ust.f(String)
+dizi yok
+dizi yok
+uzunluk 3
+*/

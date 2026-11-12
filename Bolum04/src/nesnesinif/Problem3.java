@@ -17,3 +17,7 @@ public class Problem3 {
 		System.out.println();   // MSICIC
 	}
 }
+
+/* Beklenen cikti:
+MSICIC
+*/

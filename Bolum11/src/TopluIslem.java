@@ -31,3 +31,7 @@ public class TopluIslem {
 		}
 	}
 }
+
+/* Beklenen cikti:
+1000 komut, ilki 1 satir etkiledi
+*/

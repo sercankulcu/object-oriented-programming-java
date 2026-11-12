@@ -101,3 +101,14 @@ public class TryCatchOrnekleri {
 		icIceTry();
 	}
 }
+
+/* Beklenen cikti:
+hata olustu: / by zero
+Sayi degil: For input string: "abc"
+finally calisti
+Sifir: / by zero
+finally calisti
+Eksik: Index 1 out of bounds for length 1
+finally calisti
+Tur veya null hatasi: ClassCastException
+*/

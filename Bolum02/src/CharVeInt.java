@@ -32,3 +32,15 @@ public class CharVeInt {
 		charVeIntIzleme();
 	}
 }
+
+/* Beklenen cikti:
+65
+B
+133
+BC
+a
+351
+100 D 22 e
+101
+d1
+*/

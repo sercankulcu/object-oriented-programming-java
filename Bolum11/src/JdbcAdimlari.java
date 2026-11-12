@@ -21,3 +21,7 @@ public class JdbcAdimlari {
 		}
 	}
 }
+
+/* Beklenen cikti:
+42
+*/

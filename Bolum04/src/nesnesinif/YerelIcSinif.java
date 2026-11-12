@@ -26,3 +26,7 @@ public class YerelIcSinif {
 		Outer.main(args);
 	}
 }
+
+/* Beklenen cikti:
+Yerel Ic Sinif
+*/

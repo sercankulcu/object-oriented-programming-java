@@ -11,3 +11,7 @@ public class Ana2 {
 		System.out.println("banka.Yardimci buradan gorulmez");
 	}
 }
+
+/* Beklenen cikti:
+banka.Yardimci buradan gorulmez
+*/

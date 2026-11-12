@@ -62,3 +62,15 @@ public class ReferansTipleri {
 		//   location: variable h2 of type Hayvan
 	}
 }
+
+/* Beklenen cikti:
+true
+true
+class cokbicimlilik.OrnekHiyerarsi$Kopek
+Hav hav!
+true
+true
+Kopek havliyor
+Kopek havliyor
+Kopek havliyor
+*/

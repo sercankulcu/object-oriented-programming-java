@@ -21,3 +21,8 @@ public class DiziIslemDuzeltme {
 		System.out.println("En buyuk: " + DiziIslem.enBuyuk(new int[] {3, 9, 4}));   // En buyuk: 9
 	}
 }
+
+/* Beklenen cikti:
+En buyuk: -2
+En buyuk: 9
+*/

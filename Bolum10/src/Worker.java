@@ -18,3 +18,8 @@ public class Worker implements Runnable {
 		// main yazmis olur, bu yuzden pratikte hep bu siradadir (garanti degildir).
 	}
 }
+
+/* Beklenen cikti:
+main devam ediyor
+Worker calisiyor: Thread-0
+*/

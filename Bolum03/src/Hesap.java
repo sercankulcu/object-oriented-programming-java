@@ -9,3 +9,7 @@ public class Hesap {
 		System.out.println(sonuc);  // 8
 	}
 }
+
+/* Beklenen cikti:
+8
+*/

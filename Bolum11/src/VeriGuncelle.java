@@ -27,3 +27,10 @@ public class VeriGuncelle {
 		Baglan.dosyayiSil();
 	}
 }
+
+/* Beklenen cikti:
+Tablo olusturuldu!
+Veri eklendi! (1 satir)
+Veri guncellendi! (1 satir)
+ID: 1, Ad: Mehmet Akdeniz, E-posta: ahmet@example.com
+*/

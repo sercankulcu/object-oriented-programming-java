@@ -18,3 +18,11 @@ class AaaTest {
 		TestleriCalistir.calistir(AaaTest.class);   // 1 test, 1 gecti
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] AaaTest > cekmeBakiyeyiAzaltir()
+---- Ozet ----
+Bulunan test : 1
+Gecen        : 1
+Kalan        : 0
+*/

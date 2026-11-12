@@ -41,3 +41,8 @@ public class SenkronizeMetotlar {
 		System.out.println(c2.n + " " + Blok.C.m);         // 100000 100000
 	}
 }
+
+/* Beklenen cikti:
+100000 100000
+100000 100000
+*/

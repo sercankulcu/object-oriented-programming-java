@@ -86,3 +86,16 @@ public class EqualsMetodu {
 		System.out.println(m1.equals(null));   // false
 	}
 }
+
+/* Beklenen cikti:
+false
+true
+true
+false
+true
+false
+false
+true
+false
+false
+*/

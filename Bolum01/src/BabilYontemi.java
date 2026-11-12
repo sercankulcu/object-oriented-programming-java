@@ -15,3 +15,12 @@ public class BabilYontemi {
 		System.out.println("Karekok ~ " + y);  // Karekok ~ 4.000000636692939
 	}
 }
+
+/* Beklenen cikti:
+8.5
+5.1911764705882355
+4.136664722546242
+4.002257524798522
+4.000000636692939
+Karekok ~ 4.000000636692939
+*/

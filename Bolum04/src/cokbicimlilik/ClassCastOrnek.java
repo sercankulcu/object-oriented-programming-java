@@ -80,3 +80,18 @@ public class ClassCastOrnek {
 		// Kopek havliyor
 	}
 }
+
+/* Beklenen cikti:
+java.lang.ClassCastException: class cokbicimlilik.OrnekHiyerarsi$Kedi cannot be cast to class cokbicimlilik.OrnekHiyerarsi$Kopek (cokbicimlilik.OrnekHiyerarsi$Kedi and cokbicimlilik.OrnekHiyerarsi$Kopek are in unnamed module of loader 'app')
+java.lang.ClassCastException: class cokbicimlilik.OrnekHiyerarsi$Hayvan cannot be cast to class cokbicimlilik.OrnekHiyerarsi$Kopek (cokbicimlilik.OrnekHiyerarsi$Hayvan and cokbicimlilik.OrnekHiyerarsi$Kopek are in unnamed module of loader 'app')
+Kopek havliyor
+Exception in thread "main"
+java.lang.ClassCastException
+Kopek havliyor
+Kedi tirmaliyor
+Ozel davranis yok
+Kopek havliyor
+Kedi tirmaliyor
+Ozel davranis yok
+Kopek havliyor
+*/

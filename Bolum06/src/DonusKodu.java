@@ -39,3 +39,9 @@ public class DonusKodu {
 		}
 	}
 }
+
+/* Beklenen cikti:
+2
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 3
+Hata: Bulunamadi: Ece
+*/

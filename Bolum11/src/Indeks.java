@@ -27,3 +27,10 @@ public class Indeks {
 		}
 	}
 }
+
+/* Beklenen cikti:
+SCAN ogrenciler
+SEARCH ogrenciler USING INDEX idx_ogr_ad (ad=?)
+SEARCH ogrenciler USING INTEGER PRIMARY KEY (rowid=?)
+SCAN ogrenciler
+*/

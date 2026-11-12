@@ -28,3 +28,7 @@ public class UyeIcSinif {
 		Outer.main(args);
 	}
 }
+
+/* Beklenen cikti:
+Uye Ic Sinif, sayi = 5
+*/

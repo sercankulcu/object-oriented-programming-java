@@ -31,3 +31,9 @@ public class FinalKalitim {
 		System.out.println(new Deneme() instanceof Object);   // true
 	}
 }
+
+/* Beklenen cikti:
+Nefes aliyor
+42
+true
+*/

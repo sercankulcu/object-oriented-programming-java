@@ -18,3 +18,9 @@ public class Problem2 {
 		System.out.println(k2 == k3);     // false
 	}
 }
+
+/* Beklenen cikti:
+9
+true
+false
+*/

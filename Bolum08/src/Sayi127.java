@@ -37,3 +37,11 @@ public class Sayi127 {
 			new File(ad).delete();
 	}
 }
+
+/* Beklenen cikti:
+metin.txt: 3
+metin16.txt: 6
+b.dat: 1
+s.dat: 2
+i.dat: 4
+*/

@@ -42,3 +42,10 @@ public class KovaryantDonus {
 		a.selam();   // Alt.selam
 	}
 }
+
+/* Beklenen cikti:
+miyav
+Kedi
+Ust.selam
+Alt.selam
+*/

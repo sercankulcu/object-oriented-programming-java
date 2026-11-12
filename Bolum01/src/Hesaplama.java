@@ -12,3 +12,9 @@ public class Hesaplama {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Toplam: 10
+Carpim: 21
+Disari cik
+*/

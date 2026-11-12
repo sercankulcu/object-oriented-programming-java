@@ -16,3 +16,10 @@ public class MetinAlaniOrnegi {
 		System.out.println(kaydirma.getViewport().getView() == alan);  // true
 	}
 }
+
+/* Beklenen cikti:
+Birinci satir
+Ikinci satir
+3
+true
+*/

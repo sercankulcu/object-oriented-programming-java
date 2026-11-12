@@ -31,3 +31,11 @@ public class NullOrnekleri {
 		System.out.println("Ali".equals(str));         // false
 	}
 }
+
+/* Beklenen cikti:
+java.lang.NullPointerException: Cannot invoke "String.length()" because "<local1>" is null
+java.lang.NullPointerException: Str null olamaz
+0
+0
+false
+*/

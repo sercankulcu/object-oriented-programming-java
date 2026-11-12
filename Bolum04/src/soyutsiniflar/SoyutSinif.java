@@ -74,3 +74,13 @@ public class SoyutSinif {
 		// 9.0
 	}
 }
+
+/* Beklenen cikti:
+Ucgen ciziliyor
+(3, 4) noktasina tasindi
+Cember ciziliyor
+Kare kuruldu
+null 9.0
+Kare kuruldu
+9.0
+*/

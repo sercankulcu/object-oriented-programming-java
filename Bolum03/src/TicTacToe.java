@@ -119,3 +119,50 @@ public class TicTacToe {
 		System.out.println(berabere ? "berabere" : "devam");   // devam
 	}
 }
+
+/* Beklenen cikti:
+-------------
+|   |   |   |
+-------------
+|   |   |   |
+-------------
+|   |   |   |
+-------------
+Sira X oyuncusunda. Satir ve sutun secin (1-3): -------------
+| X |   |   |
+-------------
+|   |   |   |
+-------------
+|   |   |   |
+-------------
+Sira O oyuncusunda. Satir ve sutun secin (1-3): -------------
+| X | O |   |
+-------------
+|   |   |   |
+-------------
+|   |   |   |
+-------------
+Sira X oyuncusunda. Satir ve sutun secin (1-3): -------------
+| X | O |   |
+-------------
+|   | X |   |
+-------------
+|   |   |   |
+-------------
+Sira O oyuncusunda. Satir ve sutun secin (1-3): Sira O oyuncusunda. Satir ve sutun secin (1-3): -------------
+| X | O | O |
+-------------
+|   | X |   |
+-------------
+|   |   |   |
+-------------
+Sira X oyuncusunda. Satir ve sutun secin (1-3): Tebrikler, X oyuncusu kazandi!
+-------------
+| X | O | O |
+-------------
+|   | X |   |
+-------------
+|   |   | X |
+-------------
+devam
+*/

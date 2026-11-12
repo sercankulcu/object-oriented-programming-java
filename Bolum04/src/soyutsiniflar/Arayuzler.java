@@ -54,3 +54,12 @@ public class Arayuzler {
 		g2.ciz();              // Ozel kare ciziliyor
 	}
 }
+
+/* Beklenen cikti:
+Kare ciziliyor
+4
+4
+Ozel kare ciziliyor
+Kosegen: 1.4142135623730951
+Ozel kare ciziliyor
+*/

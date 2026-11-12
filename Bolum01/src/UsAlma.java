@@ -18,3 +18,7 @@ public class UsAlma {
 		tarayici.close();
 	}
 }
+
+/* Beklenen cikti:
+Sonuc: 81
+*/

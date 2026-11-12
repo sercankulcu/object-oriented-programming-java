@@ -21,3 +21,9 @@ public class ParcaOku {
 		new File("dosya.txt").delete();
 	}
 }
+
+/* Beklenen cikti:
+4: Merh
+4: aba
+4: Java
+*/

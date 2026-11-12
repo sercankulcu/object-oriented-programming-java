@@ -14,3 +14,7 @@ public class Golge {
 		System.out.println(g.ad);   // null
 	}
 }
+
+/* Beklenen cikti:
+null
+*/

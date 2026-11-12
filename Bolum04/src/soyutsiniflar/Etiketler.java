@@ -58,3 +58,10 @@ public class Etiketler {
 		isler.temizle();   // Temizlendi
 	}
 }
+
+/* Beklenen cikti:
+42
+yedekle, Ayse, 3
+Yedek alindi
+Temizlendi
+*/

@@ -37,3 +37,11 @@ public class OyuncakBilgisayar {
 		System.out.println("bellek[207] = " + bellek[207]);  // bellek[207] = 127
 	}
 }
+
+/* Beklenen cikti:
+LOAD -> R1 = 102, bellek[207] = 0
+ADD -> R1 = 127, bellek[207] = 0
+STORE -> R1 = 127, bellek[207] = 127
+HALT -> R1 = 127, bellek[207] = 127
+bellek[207] = 127
+*/

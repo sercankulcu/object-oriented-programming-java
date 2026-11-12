@@ -16,3 +16,8 @@ public class JoinOrnegi {
 		System.out.println("join sonrasi: " + sonuc);   // join sonrasi: 500000500000
 	}
 }
+
+/* Beklenen cikti:
+join oncesi : 0
+join sonrasi: 500000500000
+*/

@@ -72,3 +72,12 @@ public class YapiciZinciri {
 		System.out.println(k.getIsim());          // Tekir
 	}
 }
+
+/* Beklenen cikti:
+Hayvan yapicisi
+Kedi yapicisi
+Nesne hazir
+Mavi 100.0 true
+Kedi
+Tekir
+*/

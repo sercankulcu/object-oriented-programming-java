@@ -11,3 +11,7 @@ class Yardimci {                  // paket erisimli
 		System.out.println(kdv(100));   // 20.0
 	}
 }
+
+/* Beklenen cikti:
+20.0
+*/

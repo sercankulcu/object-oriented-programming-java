@@ -46,3 +46,16 @@ public class TipDonusumu {
 		tipDonusumuIzleme();
 	}
 }
+
+/* Beklenen cikti:
+65
+A
+5.0
+5
+3
+-3
+4
+-126
+2.0 2.25 2.0
+9 10 -56
+*/

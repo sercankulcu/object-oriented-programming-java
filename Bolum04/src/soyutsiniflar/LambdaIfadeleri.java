@@ -101,3 +101,24 @@ public class LambdaIfadeleri {
 		is.join();                     // Is parcacigi calisti
 	}
 }
+
+/* Beklenen cikti:
+8
+Merhaba Ayse
+Consumer calisti
+4
+7
+false
+[8, 12]
+8
+[2, 4, 6]
+[1, 4, 9, 16, 25, 36, 49]
+Anonim sinif
+Lambda
+180
+[Ali, Zeynep, Mehmet]
+Merhaba Ali
+Merhaba Zeynep
+Merhaba Mehmet
+Is parcacigi calisti
+*/

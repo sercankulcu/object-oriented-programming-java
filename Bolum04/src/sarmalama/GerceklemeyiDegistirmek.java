@@ -70,3 +70,8 @@ public class GerceklemeyiDegistirmek {
 				+ s.getSaniye());   // 12:9
 	}
 }
+
+/* Beklenen cikti:
+12:9
+12:9
+*/

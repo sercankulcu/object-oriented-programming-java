@@ -26,3 +26,8 @@ public class Arac {
 		a2.bilgiYazdir();   // Renault Clio 2021
 	}
 }
+
+/* Beklenen cikti:
+Bilinmiyor Bilinmiyor 0
+Renault Clio 2021
+*/

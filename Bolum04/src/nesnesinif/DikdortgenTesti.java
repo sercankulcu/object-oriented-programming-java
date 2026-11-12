@@ -36,3 +36,8 @@ public class DikdortgenTesti {
 				+ " Cevresi: " + cevre);   // Alani: 25.0 Cevresi: 20.0
 	}
 }
+
+/* Beklenen cikti:
+Alani: 15.0 Cevresi: 16.0
+Alani: 25.0 Cevresi: 20.0
+*/

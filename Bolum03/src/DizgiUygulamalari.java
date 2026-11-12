@@ -158,3 +158,31 @@ public class DizgiUygulamalari {
 		alistirmalar2();
 	}
 }
+
+/* Beklenen cikti:
+kayak
+true
+bir: 3
+iki: 2
+üç: 1
+elma: 2
+armut: 2
+kiraz: 1
+rad 3
+4
+-1
+3345
+true
+false
+true
+true
+[Ali  ][  7][  72,46]
+S.K.
+ogrenci
+giresun.edu.tr
+nuseriG
+Java
+2
+Sesli: 2
+Yaş: Ad: Ad: Ali Veli, Yaş: 20
+*/

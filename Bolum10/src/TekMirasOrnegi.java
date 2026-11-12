@@ -28,3 +28,8 @@ public class TekMirasOrnegi {
 		// run(): Thread-0
 	}
 }
+
+/* Beklenen cikti:
+Ata sinifindan merhaba
+run(): Thread-0
+*/

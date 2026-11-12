@@ -22,3 +22,9 @@ public class FutureIzleme {
 		havuz.shutdown();
 	}
 }
+
+/* Beklenen cikti:
+false false
+toplam = 60
+true true
+*/

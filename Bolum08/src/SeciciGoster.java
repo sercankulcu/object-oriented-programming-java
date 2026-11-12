@@ -51,3 +51,7 @@ public class SeciciGoster {
 		kanal.close();
 	}
 }
+
+/* Beklenen cikti:
+Baglanti kabul edildi
+*/

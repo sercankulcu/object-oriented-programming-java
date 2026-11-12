@@ -45,3 +45,8 @@ public class CanliKilit {
 		System.out.println("yapilan is: " + yapilan);   // yapilan is: 6
 	}
 }
+
+/* Beklenen cikti:
+adil mi? true
+yapilan is: 6
+*/

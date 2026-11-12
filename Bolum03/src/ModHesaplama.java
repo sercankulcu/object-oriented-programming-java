@@ -38,3 +38,8 @@ public class ModHesaplama {
 		System.out.println(" (Tekrar Sayisi: " + enCokTekrarSayisi + ")");  // Mod: 2 (Tekrar Sayisi: 3)
 	}
 }
+
+/* Beklenen cikti:
+Elemanlar sirali: [2, 2, 2, 4, 4, 7, 9]
+Mod: 2 (Tekrar Sayisi: 3)
+*/

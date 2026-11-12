@@ -22,3 +22,8 @@ public class Not {
 		}
 	}
 }
+
+/* Beklenen cikti:
+FF CC AA
+Gecersiz puan: 101
+*/

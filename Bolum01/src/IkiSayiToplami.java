@@ -14,3 +14,7 @@ public class IkiSayiToplami {
 		giris.close();
 	}
 }
+
+/* Beklenen cikti:
+Ilk sayi: Ikinci sayi: Sonuc: 12
+*/

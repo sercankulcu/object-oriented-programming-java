@@ -56,3 +56,9 @@ public class KirilganUstSinif {
 		System.out.println(l2.getEklemeSayisi() + " " + l2.boyut());   // 4 4
 	}
 }
+
+/* Beklenen cikti:
+6 3
+3 3
+4 4
+*/

@@ -96,3 +96,14 @@ public class BankaHesabiOrnegi {
 		System.out.println(hesap1.getHesapNumarasi() + " " + hesap1.getHesapTuru());  // 123456 Vadeli
 	}
 }
+
+/* Beklenen cikti:
+500.0 TL yatirildi. Yeni bakiye: 2500.0
+200.0 TL cekildi. Kalan bakiye: 1300.0
+Faiz ekleniyor: 125.0 TL. Yeni bakiye: 2625.0
+300.0 TL yatirildi. Yeni bakiye: 1600.0
+300.0 TL transfer edildi. Yeni bakiye: 2325.0
+2325.0
+1600.0
+123456 Vadeli
+*/

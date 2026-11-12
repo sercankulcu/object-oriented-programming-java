@@ -60,3 +60,10 @@ public class SuperAnahtarSozcugu {
 		// Kediyim
 	}
 }
+
+/* Beklenen cikti:
+Isim: Mavi, Saglik: 100.0, Evcil: true
+Canliyim
+Hayvanim
+Kediyim
+*/

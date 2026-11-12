@@ -37,3 +37,7 @@ public class EqualsSimetri {
 			+ " " + k.equals(p));   // true false
 	}
 }
+
+/* Beklenen cikti:
+true false
+*/

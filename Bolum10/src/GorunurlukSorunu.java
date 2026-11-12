@@ -26,3 +26,8 @@ public class GorunurlukSorunu {
 		//                               hala calisiyor mu? false
 	}
 }
+
+/* Beklenen cikti:
+main: dur = true
+hala calisiyor mu? true
+*/

@@ -39,3 +39,13 @@ public class AsiriYuklemeDerleme {
 		//   method goster(String) in Ana match
 	}
 }
+
+/* Beklenen cikti:
+yazdir(Kopek)
+yazdir(Hayvan)
+yazdir(Kopek)
+goster(Hayvan)
+goster(String)
+goster(Object)
+goster(Hayvan)
+*/

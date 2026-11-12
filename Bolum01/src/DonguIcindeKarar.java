@@ -18,3 +18,7 @@ public class DonguIcindeKarar {
 		giris.close();
 	}
 }
+
+/* Beklenen cikti:
+3 gecti, ortalama 56.6
+*/

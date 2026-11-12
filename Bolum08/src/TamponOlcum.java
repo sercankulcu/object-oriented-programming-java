@@ -21,3 +21,10 @@ public class TamponOlcum {
 		f.delete();
 	}
 }
+
+/* Not: bu programin ciktisi her calistirmada degisir (zaman olcumu, rastgele sayi ya da
+   is parcaciklarinin sirasi); asagidaki bir ornek calistirmadir. */
+/* Beklenen cikti:
+Tamponsuz: 2405 ms
+Tamponlu : 53 ms
+*/

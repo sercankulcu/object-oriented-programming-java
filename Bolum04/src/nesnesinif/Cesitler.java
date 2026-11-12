@@ -31,3 +31,9 @@ public class Cesitler {           // uygulama sinifi
 		System.out.println(h instanceof Yuru);                     // false
 	}
 }
+
+/* Beklenen cikti:
+49
+true
+false
+*/

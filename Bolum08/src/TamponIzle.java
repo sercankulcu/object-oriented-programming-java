@@ -20,3 +20,7 @@ public class TamponIzle {
 		System.out.println(c1 + "" + c2 + " " + b);   // JA java.nio.HeapByteBuffer[pos=0 lim=8 cap=8]
 	}
 }
+
+/* Beklenen cikti:
+JA java.nio.HeapByteBuffer[pos=0 lim=8 cap=8]
+*/

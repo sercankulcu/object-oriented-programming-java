@@ -23,3 +23,10 @@ public class Yayilim {
 		System.out.println("Program bitti");           // Program bitti
 	}
 }
+
+/* Beklenen cikti:
+hesapla basladi
+bol basladi
+main: / by zero
+Program bitti
+*/

@@ -55,3 +55,12 @@ public class SelectSorgusu {
 		}
 	}
 }
+
+/* Beklenen cikti:
+naz 81
+efe 95
+naz 81, ada 72, ece 58
+can 95, efe 95, naz 81
+ece 58, efe 95
+4, 85.75, 95
+*/

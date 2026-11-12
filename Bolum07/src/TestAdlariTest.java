@@ -33,3 +33,13 @@ class TestAdlariTest {
 		TestleriCalistir.calistir(TestAdlariTest.class);   // 3 test, 3 gecti
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] TestAdlariTest > test1()
+[GECTI] TestAdlariTest > besUrundeIndirimYok()
+[GECTI] TestAdlariTest > altiUrundeIndirimVar()
+---- Ozet ----
+Bulunan test : 3
+Gecen        : 3
+Kalan        : 0
+*/

@@ -26,3 +26,7 @@ public class UcSayiSirala {
 		tarayici.close();
 	}
 }
+
+/* Beklenen cikti:
+Uc tamsayi girin: 3 5 7
+*/

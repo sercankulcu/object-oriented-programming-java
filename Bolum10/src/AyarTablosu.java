@@ -44,3 +44,8 @@ public class AyarTablosu {
 		// (sunumdaki calistirmada Okuyucu-2 once yazmis)
 	}
 }
+
+/* Beklenen cikti:
+Okuyucu-1: tr
+Okuyucu-2: tr
+*/

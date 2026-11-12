@@ -29,3 +29,8 @@ public class OrtalamaHesaplama {
 		scanner.close();
 	}
 }
+
+/* Beklenen cikti:
+boyutu girin: 1. elemani girin: 2. elemani girin: 3. elemani girin: 4. elemani girin: Elemanlar: 7.0 3.0 9.0 5.0
+Ortalama: 6.0
+*/

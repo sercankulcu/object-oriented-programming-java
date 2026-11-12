@@ -22,3 +22,7 @@ public class YapiciMetotlar {
 		System.out.println(ogr.ad + " " + ogr.numara);   // Ali 2012
 	}
 }
+
+/* Beklenen cikti:
+Ali 2012
+*/

@@ -38,3 +38,10 @@ public class OkulVeritabani {
 		}
 	}
 }
+
+/* Beklenen cikti:
+1 Ada 1
+2 Bora 2
+3 Cem 1
+4 Deniz null
+*/

@@ -37,3 +37,13 @@ public class CyclicBarrierOrnegi {
 		// (sunumda: 1, 2, 3 bekliyor; Parti tamamlandi!; 3, 1, 2 devam ediyor).
 	}
 }
+
+/* Beklenen cikti:
+1 bekliyor
+1 devam ediyor
+2 bekliyor
+2 devam ediyor
+3 bekliyor
+3 devam ediyor
+Parti tamamlandi!
+*/

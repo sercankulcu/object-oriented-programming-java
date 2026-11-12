@@ -24,3 +24,12 @@ public class InvokeLaterIzleme {
 		// icin pratikte hep bu siradadir, ama bu sira garanti degildir.
 	}
 }
+
+/* Beklenen cikti:
+1 main
+2 main devam ediyor
+3 is A
+4 is B
+5 is C, EDT mi? true
+6 main, EDT mi? false
+*/

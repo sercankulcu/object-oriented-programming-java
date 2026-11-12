@@ -43,3 +43,9 @@ public class AracTesti {
 		araba1.dur();          // Toyota durdu.
 	}
 }
+
+/* Beklenen cikti:
+Toyota ilerliyor.
+Ford sinyal veriyor.
+Toyota durdu.
+*/

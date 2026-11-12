@@ -11,3 +11,9 @@ public class Golge {
 		System.out.println(deger);            // 10
 	}
 }
+
+/* Beklenen cikti:
+5
+10
+10
+*/

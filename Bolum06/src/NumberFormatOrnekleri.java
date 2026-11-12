@@ -48,3 +48,16 @@ public class NumberFormatOrnekleri {
 		System.out.println(guvenliOku("7.5", -1));    // -1
 	}
 }
+
+/* Beklenen cikti:
+java.lang.NumberFormatException: For input string: "abc"
+java.lang.NumberFormatException: For input string: "123abc"
+java.lang.NumberFormatException: For input string: "12.34abc"
+java.lang.NumberFormatException: For input string: "45xyz"
+42
+0
+-1
+7
+0
+-1
+*/

@@ -9,3 +9,7 @@ public class MerhabaDunya {
 		System.out.println("Merhaba, Dunya!");  // Merhaba, Dunya!
 	}
 }
+
+/* Beklenen cikti:
+Merhaba, Dunya!
+*/

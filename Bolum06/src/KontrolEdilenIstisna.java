@@ -95,3 +95,11 @@ public class KontrolEdilenIstisna {
 		}
 	}
 }
+
+/* Beklenen cikti:
+main yakaladi: veri.txt (The system cannot find the file specified)
+Dosya bulunamadi: veri.txt (The system cannot find the file specified)
+Onlemesiz: java.lang.ArithmeticException: / by zero
+Payda sifir olamaz
+rapor hazir
+*/

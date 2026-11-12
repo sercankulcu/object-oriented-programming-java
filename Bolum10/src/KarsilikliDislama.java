@@ -51,3 +51,10 @@ public class KarsilikliDislama {
 		}
 	}
 }
+
+/* Beklenen cikti:
+[5, 2, 8]
+2
+[5, 8]
+Kuyruk dolu
+*/

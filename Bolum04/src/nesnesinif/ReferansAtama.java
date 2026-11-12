@@ -31,3 +31,10 @@ public class ReferansAtama {
 		System.out.println("Araba 2: " + araba2.getMarka());   // Araba 2: Ford
 	}
 }
+
+/* Beklenen cikti:
+Araba 1: Toyota
+Araba 2: Toyota
+Araba 1: Ford
+Araba 2: Ford
+*/

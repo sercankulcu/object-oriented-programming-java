@@ -26,3 +26,12 @@ public class BorderLayoutOrnegi {
 		System.out.println(yerlesim.getHgap() + " " + yerlesim.getVgap());  // 5 5
 	}
 }
+
+/* Beklenen cikti:
+Kuzey -> North
+Guney -> South
+Bati -> West
+Dogu -> East
+Merkez -> Center
+5 5
+*/

@@ -17,3 +17,8 @@ public class Belirsiz {
 		System.out.println(liste.size() + " " + Types.INTEGER);   // 0 4 (java.sql.Types)
 	}
 }
+
+/* Beklenen cikti:
+null
+0 4
+*/

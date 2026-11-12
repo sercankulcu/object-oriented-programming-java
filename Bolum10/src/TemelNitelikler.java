@@ -47,3 +47,19 @@ public class TemelNitelikler {
 		gruplar();
 	}
 }
+
+/* Beklenen cikti:
+Ad      : main
+Kimlik  : 1
+Oncelik : 5
+Grup    : main
+Daemon  : false
+Durum   : RUNNABLE
+InnocuousThreadGroup  Common-Cleaner  daemon=true
+main  main  daemon=false
+system  Attach Listener  daemon=true
+system  Finalizer  daemon=true
+system  Notification Thread  daemon=true
+system  Reference Handler  daemon=true
+system  Signal Dispatcher  daemon=true
+*/

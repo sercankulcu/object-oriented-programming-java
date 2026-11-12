@@ -19,3 +19,9 @@ public class OrnekFonksiyonlar {
 		merhabaDunya();                           // Merhaba, Dunya!
 	}
 }
+
+/* Beklenen cikti:
+9
+2.25
+Merhaba, Dunya!
+*/

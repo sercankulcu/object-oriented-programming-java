@@ -22,3 +22,7 @@ public class SiraHatasi {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Aritmetik hata
+*/

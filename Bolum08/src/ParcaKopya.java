@@ -28,3 +28,7 @@ public class ParcaKopya {
 		dosya2.delete();
 	}
 }
+
+/* Beklenen cikti:
+40000 byte kopyalandi
+*/

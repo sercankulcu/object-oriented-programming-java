@@ -135,3 +135,20 @@ public class KosulYapilari {
 		kisaDevre();
 	}
 }
+
+/* Beklenen cikti:
+15
+kosul dogru
+kosul yanlis
+Hava sicak!
+Program devam ediyor.
+Bol su icin.
+Ehliyet alabilirsiniz.
+Bir sayi girin: Mutlak deger: 7.5
+C
+kosul1 ve kosul2 dogru
+kosul1 yanlis
+Harf notu: B
+false true true
+sayac = 1
+*/

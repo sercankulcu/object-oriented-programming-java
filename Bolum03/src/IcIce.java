@@ -15,3 +15,7 @@ public class IcIce {
 		System.out.println(sonuc);                // 25
 	}
 }
+
+/* Beklenen cikti:
+25
+*/

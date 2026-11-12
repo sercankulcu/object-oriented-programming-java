@@ -34,3 +34,16 @@ public class Bicimlendirme {
 		stringFormat();
 	}
 }
+
+/* Beklenen cikti:
+x: 3 y: -17,000000 s: java
+x:    3 y: -17,00 s:   java
+x: 3    y: -17,00  s: java
+x: 3    y: -17,000 s: java
+|   ab|ab   |00042|3,1|
+Z true 1,234500e+03 ff %
+Ayşe: 85 puan
+1.234.567
+2.50
+x = 7
+*/

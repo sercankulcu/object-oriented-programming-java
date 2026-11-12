@@ -16,3 +16,14 @@ public class UcExecuteMetodu {
 		Baglan.dosyayiSil();
 	}
 }
+
+/* Beklenen cikti:
+Baglanti basarili!
+Tablo olusturuldu!
+Veri eklendi! (1 satir)
+ID: 1, Ad: Ahmet Yilmaz, E-posta: ahmet@example.com
+Veri guncellendi! (1 satir)
+ID: 1, Ad: Mehmet Akdeniz, E-posta: ahmet@example.com
+Veri silindi! (1 satir)
+Veri silindi! (0 satir)
+*/

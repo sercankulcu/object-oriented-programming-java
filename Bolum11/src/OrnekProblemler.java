@@ -38,3 +38,9 @@ public class OrnekProblemler {
 		}
 	}
 }
+
+/* Beklenen cikti:
+1 Efe
+2 Ece
+true
+*/

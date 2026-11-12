@@ -32,3 +32,10 @@ public class Alanlar {
 		System.out.println(xx + " " + y + " " + n.CONST1 + " " + CONST2);    // 0 0 5 6
 	}
 }
+
+/* Beklenen cikti:
+null null 0
+0 3.14159265359
+0 1 2 0.0
+0 0 5 6
+*/

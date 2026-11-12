@@ -15,3 +15,7 @@ public class AdimOrnek {
 		System.out.println("s = " + s);   // s = 25
 	}
 }
+
+/* Beklenen cikti:
+s = 25
+*/

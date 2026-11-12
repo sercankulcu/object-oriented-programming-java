@@ -16,3 +16,7 @@ public class Faktoriyel {
 		tarayici.close();
 	}
 }
+
+/* Beklenen cikti:
+Girilen sayinin faktoriyeli: 120
+*/

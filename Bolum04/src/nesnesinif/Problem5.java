@@ -16,3 +16,10 @@ public class Problem5 {
 		System.out.println(p1);              // Para[lira=10]
 	}
 }
+
+/* Beklenen cikti:
+true
+false
+true
+Para[lira=10]
+*/

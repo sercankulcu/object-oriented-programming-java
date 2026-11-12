@@ -23,3 +23,11 @@ public class FlowLayoutIzleme {
 		// 90, 75
 	}
 }
+
+/* Beklenen cikti:
+52, 5
+147, 5
+37, 40
+152, 40
+90, 75
+*/

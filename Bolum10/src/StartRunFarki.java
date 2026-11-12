@@ -14,3 +14,8 @@ public class StartRunFarki {
 		// run() icinde: Thread-0
 	}
 }
+
+/* Beklenen cikti:
+run() icinde: main
+run() icinde: Thread-0
+*/

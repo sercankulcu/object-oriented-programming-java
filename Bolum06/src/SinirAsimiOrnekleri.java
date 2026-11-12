@@ -47,3 +47,12 @@ public class SinirAsimiOrnekleri {
 		}
 	}
 }
+
+/* Beklenen cikti:
+1 2 3
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 3
+java.lang.IndexOutOfBoundsException: Index 5 out of bounds for length 0
+java.lang.ArrayIndexOutOfBoundsException: Array index out of range: 10
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 3
+java.lang.StringIndexOutOfBoundsException: Index 10 out of bounds for length 5
+*/

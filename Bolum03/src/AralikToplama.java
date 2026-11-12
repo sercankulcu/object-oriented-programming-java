@@ -24,3 +24,8 @@ public class AralikToplama {
 		calistir("7 3");   // Baslangic degeri (a): Bitis degeri (b): Sayilarin toplami: 0
 	}
 }
+
+/* Beklenen cikti:
+Baslangic degeri (a): Bitis degeri (b): Sayilarin toplami: 25
+Baslangic degeri (a): Bitis degeri (b): Sayilarin toplami: 0
+*/

@@ -19,3 +19,14 @@ public class FinallyIzleme {
 		System.out.println("Sonuc = " + bol(10, 0));   // try basladi, catch: / by zero, finally, Sonuc = -1
 	}
 }
+
+/* Beklenen cikti:
+try basladi
+try bitti
+finally
+Sonuc = 5
+try basladi
+catch: / by zero
+finally
+Sonuc = -1
+*/

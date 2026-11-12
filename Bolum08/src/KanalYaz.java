@@ -21,3 +21,7 @@ public class KanalYaz {
 		Files.delete(Paths.get("cikti.txt"));
 	}
 }
+
+/* Beklenen cikti:
+20 byte yazildi
+*/

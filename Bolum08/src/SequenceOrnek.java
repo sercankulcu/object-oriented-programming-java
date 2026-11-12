@@ -29,3 +29,8 @@ public class SequenceOrnek {
 		new File("dosya2.txt").delete();
 	}
 }
+
+/* Beklenen cikti:
+Birinci dosya.
+Ikinci dosya.
+*/

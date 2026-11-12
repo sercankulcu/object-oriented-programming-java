@@ -13,3 +13,11 @@ public class IstisnaNesnesi {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Index 5 out of bounds for length 3
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 3
+ArrayIndexOutOfBoundsException
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 3
+	at IstisnaNesnesi.main(IstisnaNesnesi.java:7)
+*/

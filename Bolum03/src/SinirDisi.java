@@ -20,3 +20,8 @@ public class SinirDisi {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Gecersiz indis: 5
+java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+*/

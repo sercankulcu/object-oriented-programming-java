@@ -27,3 +27,9 @@ public class ScannerDosya {
 		Files.delete(Path.of("ornekDosya.txt"));
 	}
 }
+
+/* Beklenen cikti:
+Java
+Giris Cikis
+Akislar
+*/

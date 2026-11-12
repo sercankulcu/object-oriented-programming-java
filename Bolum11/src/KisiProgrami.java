@@ -79,3 +79,11 @@ public class KisiProgrami {
 		Files.deleteIfExists(Path.of("kisiler.db"));   // eklendi: dosyayi sil
 	}
 }
+
+/* Beklenen cikti:
+1 Ahmet Akdeniz 35
+2 Ayse Demir 40
+---
+2 Ayse Demir 40
+---
+*/

@@ -13,3 +13,7 @@ public class OzelHataTest {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Yakalandi: Ozel hata olustu.
+*/

@@ -46,3 +46,8 @@ public class Kilitlenme {
 		System.out.println("Kilitlenmis: " + n);       // Kilitlenmis: 2
 	}
 }
+
+/* Beklenen cikti:
+BLOCKED BLOCKED
+Kilitlenmis: 2
+*/

@@ -14,3 +14,8 @@ public class HesapMakinesi {
 		System.out.println(hm.carp(2, -3));   // -6
 	}
 }
+
+/* Beklenen cikti:
+5
+-6
+*/

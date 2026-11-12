@@ -12,3 +12,8 @@ public class Erken {
 		bolumYazdir(7, 0);                   // Sifira bolunemez!
 	}
 }
+
+/* Beklenen cikti:
+5
+Sifira bolunemez!
+*/

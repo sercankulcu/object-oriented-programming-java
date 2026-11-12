@@ -16,3 +16,9 @@ public class Lint { // -Xlint uyarilari: fall-through ve sifira bolme; satir num
 // Sunumdaki satir 13: int x = 10 / 0;  -> calisma zamaninda ArithmeticException: / by zero
 // javac -Xlint:all Lint.java -> [divzero] satir 13, [fallthrough] satir 7 ve 9 (bilerek)
 // Cikti: yakalandi: java.lang.ArithmeticException: / by zero
+
+/* Beklenen cikti:
+Sali
+Carsamba
+yakalandi: java.lang.ArithmeticException: / by zero
+*/

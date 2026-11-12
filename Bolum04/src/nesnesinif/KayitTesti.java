@@ -18,3 +18,10 @@ public class KayitTesti {
 		// derleme hatasi: x has private access in Nokta (ayri sinifta)
 	}
 }
+
+/* Beklenen cikti:
+true
+false
+Nokta[x=1.0, y=2.5]
+3.5
+*/

@@ -19,3 +19,9 @@ public class Sabitler {
 		System.out.println(alanF);            // 12.56636
 	}
 }
+
+/* Beklenen cikti:
+Alan: 12.56636
+28 gun
+12.56636
+*/

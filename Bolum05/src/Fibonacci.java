@@ -18,3 +18,7 @@ public class Fibonacci {
 		System.out.println(sonuc);   // 55
 	}
 }
+
+/* Beklenen cikti:
+55
+*/

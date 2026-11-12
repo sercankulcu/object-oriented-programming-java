@@ -35,3 +35,12 @@ public class HavuzOrnegi {
 		// Gorev 3 -> pool-1-thread-2, Gorev 4 -> pool-1-thread-2.
 	}
 }
+
+/* Beklenen cikti:
+Callable sonucu: 42
+Gorev 1 -> pool-1-thread-?
+Gorev 2 -> pool-1-thread-?
+Gorev 3 -> pool-1-thread-?
+Gorev 4 -> pool-1-thread-?
+Havuz kapandi
+*/

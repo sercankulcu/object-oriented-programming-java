@@ -28,3 +28,8 @@ public class MySqlBaglanti {
 		// No suitable driver found for jdbc:mysql://localhost:3306/testdb
 	}
 }
+
+/* Beklenen cikti:
+sunucu yok
+No suitable driver found for jdbc:mysql://localhost:3306/testdb
+*/

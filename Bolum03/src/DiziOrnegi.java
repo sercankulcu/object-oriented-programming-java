@@ -20,3 +20,9 @@ public class DiziOrnegi {
 		System.out.println();
 	}
 }
+
+/* Beklenen cikti:
+birinci eleman: 10
+ucuncu eleman: 30
+Elemanlar: 10 20 30 40 50
+*/

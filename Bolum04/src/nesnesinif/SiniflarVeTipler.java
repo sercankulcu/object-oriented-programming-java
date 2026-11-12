@@ -45,3 +45,12 @@ public class SiniflarVeTipler {
 		System.out.println(kazanan instanceof Serializable);  // true
 	}
 }
+
+/* Beklenen cikti:
+Hayvan: Karabas
+Karabas kosuyor.
+true
+true
+true
+true
+*/

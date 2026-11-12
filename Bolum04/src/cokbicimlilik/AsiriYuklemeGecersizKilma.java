@@ -26,3 +26,9 @@ public class AsiriYuklemeGecersizKilma {
 		yazdir((Kopek) hayvan);    // yazdir(Kopek): Hav hav!
 	}
 }
+
+/* Beklenen cikti:
+yazdir(Hayvan): Hav hav!
+yazdir(Hayvan): Miyav!
+yazdir(Kopek): Hav hav!
+*/

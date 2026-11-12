@@ -62,3 +62,11 @@ public class IsAHasA {
 		// Hiz: 50 km/sa
 	}
 }
+
+/* Beklenen cikti:
+Motor calisti: 110 BG
+Hiz: 50 km/sa
+Sarj ediliyor.
+Motor calisti: 150 BG
+Hiz: 50 km/sa
+*/

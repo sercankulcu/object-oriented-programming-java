@@ -58,3 +58,10 @@ public class HashCodeMetodu {
 		System.out.println(new Izleme.Nokta(3, 4).hashCode());         // 1058 = 31*(31+3)+4
 	}
 }
+
+/* Beklenen cikti:
+1 true
+2
+true
+1058
+*/

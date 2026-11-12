@@ -29,3 +29,10 @@ public class FileWriterOrnek {
 		Files.delete(Path.of("yeniDosya.txt"));
 	}
 }
+
+/* Beklenen cikti:
+Dosya olusturuldu ve veri yazildi.
+Merhaba, dunya!
+Bu bir FileWriter ornegidir.
+Sona eklenen satir.
+*/

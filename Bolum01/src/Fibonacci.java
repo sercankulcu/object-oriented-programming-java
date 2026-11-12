@@ -22,3 +22,7 @@ public class Fibonacci {
 		tarayici.close();
 	}
 }
+
+/* Beklenen cikti:
+0 1 1 2 3
+*/

@@ -60,3 +60,8 @@ public class Cikti {
 		// b: ikinci
 	}
 }
+
+/* Beklenen cikti:
+a: birinci
+b: ikinci
+*/

@@ -109,3 +109,24 @@ public class KuyrukOrnekleri {
 		arrayDequeIzleme();
 	}
 }
+
+/* Beklenen cikti:
+[Ali, Banu, Cem]
+Ali
+Ali
+Banu
+1
+Cem
+null
+10
+[10, 20, 40, 30]
+10 20 30 40
+Ariza(1)
+Toplanti(2)
+Rapor(3)
+40
+B
+[1, 5, 10]
+1 10
+5
+*/

@@ -180,3 +180,55 @@ public class DizgiTemelleri {
 		stringBuilderIzleme();
 	}
 }
+
+/* Beklenen cikti:
+Tarkan
+Mustafa Sandal
+(3, 5)
+Giresun
+Java 42 Giresun Üni.
+Toplam: 35
+Toplam: 8
+8 elma
+195c
+ab
+Sonuç: 42 | Sonuç: 6
+6 kalem | 241z | xy
+6
+T
+n
+115
+s
+java.lang.StringIndexOutOfBoundsException: Index 4 out of bounds for length 4
+Bir kelime giriniz: 1. harf: G
+3. harf: r
+5. harf: s
+7. harf: n
+5 16
+Program | Programlama
+java programlama | JAVA PROGRAMLAMA
+[Merhaba Dünya]
+[  Merhebe Dünye  ]
+3
+armut
+elma - armut - kiraz
+ababab
+true
+true
+4 J
+GireSUN
+3.51
+43
+Giresun Üniversitesi
+GİRESUN ÜNİVERSİTESİ
+GİRESUN ÜNİVERSİTESİ
+GIRESUN ÜNIVERSITESI
+tıtle
+false
+title
+1 2 3 4 5
+1 2 3 4 5
+nuseriG
+>> java! 8
+>> java programlama dili 24 42
+*/

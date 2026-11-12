@@ -41,3 +41,8 @@ public class Alistirmalar {
 		System.out.println("Karelerin toplami: " + toplam);   // Karelerin toplami: 55
 	}
 }
+
+/* Beklenen cikti:
+125250 + 375250 = 500500
+Karelerin toplami: 55
+*/

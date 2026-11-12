@@ -30,3 +30,8 @@ public class NedenPublicAlanDegil {
 		System.out.println(t.saniye);    // 0 (ayni dosyadan okunur)
 	}
 }
+
+/* Beklenen cikti:
+-5
+0
+*/

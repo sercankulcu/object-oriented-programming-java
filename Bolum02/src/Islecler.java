@@ -69,3 +69,17 @@ public class Islecler {
 		icIceUclu(7);   // Sayi Pozitif
 	}
 }
+
+/* Beklenen cikti:
+false true true true false true
+true
+true
+false
+true
+Bolunemez ya da kucuk
+Sayi Negatif
+Sayi Negatif
+Sayi Negatif
+Sayi Sifir
+Sayi Pozitif
+*/

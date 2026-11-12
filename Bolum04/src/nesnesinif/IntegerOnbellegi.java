@@ -21,3 +21,11 @@ public class IntegerOnbellegi {
 		}
 	}
 }
+
+/* Beklenen cikti:
+true
+false
+true
+256
+java.lang.NullPointerException
+*/

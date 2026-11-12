@@ -27,3 +27,7 @@ public class SizanReferans {
 		System.out.println(k.ortalama());   // -3.3333333333333335
 	}
 }
+
+/* Beklenen cikti:
+-3.3333333333333335
+*/

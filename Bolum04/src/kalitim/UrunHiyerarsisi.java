@@ -48,3 +48,9 @@ public class UrunHiyerarsisi {
 		// Kulaklik: 900.0 TL (%25 indirim)
 	}
 }
+
+/* Beklenen cikti:
+Kalem: 60.0 TL
+Ekmek: 10.1 TL
+Kulaklik: 900.0 TL (%25 indirim)
+*/

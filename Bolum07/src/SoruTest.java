@@ -17,3 +17,17 @@ class SoruTest {
 		// d kalir: Expected java.lang.ArithmeticException to be thrown, but nothing was thrown. (5 yazar)
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] SoruTest > a()
+[KALDI] SoruTest > b()
+[GECTI] SoruTest > c()
+5
+[KALDI] SoruTest > d()
+---- Ozet ----
+Bulunan test : 4
+Gecen        : 2
+Kalan        : 2
+  KALDI: b() -> expected: <0.3> but was: <0.30000000000000004>
+  KALDI: d() -> Expected java.lang.ArithmeticException to be thrown, but nothing was thrown.
+*/

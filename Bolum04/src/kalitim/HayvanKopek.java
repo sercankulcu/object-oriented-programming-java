@@ -47,3 +47,10 @@ public class HayvanKopek {
 		new Hayvan("Pamuk", 2).konus();   // Bu hayvan konusur.
 	}
 }
+
+/* Beklenen cikti:
+Karabas havlar.
+Karabas top oynuyor!
+Karabas uyudu. Saglik: 105.0
+Bu hayvan konusur.
+*/

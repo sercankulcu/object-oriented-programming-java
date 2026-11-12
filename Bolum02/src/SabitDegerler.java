@@ -30,3 +30,20 @@ public class SabitDegerler {
 		hassaslik();
 	}
 }
+
+/* Beklenen cikti:
+2500.0
+0.0768
+1000000
+31
+10
+3000000000
+Ali	Veli
+"Java"
+0.3333333333333333
+1.0
+0.30000000000000004
+false
+0.9999999999999999
+true
+*/

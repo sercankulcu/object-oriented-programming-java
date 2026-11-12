@@ -22,3 +22,13 @@ public class KapanisSirasi {
 		// finally
 	}
 }
+
+/* Beklenen cikti:
+A acildi
+B acildi
+blok calisiyor
+B kapandi
+A kapandi
+yakalandi: hata!
+finally
+*/

@@ -23,3 +23,8 @@ public class ListeYazdir {
 		yazdir(b);   // Elma Armut Kiraz (3 oge)
 	}
 }
+
+/* Beklenen cikti:
+Elma Armut (2 oge)
+Elma Armut Kiraz (3 oge)
+*/

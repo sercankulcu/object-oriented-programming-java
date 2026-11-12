@@ -33,3 +33,14 @@ class BankaIstisnaTest {
 		// KALDI: yanlisBeklenti() -> Expected java.lang.IllegalStateException to be thrown, but nothing was thrown.
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] BankaIstisnaTest > fazlaCekmeMesajiDogru()
+[GECTI] BankaIstisnaTest > negatifYatirmaReddedilir()
+[KALDI] BankaIstisnaTest > yanlisBeklenti()
+---- Ozet ----
+Bulunan test : 3
+Gecen        : 2
+Kalan        : 1
+  KALDI: yanlisBeklenti() -> Expected java.lang.IllegalStateException to be thrown, but nothing was thrown.
+*/

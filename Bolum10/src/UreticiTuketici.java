@@ -94,3 +94,16 @@ public class UreticiTuketici {
 		// tuketildi 2, tuketildi 3, tuketildi 4 (zamanlamaya bagli; burada sirali yazdirildi).
 	}
 }
+
+/* Beklenen cikti:
+mesgul bekleme bitti
+tuketildi: 1
+tuketildi: 2
+tuketildi: 3
+tuketildi: 4
+uretildi: 1
+uretildi: 2
+uretildi: 3
+uretildi: 4
+kalan: 0
+*/

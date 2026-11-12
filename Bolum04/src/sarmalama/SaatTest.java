@@ -29,3 +29,8 @@ public class SaatTest {
 		System.out.println(s.saat + " " + s.dakika);   // 0 0
 	}
 }
+
+/* Beklenen cikti:
+45
+0 0
+*/

@@ -43,3 +43,10 @@ public class KilitFinally {
 		}
 	}
 }
+
+/* Beklenen cikti:
+kritik bolgede
+islem basarisiz
+kilit hala tutulu mu? true
+java.lang.IllegalMonitorStateException
+*/

@@ -42,3 +42,11 @@ public class DurumGozlem {
 		katil(engellenen);
 	}
 }
+
+/* Beklenen cikti:
+1) NEW
+2) TIMED_WAITING
+3) WAITING
+4) BLOCKED
+5) TERMINATED
+*/

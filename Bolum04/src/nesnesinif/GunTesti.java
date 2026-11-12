@@ -25,3 +25,10 @@ public class GunTesti {
 		// PAZAR: hafta sonu
 	}
 }
+
+/* Beklenen cikti:
+7 gun
+PERSEMBE 3
+CUMARTESI: hafta sonu
+PAZAR: hafta sonu
+*/

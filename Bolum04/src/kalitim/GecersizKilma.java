@@ -46,3 +46,9 @@ public class GecersizKilma {
 		d.ciz("Mavi");            // Mavi dikdortgen ciziliyor.
 	}
 }
+
+/* Beklenen cikti:
+Sekil ciziliyor.
+Dikdortgen ciziliyor.
+Mavi dikdortgen ciziliyor.
+*/

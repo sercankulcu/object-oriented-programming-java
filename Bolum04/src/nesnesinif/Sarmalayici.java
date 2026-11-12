@@ -23,3 +23,13 @@ public class Sarmalayici {
 		System.out.println(bos);                                 // null
 	}
 }
+
+/* Beklenen cikti:
+84
+true
+124
+2147483647
+true
+5.0
+null
+*/

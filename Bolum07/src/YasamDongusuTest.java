@@ -37,3 +37,20 @@ class YasamDongusuTest {
 		// AfterAll
 	}
 }
+
+/* Beklenen cikti:
+BeforeAll
+  BeforeEach
+    testA
+  AfterEach
+[GECTI] YasamDongusuTest > testA()
+  BeforeEach
+    testB
+  AfterEach
+[GECTI] YasamDongusuTest > testB()
+AfterAll
+---- Ozet ----
+Bulunan test : 2
+Gecen        : 2
+Kalan        : 0
+*/

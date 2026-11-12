@@ -10,3 +10,8 @@ public class MetinIslem {
 		System.out.println(ters(ters("java")));   // java
 	}
 }
+
+/* Beklenen cikti:
+avaj
+java
+*/

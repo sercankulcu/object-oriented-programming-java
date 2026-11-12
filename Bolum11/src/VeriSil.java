@@ -27,3 +27,10 @@ public class VeriSil {
 		Baglan.dosyayiSil();
 	}
 }
+
+/* Beklenen cikti:
+Tablo olusturuldu!
+Veri eklendi! (1 satir)
+Veri silindi! (1 satir)
+Veri silindi! (0 satir)
+*/

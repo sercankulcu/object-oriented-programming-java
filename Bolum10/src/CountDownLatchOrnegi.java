@@ -26,3 +26,10 @@ public class CountDownLatchOrnegi {
 		// (sunumdaki calistirmada sira 1, 3, 2)
 	}
 }
+
+/* Beklenen cikti:
+1. olay gerceklesti
+2. olay gerceklesti
+3. olay gerceklesti
+Tum olaylar tamamlandi!
+*/

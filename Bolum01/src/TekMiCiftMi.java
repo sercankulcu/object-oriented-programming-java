@@ -16,3 +16,7 @@ public class TekMiCiftMi {
 		giris.close();
 	}
 }
+
+/* Beklenen cikti:
+Sayi: tek
+*/

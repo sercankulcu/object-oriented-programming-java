@@ -89,3 +89,17 @@ public class SikYapilanHatalar {
 		hatalar4();
 	}
 }
+
+/* Beklenen cikti:
+[90]
+[42]
+[10, 30]
+[30]
+false
+true
+java.lang.UnsupportedOperationException
+x
+java.lang.IndexOutOfBoundsException: Index 3 out of bounds for length 3
+[Can, Zeynep, Çağla, Ömer]
+[Can, Çağla, Ömer, Zeynep]
+*/

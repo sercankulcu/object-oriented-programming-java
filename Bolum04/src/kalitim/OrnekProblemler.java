@@ -60,3 +60,18 @@ public class OrnekProblemler {
 		System.out.println();                // Ab A Bb B7
 	}
 }
+
+/* Beklenen cikti:
+A
+B
+C
+B.yaz
+C.yaz
+A
+B
+B.yaz
+true
+false
+As Bs Ab A Bb B0 B
+Ab A Bb B7
+*/

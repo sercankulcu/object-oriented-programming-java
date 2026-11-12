@@ -33,3 +33,12 @@ public class AritmetikOrnekleri {
 		}
 	}
 }
+
+/* Beklenen cikti:
+java.lang.ArithmeticException: / by zero
+NaN
+Infinity
+java.lang.ArithmeticException: integer overflow
+java.lang.IllegalArgumentException: bound must be positive
+java.lang.ArithmeticException: Division by zero
+*/

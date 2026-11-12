@@ -31,3 +31,9 @@ public class VeriOku {
 		Baglan.dosyayiSil();
 	}
 }
+
+/* Beklenen cikti:
+Tablo olusturuldu!
+Veri eklendi! (1 satir)
+ID: 1, Ad: Ahmet Yilmaz, E-posta: ahmet@example.com
+*/

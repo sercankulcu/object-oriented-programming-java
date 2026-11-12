@@ -31,3 +31,10 @@ public class CepTelefonu {
 		System.out.println(isletimSistemi);    // Surum 2
 	}
 }
+
+/* Beklenen cikti:
+Model X ariyor: 5551234567
+Ayse <- Merhaba
+Surum 1
+Surum 2
+*/

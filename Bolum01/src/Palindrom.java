@@ -30,3 +30,8 @@ public class Palindrom {
 		calistir("Kitap");  // Girilen metin bir palindrom degildir.
 	}
 }
+
+/* Beklenen cikti:
+Girilen metin bir palindromdur.
+Girilen metin bir palindrom degildir.
+*/

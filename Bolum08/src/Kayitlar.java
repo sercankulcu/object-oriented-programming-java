@@ -23,3 +23,10 @@ public class Kayitlar {
 		new File("n.dat").delete();
 	}
 }
+
+/* Beklenen cikti:
+Uzunluk: 20
+3. not: 90
+Konum: 12
+Toplam: 355
+*/

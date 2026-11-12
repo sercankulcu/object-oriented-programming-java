@@ -44,3 +44,15 @@ public class Sozlesme {
 		System.out.println(islem2.getKayitSayisi());   // 2
 	}
 }
+
+/* Beklenen cikti:
+true
+false
+false
+1
+true
+false
+false
+true
+2
+*/

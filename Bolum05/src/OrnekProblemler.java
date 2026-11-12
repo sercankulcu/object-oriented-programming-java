@@ -52,3 +52,13 @@ public class OrnekProblemler {
 		dequeVeMap();
 	}
 }
+
+/* Beklenen cikti:
+true
+false
+false
+[4, 2, 1, 3]
+7
+[2, 1]
+{a=2, b=3} [2, 3] 2
+*/

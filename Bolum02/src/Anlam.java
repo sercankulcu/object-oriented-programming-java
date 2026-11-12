@@ -9,3 +9,9 @@ public class Anlam {
 		System.out.println((a + b) / 2.0);  // dogru -> 7.5
 	}
 }
+
+/* Beklenen cikti:
+7
+11
+7.5
+*/

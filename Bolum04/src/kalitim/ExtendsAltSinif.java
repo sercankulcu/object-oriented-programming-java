@@ -34,3 +34,9 @@ public class ExtendsAltSinif {
 		new Hayvan();   // Hayvan() icinde: Hayvan
 	}
 }
+
+/* Beklenen cikti:
+true
+Hayvan() icinde: Kedi
+Hayvan() icinde: Hayvan
+*/

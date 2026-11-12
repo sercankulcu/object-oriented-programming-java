@@ -24,3 +24,9 @@ public class Telefon {
 		telefon1.kameraAc();                        // 5551234567 kamera acti.
 	}
 }
+
+/* Beklenen cikti:
+5551234567 ariyor: 5051234567
+5551234567 <- Merhaba!
+5551234567 kamera acti.
+*/

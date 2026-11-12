@@ -29,3 +29,8 @@ public class YapiciOrnegiAraba {
 		Araba.main(args);
 	}
 }
+
+/* Beklenen cikti:
+2022 - KIRMIZI
+2023 - BEYAZ
+*/

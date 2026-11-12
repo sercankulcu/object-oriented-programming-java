@@ -15,3 +15,7 @@ public class IcKapsam {
 		fonksiyon();
 	}
 }
+
+/* Beklenen cikti:
+25
+*/

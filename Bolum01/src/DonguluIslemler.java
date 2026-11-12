@@ -31,3 +31,10 @@ public class DonguluIslemler {
 		doWhileDongusu();
 	}
 }
+
+/* Beklenen cikti:
+s = 3, i = 0
+1
+2
+3
+*/

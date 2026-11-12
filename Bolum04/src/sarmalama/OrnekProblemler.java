@@ -80,3 +80,20 @@ public class OrnekProblemler {
 		problem4();
 	}
 }
+
+/* Beklenen cikti:
+00:30:59
+45 10
+30
+Yetersiz bakiye.
+Yatirilan miktar gecersiz.
+Faiz yalnizca vadeli hesaplarda uygulanabilir.
+250.0 TL cekildi. Kalan bakiye: 750.0
+Yetersiz bakiye veya gecersiz miktar.
+750.0 TL yatirildi. Yeni bakiye: 850.0
+750.0 TL transfer edildi. Yeni bakiye: 0.0
+0.0 850.0
+100.0
+55.0
+2,00 TL
+*/

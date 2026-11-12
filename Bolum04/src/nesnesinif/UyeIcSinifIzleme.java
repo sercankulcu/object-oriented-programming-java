@@ -25,3 +25,8 @@ public class UyeIcSinifIzleme {
 		Outer.main(args);
 	}
 }
+
+/* Beklenen cikti:
+sayi = 8
+5
+*/

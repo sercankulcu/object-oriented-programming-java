@@ -29,3 +29,10 @@ public class ExchangerOrnegi {
 		// (zaman sirasi: iki "gonderiliyor", 2 sn sonra iki "sahibi aldi")
 	}
 }
+
+/* Beklenen cikti:
+Veri 1 sahibi aldi: Veri 2
+Veri 2 sahibi aldi: Veri 1
+gonderiliyor: Veri 1
+gonderiliyor: Veri 2
+*/

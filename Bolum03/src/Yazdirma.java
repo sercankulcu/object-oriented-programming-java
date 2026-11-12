@@ -13,3 +13,10 @@ public class Yazdirma {
 		System.out.printf("Pi yaklasik %.2f%n", Math.PI);    // Pi yaklasik 3,14
 	}
 }
+
+/* Beklenen cikti:
+Merhaba, Dunya!
+Bir satir
+Yas: 20
+Pi yaklasik 3,14
+*/

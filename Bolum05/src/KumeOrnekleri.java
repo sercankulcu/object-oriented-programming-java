@@ -151,3 +151,33 @@ public class KumeOrnekleri {
 		kumeIslemleri();
 	}
 }
+
+/* Beklenen cikti:
+true
+true
+false
+2
+true
+[Elma]
+[5, 10, 1]
+HashSet:       [muz, elma, armut, kiraz]
+LinkedHashSet: [muz, elma, kiraz, armut]
+TreeSet:       [armut, elma, kiraz, muz]
+2
+1
+true
+false
+false
+2
+[50, 60, 70, 80, 90]
+50 90
+[50, 60]
+[70, 80, 90]
+[60, 70, 80]
+null
+[Armut, Elma]
+A birlesim B = [1, 2, 3, 4, 5]
+A kesisim B = [3, 4]
+A - B = [1, 2]
+true
+*/

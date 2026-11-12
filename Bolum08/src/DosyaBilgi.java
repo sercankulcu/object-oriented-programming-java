@@ -22,3 +22,18 @@ public class DosyaBilgi {
 		klasor.delete();
 	}
 }
+
+/* Beklenen cikti:
+var mi: false
+mkdir: true
+olustu: true
+dosya mi: true
+klasor mu: false
+okunur: true
+yazilir: true
+boyut: 0
+klasorde: 1 oge
+zaman > 0: true
+silindi: true
+var mi: false
+*/

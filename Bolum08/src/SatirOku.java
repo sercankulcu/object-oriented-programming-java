@@ -41,3 +41,10 @@ public class SatirOku {
 		new File("dosya2.txt").delete();
 	}
 }
+
+/* Beklenen cikti:
+Java
+Giris Cikis
+Akislar
+dosya2.txt: 28 byte
+*/

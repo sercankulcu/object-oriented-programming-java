@@ -36,3 +36,10 @@ public class TamponluOkuma {
 		new File("dosya.txt").delete();
 	}
 }
+
+/* Beklenen cikti:
+Java I/O
+Tampon
+Java I/O
+Tampon
+*/

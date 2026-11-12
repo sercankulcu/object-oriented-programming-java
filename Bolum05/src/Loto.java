@@ -27,3 +27,7 @@ public class Loto {
 		System.out.println();   // 4 34 8 24 26 40 (tohum 42; sunumda tohumsuz: 46 18 22 11 20 10)
 	}
 }
+
+/* Beklenen cikti:
+4 34 8 24 26 40
+*/

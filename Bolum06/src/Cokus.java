@@ -19,3 +19,10 @@ public class Cokus {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Basla
+Exception in thread main java.lang.ArithmeticException: / by zero
+	at Cokus.calistir(Cokus.java:8)
+	at Cokus.main(Cokus.java:15)
+*/

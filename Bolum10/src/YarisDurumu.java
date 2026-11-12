@@ -33,3 +33,11 @@ public class YarisDurumu {
 		System.out.println("Tek is parcacigi: " + sayac);   // Tek is parcacigi: 5
 	}
 }
+
+/* Not: bu programin ciktisi her calistirmada degisir (zaman olcumu, rastgele sayi ya da
+   is parcaciklarinin sirasi); asagidaki bir ornek calistirmadir. */
+/* Beklenen cikti:
+Beklenen: 200000
+Bulunan : 154432
+Tek is parcacigi: 5
+*/

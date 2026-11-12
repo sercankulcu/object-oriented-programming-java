@@ -26,3 +26,7 @@ public class BaytKopya {
 		dosya2.delete();
 	}
 }
+
+/* Beklenen cikti:
+4 byte kopyalandi
+*/

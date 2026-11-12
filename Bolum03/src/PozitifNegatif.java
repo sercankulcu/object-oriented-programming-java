@@ -25,3 +25,9 @@ public class PozitifNegatif {
 		calistir("0");     // Bir sayi girin: Sayi sifir.
 	}
 }
+
+/* Beklenen cikti:
+Bir sayi girin: Sayi pozitif.
+Bir sayi girin: Sayi negatif.
+Bir sayi girin: Sayi sifir.
+*/

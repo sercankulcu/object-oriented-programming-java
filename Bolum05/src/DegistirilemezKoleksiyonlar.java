@@ -42,3 +42,12 @@ public class DegistirilemezKoleksiyonlar {
 		unmodifiableList();
 	}
 }
+
+/* Beklenen cikti:
+[kirmizi, yesil]
+85
+true
+java.lang.UnsupportedOperationException
+[a, b]
+java.lang.UnsupportedOperationException
+*/

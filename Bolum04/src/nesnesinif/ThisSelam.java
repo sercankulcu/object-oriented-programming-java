@@ -27,3 +27,8 @@ public class ThisSelam {
 		Ogrenci.main(args);
 	}
 }
+
+/* Beklenen cikti:
+Merhaba, ben Ali
+Merhaba, ben Ayse
+*/

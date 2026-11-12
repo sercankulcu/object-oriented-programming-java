@@ -37,3 +37,9 @@ public class TransientOrnek {
 		new File("k.ser").delete();
 	}
 }
+
+/* Beklenen cikti:
+Kullanici [ad=ayse, sifre=null]
+sayac = 99
+ayni nesne mi? false
+*/

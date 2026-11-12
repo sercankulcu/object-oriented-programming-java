@@ -23,3 +23,10 @@ public class VolatileSinirlari {
 		System.out.println(new FinalVolatile().x);        // 5
 	}
 }
+
+/* Not: bu programin ciktisi her calistirmada degisir (zaman olcumu, rastgele sayi ya da
+   is parcaciklarinin sirasi); asagidaki bir ornek calistirmadir. */
+/* Beklenen cikti:
+volatile sayac: 177437
+5
+*/

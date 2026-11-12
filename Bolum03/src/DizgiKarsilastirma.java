@@ -79,3 +79,35 @@ public class DizgiKarsilastirma {
 		compareToIzleme();
 	}
 }
+
+/* Beklenen cikti:
+true
+true
+false
+false
+true
+true
+true
+true
+true
+false
+true
+false
+java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "<local5>" is null
+true
+false
+true
+false
+true
+true
+false
+true
+4
+-4
+0
+-32
+0
+-2
+131
+-3 -2 -7
+*/

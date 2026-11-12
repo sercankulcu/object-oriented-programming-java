@@ -24,3 +24,8 @@ public class Tavsiyeler {
 		// derleme hatasi: gecerliMi(int) has private access in Ogrenci
 	}
 }
+
+/* Beklenen cikti:
+0
+75
+*/

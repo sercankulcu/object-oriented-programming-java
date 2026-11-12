@@ -17,3 +17,12 @@ class IsaretTest {
 		TestleriCalistir.calistir(IsaretTest.class);   // 2 test, 2 gecti
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] IsaretTest > pozitif()
+[GECTI] IsaretTest > negatif()
+---- Ozet ----
+Bulunan test : 2
+Gecen        : 2
+Kalan        : 0
+*/

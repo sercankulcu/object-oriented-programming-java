@@ -21,3 +21,8 @@ public class KodlamaOku {
 		dosya.delete();
 	}
 }
+
+/* Beklenen cikti:
+Işık, şimşek, çiğ, öğrenci, Ünye
+IÅÄ±k, ÅimÅek, Ã§iÄ, Ã¶Ärenci, Ãnye
+*/

@@ -10,3 +10,7 @@ public class StopOrnegi {
 		}
 	}
 }
+
+/* Beklenen cikti:
+stop(): desteklenmiyor
+*/

@@ -18,3 +18,11 @@ public class SayacIzleme {
 		});
 	}
 }
+
+/* Beklenen cikti:
+1
+2
+Henuz tiklanmadi
+1 kez tiklandi
+2 kez tiklandi
+*/

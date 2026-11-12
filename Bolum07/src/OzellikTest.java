@@ -29,3 +29,11 @@ class OzellikTest {
 		TestleriCalistir.calistir(OzellikTest.class);   // 1 test (1000 girdi), 1 gecti
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] OzellikTest > ikiKezTersCevirmekAyniMetniVerir()
+---- Ozet ----
+Bulunan test : 1
+Gecen        : 1
+Kalan        : 0
+*/

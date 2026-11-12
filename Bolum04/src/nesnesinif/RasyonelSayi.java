@@ -35,3 +35,9 @@ public class RasyonelSayi {
 		System.out.println(c.topla(d) + " " + c);   // 11/12 3/4
 	}
 }
+
+/* Beklenen cikti:
+4/5
+22/15
+11/12 3/4
+*/

@@ -14,3 +14,8 @@ public class SiraOnemlidir {
 		System.out.println(c + " " + d);  // 5 3
 	}
 }
+
+/* Beklenen cikti:
+5 5
+5 3
+*/

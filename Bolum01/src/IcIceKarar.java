@@ -23,3 +23,11 @@ public class IcIceKarar {
 		calistir(new Scanner("-1"));  // negatif
 	}
 }
+
+/* Beklenen cikti:
+pozitif
+negatif
+sifir
+pozitif
+negatif
+*/

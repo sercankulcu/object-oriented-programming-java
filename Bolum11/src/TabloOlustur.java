@@ -25,3 +25,7 @@ public class TabloOlustur {
 		Baglan.dosyayiSil();
 	}
 }
+
+/* Beklenen cikti:
+Tablo olusturuldu!
+*/

@@ -42,3 +42,9 @@ public class BilgiSaklama {
 		Ana.main(args);
 	}
 }
+
+/* Beklenen cikti:
+Baglanti acildi
+Eklendi: Ayse
+Baglanti kapatildi
+*/

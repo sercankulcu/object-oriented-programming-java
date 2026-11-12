@@ -20,3 +20,7 @@ public class Zar {
 		System.out.println();   // 3 4 1 3 1
 	}
 }
+
+/* Beklenen cikti:
+3 4 1 3 1
+*/

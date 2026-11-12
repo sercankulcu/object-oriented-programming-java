@@ -45,3 +45,16 @@ public class AlgoritmaOrnekleri {
 		kompozisyonIzleme();
 	}
 }
+
+/* Beklenen cikti:
+3
+-4
+3
+9
+2
+2
+[Ahmet, Ayse, Cem, W]
+[W, Cem, Ayse, Ahmet]
+[Ayse, Cem, W, Ahmet]
+[Java, Java, Java, Java]
+*/

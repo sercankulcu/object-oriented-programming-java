@@ -20,3 +20,8 @@ public class EskiAkis {
 		System.out.println();                      // 197 159 226 130 172
 	}
 }
+
+/* Beklenen cikti:
+95 172
+197 159 226 130 172
+*/

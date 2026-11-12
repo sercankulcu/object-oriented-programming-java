@@ -34,3 +34,9 @@ public class YerineKoyma {
 		System.out.println(d.alan());   // 25
 	}
 }
+
+/* Beklenen cikti:
+Beklenen 20, bulunan 20
+Beklenen 20, bulunan 16
+25
+*/

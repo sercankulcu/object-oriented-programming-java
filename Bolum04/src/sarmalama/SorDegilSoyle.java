@@ -42,3 +42,8 @@ public class SorDegilSoyle {
 		System.out.println(h.getBakiye() + " " + o.getNot());   // 400.0 100
 	}
 }
+
+/* Beklenen cikti:
+700.0 100
+400.0 100
+*/

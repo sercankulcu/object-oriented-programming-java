@@ -26,3 +26,8 @@ public class VeriEkle {
 		Baglan.dosyayiSil();
 	}
 }
+
+/* Beklenen cikti:
+Tablo olusturuldu!
+Veri eklendi! (1 satir)
+*/

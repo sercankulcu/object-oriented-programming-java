@@ -50,3 +50,9 @@ public class YapiciZinciri {
 				+ k2.yazar + " / " + k2.sayfaSayisi);   // Nutuk / Ataturk / 0
 	}
 }
+
+/* Beklenen cikti:
+Ali 20000.0
+Ayse 30000.0
+Nutuk / Ataturk / 0
+*/

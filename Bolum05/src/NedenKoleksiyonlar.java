@@ -73,3 +73,13 @@ public class NedenKoleksiyonlar {
 		ilkOrnekler();
 	}
 }
+
+/* Beklenen cikti:
+dizi[3] = 40 -> java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+[10, 20, 30, 40]
+boyut: 4
+[Kirmizi, Mavi]
+Ali 85
+[Ahmet, Ayse]
+555-1234
+*/

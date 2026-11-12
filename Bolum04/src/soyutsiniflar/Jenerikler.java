@@ -117,3 +117,19 @@ public class Jenerikler {
 		// soyutsiniflar.Jenerikler$Kutu   (sunumda: Kutu; paket ve dis sinif adi eklenir)
 	}
 }
+
+/* Beklenen cikti:
+Merhaba
+java.lang.ClassCastException
+Merhaba
+Merhaba 43
+Oge: 3.14
+Oge: A
+42.0
+3.0
+12
+kiraz
+6.0 [1, 2, 2.5]
+true
+soyutsiniflar.Jenerikler$Kutu
+*/

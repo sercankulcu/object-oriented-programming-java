@@ -15,3 +15,7 @@ public class ToplamaHesaplama {
 		tarayici.close();
 	}
 }
+
+/* Beklenen cikti:
+Birinci sayiyi giriniz: Ikinci sayiyi giriniz: 3.0 ile 5.0 toplami: 8.0
+*/

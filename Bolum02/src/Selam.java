@@ -7,3 +7,7 @@ public class Selam {
 		System.out.println("Merhaba");  // Merhaba
 	}
 }
+
+/* Beklenen cikti:
+Merhaba
+*/

@@ -37,3 +37,9 @@ public class BankaHesabi {
 		}
 	}
 }
+
+/* Beklenen cikti:
+120.0
+Yetersiz bakiye
+Gecersiz miktar
+*/

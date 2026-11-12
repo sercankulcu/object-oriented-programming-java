@@ -17,3 +17,8 @@ public class UsAlma {
 		tarayici.close();
 	}
 }
+
+/* Beklenen cikti:
+Taban ve us girin: Sonuc: 81
+Math.pow: 81.0
+*/

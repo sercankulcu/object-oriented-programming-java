@@ -40,3 +40,10 @@ class AssertAcik {
 		System.out.println("assert gecti");
 	}
 }
+
+/* Beklenen cikti:
+SOE -> java.lang.StackOverflowError
+OOM -> java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+assert gecti
+java.lang.AssertionError: Yas negatif: -5
+*/

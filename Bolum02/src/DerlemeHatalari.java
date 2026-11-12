@@ -93,3 +93,16 @@ public class DerlemeHatalari {
 		atamaKarsilastirma();
 	}
 }
+
+/* Beklenen cikti:
+5
+1.0
+5
+5 bes
+3.141592653589793
+6.141592653589793 7
+20
+5
+0
+bes degil
+*/

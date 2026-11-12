@@ -49,3 +49,11 @@ public class KalitimAvantajlari {
 		System.out.println(h.faktoriyel(5));       // 120  (yeni)
 	}
 }
+
+/* Beklenen cikti:
+8.0
+8.0
+32.0
+24.0
+120
+*/

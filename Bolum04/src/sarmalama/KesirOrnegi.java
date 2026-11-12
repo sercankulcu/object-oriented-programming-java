@@ -28,3 +28,7 @@ public class KesirOrnegi {
 		// derleme hatasi: pay has private access in Kesir
 	}
 }
+
+/* Beklenen cikti:
+6/12
+*/

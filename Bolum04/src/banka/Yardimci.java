@@ -12,3 +12,7 @@ class Yardimci {     // public degil
 		System.out.println(Yardimci.kdv(250.0));   // 50.0
 	}
 }
+
+/* Beklenen cikti:
+50.0
+*/

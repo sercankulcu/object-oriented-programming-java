@@ -100,3 +100,26 @@ public class AkisOrnekleri {
 		yanEtkiler();
 	}
 }
+
+/* Not: bu programin ciktisi her calistirmada degisir (zaman olcumu, rastgele sayi ya da
+   is parcaciklarinin sirasi); asagidaki bir ornek calistirmadir. */
+/* Beklenen cikti:
+[72, 80, 87, 95]
+[ARDA, AYSE]
+java.lang.IllegalStateException: stream has already been operated upon or closed
+hat hazir
+filter Arda
+map Arda
+filter Ece
+filter Ayse
+map Ayse
+filter Can
+[ARDA, AYSE]
+toplam = 66
+boy = {3=[muz], 4=[elma, kivi, erik], 5=[incir]}
+hepsi = elma, kivi, muz, erik, incir
+t = 5050
+yok
+YANLIS yol: 9214 oge
+DOGRU yol: 10000 oge
+*/

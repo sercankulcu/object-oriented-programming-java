@@ -31,3 +31,8 @@ public class OnKosulBozulunca {
 		System.out.println(s.getSaniye());                   // 30
 	}
 }
+
+/* Beklenen cikti:
+Hata: saniye 0-59 olmali: 75
+30
+*/

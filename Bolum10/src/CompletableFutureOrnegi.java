@@ -22,3 +22,8 @@ public class CompletableFutureOrnegi {
 		System.out.println(say);  // {elma=2, armut=1}
 	}
 }
+
+/* Beklenen cikti:
+50
+{elma=2, armut=1}
+*/

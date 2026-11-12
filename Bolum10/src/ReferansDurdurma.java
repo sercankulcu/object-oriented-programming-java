@@ -28,3 +28,8 @@ public class ReferansDurdurma {
 		// main: bitti
 	}
 }
+
+/* Beklenen cikti:
+run() bitti
+main: bitti
+*/

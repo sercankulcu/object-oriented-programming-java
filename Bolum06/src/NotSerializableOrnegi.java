@@ -42,3 +42,8 @@ public class NotSerializableOrnegi {
 		}
 	}
 }
+
+/* Beklenen cikti:
+java.io.NotSerializableException: Nokta
+Serializable Nokta yazildi
+*/

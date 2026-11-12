@@ -27,3 +27,8 @@ public class SenkronizeBlok {
 		System.out.println(ortak);   // 100000
 	}
 }
+
+/* Beklenen cikti:
+monitor bizde mi? true
+100000
+*/

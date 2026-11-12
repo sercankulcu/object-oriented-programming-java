@@ -71,3 +71,9 @@ public class Alistirmalar {
 		alistirma3();
 	}
 }
+
+/* Beklenen cikti:
+4 satir, 8 kelime, 37 karakter
+Kareler toplami: 55
+5 eleman, toplam 14
+*/

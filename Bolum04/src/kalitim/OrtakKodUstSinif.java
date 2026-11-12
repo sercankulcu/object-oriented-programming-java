@@ -59,3 +59,10 @@ public class OrtakKodUstSinif {
 		System.out.println(new Ogretmen("Murat", 41, "Fizik").kimlik()); // Murat (41), Fizik
 	}
 }
+
+/* Beklenen cikti:
+null (0)
+null (0)
+Ece (20), ort. 3.4
+Murat (41), Fizik
+*/

@@ -11,3 +11,9 @@ public class TipKarsilastirma {
 		System.out.println(metin.equals(sayi));                       // false
 	}
 }
+
+/* Beklenen cikti:
+true
+true
+false
+*/

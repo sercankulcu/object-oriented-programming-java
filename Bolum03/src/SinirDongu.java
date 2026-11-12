@@ -34,3 +34,8 @@ public class SinirDongu {
 		}
 	}
 }
+
+/* Beklenen cikti:
+java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
+*/

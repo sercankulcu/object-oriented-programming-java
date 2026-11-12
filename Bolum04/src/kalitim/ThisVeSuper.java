@@ -66,3 +66,15 @@ public class ThisVeSuper {
 		// Ust alani, Ust(), Alt alani, Alt()
 	}
 }
+
+/* Beklenen cikti:
+Calisan(String, double)
+Calisan(String)
+Yonetici(String, double)
+Yonetici(String)
+25000.0
+Ust static
+Alt static
+Ust alani, Ust(), Alt alani, Alt()
+Ust alani, Ust(), Alt alani, Alt()
+*/

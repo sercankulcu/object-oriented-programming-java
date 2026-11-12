@@ -67,3 +67,13 @@ public class OrnekProblemler {
 		// derleme hatasi: cannot find symbol (Sesli yalnizca ses()'i bilir)
 	}
 }
+
+/* Beklenen cikti:
+f
+1
+C.h
+k
+H K H
+kedi: miyav
+balik: ...
+*/

@@ -52,3 +52,15 @@ public class JoinSorgusu {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Ada - Bilgisayar
+Bora - Elektrik
+Cem - Bilgisayar
+Ada - Bilgisayar
+Bora - Elektrik
+Cem - Bilgisayar
+Deniz - null
+Cem 1
+Deniz 0 (NULL)
+*/

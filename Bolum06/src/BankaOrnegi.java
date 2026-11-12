@@ -28,3 +28,8 @@ public class BankaOrnegi {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Kalan: 70.0
+Bakiye yetersiz, eksik: 20.0
+*/

@@ -46,3 +46,10 @@ public class ToStringMetodu {
 		System.out.println("Konum: " + n);     // Konum: Nokta[x=3, y=4]
 	}
 }
+
+/* Beklenen cikti:
+Object
+kalitim.ToStringMetodu$Yalin$Nokta@28a418fc
+Nokta[x=3, y=4]
+Konum: Nokta[x=3, y=4]
+*/

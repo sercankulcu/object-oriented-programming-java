@@ -36,3 +36,8 @@ public class DegistirilemezPara {
 		}
 	}
 }
+
+/* Beklenen cikti:
+12,50 TL | 16,25 TL
+Birim farkli
+*/

@@ -21,3 +21,13 @@ class SayacTest {
 		// artir gecer; ikiKezArtir kalir: expected: <2> but was: <3> (JUnit 5.10.2 sirasiyla)
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] SayacTest > artir()
+[KALDI] SayacTest > ikiKezArtir()
+---- Ozet ----
+Bulunan test : 2
+Gecen        : 1
+Kalan        : 1
+  KALDI: ikiKezArtir() -> expected: <2> but was: <3>
+*/

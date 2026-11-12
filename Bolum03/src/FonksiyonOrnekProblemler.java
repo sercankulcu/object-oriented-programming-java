@@ -30,3 +30,12 @@ public class FonksiyonOrnekProblemler {
 		System.out.println(Math.max(Math.abs(-8), Math.sqrt(49)));   // 8.0
 	}
 }
+
+/* Beklenen cikti:
+3 7
+7
+17
+5.0
+5
+8.0
+*/

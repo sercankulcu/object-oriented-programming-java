@@ -22,3 +22,13 @@ public class AsiriYukleme {
 		System.out.println(topla('A', 1));        // 66   ('A' -> 65, int surumu)
 	}
 }
+
+/* Beklenen cikti:
+5
+3.7
+6
+10
+6.5
+10
+66
+*/

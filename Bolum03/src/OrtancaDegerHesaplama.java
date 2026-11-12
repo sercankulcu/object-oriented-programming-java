@@ -41,3 +41,10 @@ public class OrtancaDegerHesaplama {
 		// Ortanca Deger: 6.0
 	}
 }
+
+/* Beklenen cikti:
+Elemanlar (sirali): 1.0 3.0 5.0 7.0 9.0
+Ortanca Deger: 5.0
+Elemanlar (sirali): 3.0 5.0 7.0 9.0
+Ortanca Deger: 6.0
+*/

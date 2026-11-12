@@ -27,3 +27,11 @@ public class IkiIsParcacigi {
 		// Gercek sira zamanlamaya bagli oldugu icin burada satirlar sirali yazdiriliyor.
 	}
 }
+
+/* Beklenen cikti:
+A: adim 1
+A: adim 2
+B: adim 1
+B: adim 2
+main: bitti
+*/

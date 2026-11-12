@@ -9,3 +9,9 @@ public class ColorOrnegi {
 		System.out.println(Color.RED.darker());   // java.awt.Color[r=178,g=0,b=0]
 	}
 }
+
+/* Beklenen cikti:
+java.awt.Color[r=255,g=128,b=0]
+128
+java.awt.Color[r=178,g=0,b=0]
+*/

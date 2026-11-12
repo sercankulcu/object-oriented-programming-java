@@ -63,3 +63,11 @@ public class ThrowOrnekleri {
 		}
 	}
 }
+
+/* Beklenen cikti:
+java.lang.Exception: Bu bir istisna durumu!
+Deger uygun: 5
+Yakalandi: Deger negatif olamaz!
+java.lang.IllegalArgumentException: negatif
+java.lang.Exception: negatif
+*/

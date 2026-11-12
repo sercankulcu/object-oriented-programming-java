@@ -19,3 +19,8 @@ public class ReentrantLockOrnegi {
 		System.out.println("adil mi? " + kilit2.isFair());   // adil mi? true
 	}
 }
+
+/* Beklenen cikti:
+iki kilit de alindi
+adil mi? true
+*/

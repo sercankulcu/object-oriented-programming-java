@@ -50,3 +50,8 @@ public class SatirdanNesneye {
 		}
 	}
 }
+
+/* Beklenen cikti:
+#1 Ada
+#3 Cem
+*/

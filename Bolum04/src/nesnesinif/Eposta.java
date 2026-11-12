@@ -19,3 +19,8 @@ public class Eposta {
 		System.out.println(s1 + " " + s2);                      // true false
 	}
 }
+
+/* Beklenen cikti:
+ali@ornek.com <- Odev
+true false
+*/

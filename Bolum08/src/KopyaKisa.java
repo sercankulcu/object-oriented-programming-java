@@ -25,3 +25,8 @@ public class KopyaKisa {
 		Files.delete(Path.of("dosya3.txt"));
 	}
 }
+
+/* Beklenen cikti:
+4 byte aktarildi
+4 byte kopyalandi
+*/

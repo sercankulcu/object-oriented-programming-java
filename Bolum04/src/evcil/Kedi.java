@@ -36,3 +36,11 @@ public class Kedi extends Hayvan {
 		// 100.0
 	}
 }
+
+/* Beklenen cikti:
+Mavi uyuyor.
+Saglik: 105.0
+Mavi
+Tekir
+100.0
+*/

@@ -59,3 +59,10 @@ public class Havale {
 		// Ece: 800
 	}
 }
+
+/* Beklenen cikti:
+300 TL aktarildi.
+Geri alindi: 5000 TL
+Ali: 700
+Ece: 800
+*/

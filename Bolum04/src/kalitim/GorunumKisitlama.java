@@ -42,3 +42,8 @@ public class GorunumKisitlama {
 		}
 	}
 }
+
+/* Beklenen cikti:
+XYZ-123
+true 225/45R17
+*/

@@ -67,3 +67,7 @@ public class KosulKuyrugu {
 		uretici.join();
 	}
 }
+
+/* Beklenen cikti:
+1 2 3 4
+*/

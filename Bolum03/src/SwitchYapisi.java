@@ -139,3 +139,18 @@ public class SwitchYapisi {
 		yeniSwitch();
 	}
 }
+
+/* Beklenen cikti:
+Islemler 2
+Varsayilan islemler
+4. ay: Ilkbahar
+Sali
+Carsamba
+switch bitti
+12 * 4 = 48
+Motor durdu
+(int) d = 2
+a = 1
+b = 2
+Sonbahar
+*/

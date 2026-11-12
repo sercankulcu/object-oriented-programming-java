@@ -32,3 +32,8 @@ public class StaticKurallari {
 		Selam2.yaz();       // Ali
 	}
 }
+
+/* Beklenen cikti:
+Merhaba Ali
+Ali
+*/

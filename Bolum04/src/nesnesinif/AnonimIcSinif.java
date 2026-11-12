@@ -25,3 +25,7 @@ public class AnonimIcSinif {
 		Outer.main(args);
 	}
 }
+
+/* Beklenen cikti:
+Anonim Ic Sinif
+*/

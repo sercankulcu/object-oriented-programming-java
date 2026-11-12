@@ -28,3 +28,10 @@ public class ParcaIzle {
 		new File("dosya2.txt").delete();
 	}
 }
+
+/* Beklenen cikti:
+boyut = 16
+boyut = 16
+boyut = 7
+Bitti: 39 byte
+*/

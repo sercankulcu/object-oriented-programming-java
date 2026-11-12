@@ -62,3 +62,10 @@ public class Alistirmalar {
 		notOrtalamalari();
 	}
 }
+
+/* Beklenen cikti:
+elma
+[20, 26, 30, 32, 34, 35]
+Ali ort: 85
+Banu ort: 70
+*/

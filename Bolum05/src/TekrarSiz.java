@@ -17,3 +17,7 @@ public class TekrarSiz {
 		System.out.println(tekrarSiz(l));   // [b, a, c]
 	}
 }
+
+/* Beklenen cikti:
+[b, a, c]
+*/

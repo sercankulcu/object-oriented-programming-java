@@ -36,3 +36,14 @@ public class FlushOrnek {
 		kodIzleme();
 	}
 }
+
+/* Beklenen cikti:
+once: 0
+sonra: 8
+0: 0
+1: 0
+2: 0
+3: 14
+4: 21
+hata? true
+*/

@@ -19,3 +19,11 @@ class ZarTest {
 		TestleriCalistir.calistir(ZarTest.class);   // 1 test, 1 gecti
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] ZarTest > ayniTohumAyniSonuclar()
+---- Ozet ----
+Bulunan test : 1
+Gecen        : 1
+Kalan        : 0
+*/

@@ -274,3 +274,31 @@ public class Ozyineleme {
 		System.out.println(ters("java"));                      // avaj
 	}
 }
+
+/* Beklenen cikti:
+24
+15
+3
+0 1 1 2 3 5 8 13 21 34 55
+2 1 3 4 7 11 18 29 47 76 123
+1 1 2 5 14 42 132 429 1430 4862
+1 1 2 5 15 52 203 877
+5 1
+30
+15
+true true false true
+3
+24
+15
+true
+24
+30
+3
+12586269025
+2432902008176640000
+3 2 1
+1 2 3
+12
+gizem(4, -1): java.lang.StackOverflowError
+avaj
+*/

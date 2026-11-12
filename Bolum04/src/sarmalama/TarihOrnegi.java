@@ -13,3 +13,8 @@ public class TarihOrnegi {
 		System.out.println(kayit);                 // 2024-09-16
 	}
 }
+
+/* Beklenen cikti:
+0
+2024-09-16
+*/

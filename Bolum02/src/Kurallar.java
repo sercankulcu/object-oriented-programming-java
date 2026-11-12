@@ -11,3 +11,7 @@ public class Kurallar {
 				+ Sayi);   // satir bolunebilir -> 12
 	}
 }
+
+/* Beklenen cikti:
+12
+*/

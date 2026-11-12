@@ -111,3 +111,30 @@ public class MapOrnekleri {
 		treeMapOrnegi();
 	}
 }
+
+/* Beklenen cikti:
+2000.0
+1800.0
+null
+true
+2
+4
+Ayse Banu Cem
+95 60 72
+Ayse -> 95
+Banu -> 60
+Cem -> 72
+{armut=2, elma=3, kiraz=1}
+LinkedHashMap: {Zeynep=555-1111, Ahmet=555-1234, Mert=555-2222}
+HashMap:       {Ahmet=555-1234, Mert=555-2222, Zeynep=555-1111}
+TreeMap:       {Ahmet=555-1234, Mert=555-2222, Zeynep=555-1111}
+555-1234
+false
+java.lang.NullPointerException: Cannot invoke "Object.hashCode()" because "key" is null
+{Defter=40.0, Kalem=15.0, Silgi=5.0, Telefon=2000.0}
+Defter
+Telefon
+{Defter=40.0}
+{Kalem=15.0, Silgi=5.0, Telefon=2000.0}
+{Defter=40.0, Kalem=15.0}
+*/

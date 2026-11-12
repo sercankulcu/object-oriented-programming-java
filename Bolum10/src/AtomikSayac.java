@@ -21,3 +21,9 @@ public class AtomikSayac {
 		System.out.println(b2 + " " + sayac.get());     // false 0
 	}
 }
+
+/* Beklenen cikti:
+Sonuc: 200000
+true 0
+false 0
+*/

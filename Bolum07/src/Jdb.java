@@ -14,3 +14,7 @@ public class Jdb { // jdb ile hata ayiklama; satir numaralari sunumdakiyle ayni 
 }
 // Calistirma:   javac -g Jdb.java   ve   jdb Jdb
 // Oturum:       stop at Jdb:4, run, where, locals, cont, print sonuc, clear Jdb:4, cont
+
+/* Beklenen cikti:
+Toplam: 14
+*/

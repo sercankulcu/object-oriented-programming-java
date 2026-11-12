@@ -70,3 +70,11 @@ public class SqlEnjeksiyonu {
 		}
 	}
 }
+
+/* Beklenen cikti:
+SELECT ad FROM kisiler WHERE ad = 'x' OR '1'='1'
+Birlestirme: 3 satir
+PreparedStatement: 0 satir
+Birlestirme: 3 satir
+PreparedStatement: 0 satir
+*/

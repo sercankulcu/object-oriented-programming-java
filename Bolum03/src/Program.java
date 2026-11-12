@@ -9,3 +9,7 @@ public class Program {
 		// 25.0 derece C = 77.0 derece F = 298.15 K
 	}
 }
+
+/* Beklenen cikti:
+25.0 °C = 77.0 °F = 298.15 K
+*/

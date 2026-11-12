@@ -17,3 +17,8 @@ public class DiziIslem {
 		System.out.println(enBuyuk(new int[] {-5, -2, -8}));   // 0 (hatali, -2 olmali)
 	}
 }
+
+/* Beklenen cikti:
+9
+0
+*/

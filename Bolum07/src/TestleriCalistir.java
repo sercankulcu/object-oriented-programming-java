@@ -79,3 +79,60 @@ public class TestleriCalistir {
 		// Ozet: Bulunan test : 35, Gecen : 29, Kalan : 6
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] HesapMakinesiTest > negatifSayiylaCarpar()
+[GECTI] HesapMakinesiTest > ikiSayiyiToplar()
+[GECTI] AaaTest > cekmeBakiyeyiAzaltir()
+[GECTI] BankaHesabiTest > fazlaCekmeIstisnaFirlatir()
+[GECTI] BankaHesabiTest > yatirmaBakiyeyiArtirir()
+[GECTI] BankaIstisnaTest > fazlaCekmeMesajiDogru()
+[GECTI] BankaIstisnaTest > negatifYatirmaReddedilir()
+[KALDI] BankaIstisnaTest > yanlisBeklenti()
+BeforeAll
+  BeforeEach
+    testA
+  AfterEach
+[GECTI] YasamDongusuTest > testA()
+  BeforeEach
+    testB
+  AfterEach
+[GECTI] YasamDongusuTest > testB()
+AfterAll
+[GECTI] DiziIslemTest > pozitifDizi()
+[KALDI] DiziIslemTest > tumuNegatifDizi()
+[GECTI] sinirDegerleri(int, String) > [1] 0, FF
+[GECTI] sinirDegerleri(int, String) > [2] 49, FF
+[GECTI] sinirDegerleri(int, String) > [3] 50, CC
+[GECTI] sinirDegerleri(int, String) > [4] 59, CC
+[GECTI] sinirDegerleri(int, String) > [5] 60, CB
+[GECTI] sinirDegerleri(int, String) > [6] 89, BA
+[GECTI] sinirDegerleri(int, String) > [7] 90, AA
+[GECTI] sinirDegerleri(int, String) > [8] 100, AA
+[GECTI] NotTest > aralikDisiPuanReddedilir()
+[GECTI] TestAdlariTest > test1()
+[GECTI] TestAdlariTest > besUrundeIndirimYok()
+[GECTI] TestAdlariTest > altiUrundeIndirimVar()
+[GECTI] ZarTest > ayniTohumAyniSonuclar()
+[GECTI] IsaretTest > pozitif()
+[GECTI] IsaretTest > negatif()
+[GECTI] OzellikTest > ikiKezTersCevirmekAyniMetniVerir()
+[KALDI] OzellikTest2 > enBuyukDizininEnBuyukElemanidir()
+[GECTI] SoruTest > a()
+[KALDI] SoruTest > b()
+[GECTI] SoruTest > c()
+5
+[KALDI] SoruTest > d()
+[GECTI] SayacTest > artir()
+[KALDI] SayacTest > ikiKezArtir()
+---- Ozet ----
+Bulunan test : 35
+Gecen        : 29
+Kalan        : 6
+  KALDI: yanlisBeklenti() -> Expected java.lang.IllegalStateException to be thrown, but nothing was thrown.
+  KALDI: tumuNegatifDizi() -> expected: <-2> but was: <0>
+  KALDI: enBuyukDizininEnBuyukElemanidir() -> Karsi ornek: [-60, -69, -39, -65, -13] ==> expected: <true> but was: <false>
+  KALDI: b() -> expected: <0.3> but was: <0.30000000000000004>
+  KALDI: d() -> Expected java.lang.ArithmeticException to be thrown, but nothing was thrown.
+  KALDI: ikiKezArtir() -> expected: <2> but was: <3>
+*/

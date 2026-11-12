@@ -30,3 +30,8 @@ public class AsalSayi {
 		calistir("97");    // Bir sayi girin: 97 bir asal sayidir.
 	}
 }
+
+/* Beklenen cikti:
+Bir sayi girin: 21 bir asal sayi degildir.
+Bir sayi girin: 97 bir asal sayidir.
+*/

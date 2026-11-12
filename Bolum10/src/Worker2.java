@@ -15,3 +15,8 @@ public class Worker2 extends Thread {
 		// Not: sira pratikte hep budur ama garanti degildir (iki ayri is parcacigi yaziyor).
 	}
 }
+
+/* Beklenen cikti:
+main devam ediyor
+Worker calisiyor: Thread-0
+*/

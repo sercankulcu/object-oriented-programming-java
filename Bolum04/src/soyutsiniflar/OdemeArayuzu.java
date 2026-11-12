@@ -27,3 +27,8 @@ public class OdemeArayuzu {
 		satinAl(new Havale(), 120.0);       // Havale: 125.0 TL
 	}
 }
+
+/* Beklenen cikti:
+Kart: 250.0 TL
+Havale: 125.0 TL
+*/

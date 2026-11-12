@@ -19,3 +19,7 @@ public class Problem4 {
 		System.out.println(x.deger);   // 100
 	}
 }
+
+/* Beklenen cikti:
+100
+*/

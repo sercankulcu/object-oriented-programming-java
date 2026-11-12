@@ -13,3 +13,9 @@ public class Mutlak {
 		System.out.println(mutlak(0));    // 0
 	}
 }
+
+/* Beklenen cikti:
+3
+5
+0
+*/

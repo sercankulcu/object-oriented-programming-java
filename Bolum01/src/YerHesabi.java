@@ -15,3 +15,11 @@ public class YerHesabi {
 		System.out.println("1 dk CD sesi (bayt): " + ses);   // 1 dk CD sesi (bayt): 10584000
 	}
 }
+
+/* Beklenen cikti:
+Piksel: 2073600
+Kare (bayt): 6220800
+1 saniye (bayt): 186624000
+1 dakika (MB): 11197
+1 dk CD sesi (bayt): 10584000
+*/

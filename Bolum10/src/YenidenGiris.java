@@ -26,3 +26,9 @@ public class YenidenGiris {
 		// main:  0
 	}
 }
+
+/* Beklenen cikti:
+dis(): 1
+ic():  2
+main:  0
+*/

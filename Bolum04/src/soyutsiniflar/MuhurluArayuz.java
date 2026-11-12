@@ -50,3 +50,12 @@ public class MuhurluArayuz {
 		// kopek
 	}
 }
+
+/* Beklenen cikti:
+Kedi sessizce yuruyor
+kedi
+Kopek kosuyor
+kopek
+Kangal suruyu koruyor
+kopek
+*/

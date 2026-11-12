@@ -58,3 +58,13 @@ public class DinamikBaglanmayanlar {
 		System.out.println(((Izleme.Kopek) h2).tur);   // kopek
 	}
 }
+
+/* Beklenen cikti:
+hayvan
+Hayvan.bilgi()
+Ben bir kopek
+hayvan
+Hayvan.bilgi
+Ben bir kopek
+kopek
+*/

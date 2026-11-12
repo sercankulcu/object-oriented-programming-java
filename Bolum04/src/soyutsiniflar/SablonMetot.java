@@ -30,3 +30,9 @@ public class SablonMetot {
 		// Servis edildi
 	}
 }
+
+/* Beklenen cikti:
+Su kaynadi
+Cay demlendi
+Servis edildi
+*/

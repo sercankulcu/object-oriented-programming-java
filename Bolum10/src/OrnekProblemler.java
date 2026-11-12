@@ -37,3 +37,9 @@ public class OrnekProblemler {
 		System.out.println(h.getBakiye());       // 150
 	}
 }
+
+/* Beklenen cikti:
+ABC
+NEW X NEW
+150
+*/

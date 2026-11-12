@@ -11,3 +11,7 @@ public class Oklid {
 		System.out.println("EBOB = " + b);  // EBOB = 6
 	}
 }
+
+/* Beklenen cikti:
+EBOB = 6
+*/

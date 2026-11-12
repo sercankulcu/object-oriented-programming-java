@@ -8,3 +8,10 @@ public class Sinirlar {
 		System.out.println(5 / 2);        // tamsayi bolmesi -> 2
 	}
 }
+
+/* Beklenen cikti:
+2147483647
+-2147483648
+0.30000000000000004
+2
+*/

@@ -64,3 +64,13 @@ public class GecersizArguman {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Ali 20
+java.lang.IllegalArgumentException: Yas negatif olamaz
+java.lang.IllegalArgumentException: 3 karakter olmali
+java.lang.IllegalArgumentException: 5 > 2
+java.lang.IllegalArgumentException: Illegal Capacity: -1
+java.lang.IllegalArgumentException: URI scheme is not "file"
+java.lang.IllegalArgumentException
+*/

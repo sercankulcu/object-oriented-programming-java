@@ -17,3 +17,9 @@ public class Genelleme {
 		cizgiCiz(12, '=');       // ============
 	}
 }
+
+/* Beklenen cikti:
+----------
+*****
+============
+*/

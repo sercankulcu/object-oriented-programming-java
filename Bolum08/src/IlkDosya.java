@@ -25,3 +25,8 @@ public class IlkDosya {
 		new File("veri.dat").delete();
 	}
 }
+
+/* Beklenen cikti:
+Okunan byte: 127
+dosya.txt: 16 byte
+*/

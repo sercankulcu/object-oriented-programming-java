@@ -29,3 +29,11 @@ public class DaemonOrnegi {
 		saat.join();
 	}
 }
+
+/* Beklenen cikti:
+tik 0
+tik 1
+tik 2
+tik 3
+main bitti, JVM kapaniyor
+*/

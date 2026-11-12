@@ -25,3 +25,8 @@ public class BekciDeger {
 		calistir(new Scanner("0"));         // Sayi yok
 	}
 }
+
+/* Beklenen cikti:
+Ortalama: 8.0
+Sayi yok
+*/

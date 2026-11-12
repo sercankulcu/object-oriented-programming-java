@@ -19,3 +19,11 @@ public class IzlemeOrnegi {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Ali: 3
+java.lang.NullPointerException: Cannot invoke "String.length()" because "<parameter1>" is null
+	at IzlemeOrnegi.uzunluk(IzlemeOrnegi.java:5)
+	at IzlemeOrnegi.yazdir(IzlemeOrnegi.java:8)
+	at IzlemeOrnegi.main(IzlemeOrnegi.java:13)
+*/

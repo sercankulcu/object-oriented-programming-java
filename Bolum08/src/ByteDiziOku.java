@@ -18,3 +18,8 @@ public class ByteDiziOku {
 		System.out.println(sonuc.length + " byte: " + baos);   // 5 byte: Java!
 	}
 }
+
+/* Beklenen cikti:
+74=J 97=a 118=v 97=a
+5 byte: Java!
+*/

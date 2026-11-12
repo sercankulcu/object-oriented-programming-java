@@ -22,3 +22,12 @@ public class IcIceTry {
 		System.out.println("Program suruyor");          // Program suruyor
 	}
 }
+
+/* Beklenen cikti:
+Dis try
+Ic try
+Ic finally
+Dis catch: NPE
+Dis finally
+Program suruyor
+*/

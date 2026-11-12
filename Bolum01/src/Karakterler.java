@@ -39,3 +39,13 @@ public class Karakterler {
 		dizgiKodlari();
 	}
 }
+
+/* Beklenen cikti:
+8
+9
+2
+1
+8
+231 105 107 111 108 97 116 97
+Uzunluk: 8
+*/

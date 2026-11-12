@@ -29,3 +29,7 @@ public class ExecuteUpdateDonus {
 		}
 	}
 }
+
+/* Beklenen cikti:
+2 guncellendi, 0 silindi
+*/

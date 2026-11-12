@@ -16,3 +16,7 @@ public class SpotOrnek {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Reddedildi
+*/

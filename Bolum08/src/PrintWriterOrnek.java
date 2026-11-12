@@ -31,3 +31,10 @@ public class PrintWriterOrnek {
 		Files.delete(Path.of("yeniDosya.txt"));
 	}
 }
+
+/* Beklenen cikti:
+Merhaba, dunya!
+Bu bir ornek dosyadir.
+Pi yaklasik 3.14
+42
+*/

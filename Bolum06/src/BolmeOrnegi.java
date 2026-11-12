@@ -14,3 +14,10 @@ public class BolmeOrnegi {
 		System.out.println("Bitti");                   // Bitti
 	}
 }
+
+/* Beklenen cikti:
+Basla
+Bolme oncesi
+Hata: / by zero
+Bitti
+*/

@@ -35,3 +35,16 @@ public class SemaphoreOrnegi {
 		// Sunumdaki zaman sirasi: 1, 3, 2 girdi; 2, 1 cikiyor; 4, 5 girdi; 3, 4, 5 cikiyor.
 	}
 }
+
+/* Beklenen cikti:
+1 cikiyor
+1 girdi
+2 cikiyor
+2 girdi
+3 cikiyor
+3 girdi
+4 cikiyor
+4 girdi
+5 cikiyor
+5 girdi
+*/

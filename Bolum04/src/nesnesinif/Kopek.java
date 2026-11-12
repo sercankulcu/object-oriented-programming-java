@@ -29,3 +29,12 @@ public class Kopek {
 		System.out.println(d1.havla());   // Kara haw haw haw!
 	}
 }
+
+/* Beklenen cikti:
+Kopekler!
+Kopek olusturuluyor.
+Kara
+Kopek olusturuluyor.
+Gece
+Kara haw haw haw!
+*/

@@ -42,3 +42,10 @@ public class OrnekHiyerarsi {
 		h2.sesCikar(); // Miyav!
 	}
 }
+
+/* Beklenen cikti:
+int surumu
+double surumu
+Hav hav!
+Miyav!
+*/

@@ -93,3 +93,15 @@ public class Degiskenler {
 		bilesikAtama();
 	}
 }
+
+/* Beklenen cikti:
+Sayi pozitif.
+1 2 3 100.0 0.05 E
+26 1.78 K
+A
+true
+false
+Ali Veli false 100 true
+20 10 Ahmet
+x = 2, y = 10
+*/

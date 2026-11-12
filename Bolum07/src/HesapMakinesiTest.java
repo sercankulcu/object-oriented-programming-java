@@ -21,3 +21,12 @@ class HesapMakinesiTest {
 		TestleriCalistir.calistir(HesapMakinesiTest.class);   // 2 test, 2 gecti
 	}
 }
+
+/* Beklenen cikti:
+[GECTI] HesapMakinesiTest > negatifSayiylaCarpar()
+[GECTI] HesapMakinesiTest > ikiSayiyiToplar()
+---- Ozet ----
+Bulunan test : 2
+Gecen        : 2
+Kalan        : 0
+*/

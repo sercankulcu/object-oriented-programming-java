@@ -17,3 +17,7 @@ public class ImportOrnek {
 		giris.close();
 	}
 }
+
+/* Beklenen cikti:
+7.0 49 30
+*/

@@ -176,3 +176,29 @@ public class Fonksiyonlar {
 				+ " " + ortalama + " " + kitapAdi);                  // 40 40 25 Ahmet 85.5 Sefiller
 	}
 }
+
+/* Beklenen cikti:
+8
+arttir: 15
+main: 5
+50 2 1
+4.0
+17.2
+5.0
+1024.0
+3
+-4
+5
+6
+10 5
+24
+6 2
+Merhaba
+17 asal
+Ortalama: 81.66666666666667 -> BB
+80.0
+71.66666666666667
+80.0
+71.66666666666667
+40 40 25 Ahmet 85.5 Sefiller
+*/

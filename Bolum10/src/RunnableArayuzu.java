@@ -27,3 +27,9 @@ public class RunnableArayuzu {
 		t2.join();
 	}
 }
+
+/* Beklenen cikti:
+MyRunnable bitti: TERMINATED
+merhaba
+merhaba
+*/

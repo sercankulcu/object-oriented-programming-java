@@ -39,3 +39,7 @@ public class Baglan {
 		dosyayiSil();
 	}
 }
+
+/* Beklenen cikti:
+Baglanti basarili!
+*/

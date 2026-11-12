@@ -48,3 +48,17 @@ public class KaynakOrnekleri {
 		ikiKaynak();
 	}
 }
+
+/* Beklenen cikti:
+dosya acildi
+dosya kullaniliyor
+dosya kapatildi
+Hata: / by zero
+dosya acildi
+ag acildi
+ag kullaniliyor
+ag kapatildi
+dosya kapatildi
+Hata: / by zero
+finally
+*/

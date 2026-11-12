@@ -16,3 +16,9 @@ public class Isaret {
 		System.out.println(isaret(0));    // sifir
 	}
 }
+
+/* Beklenen cikti:
+pozitif
+negatif
+sifir
+*/

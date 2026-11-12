@@ -45,3 +45,10 @@ public class KilitlenmeyiOnleme {
 		// Kilitlenmis: 0
 	}
 }
+
+/* Beklenen cikti:
+T1 bitti
+T2 bitti
+TERMINATED TERMINATED
+Kilitlenmis: 0
+*/

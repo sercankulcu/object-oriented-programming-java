@@ -24,3 +24,7 @@ public class ErisimBelirleyiciler {
 		System.out.println(hesap.getHesapBakiyesi());  // 1000.0
 	}
 }
+
+/* Beklenen cikti:
+1000.0
+*/

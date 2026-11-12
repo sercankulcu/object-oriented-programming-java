@@ -18,3 +18,7 @@ public class Dikdortgen {
 		System.out.println("Alan: " + d.alan());  // Alan: 12.0
 	}
 }
+
+/* Beklenen cikti:
+Alan: 12.0
+*/

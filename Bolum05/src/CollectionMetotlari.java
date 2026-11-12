@@ -23,3 +23,12 @@ public class CollectionMetotlari {
 		System.out.println(renkler.isEmpty());           // true
 	}
 }
+
+/* Beklenen cikti:
+3
+true
+[kirmizi, mavi]
+true
+2
+true
+*/

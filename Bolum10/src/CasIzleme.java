@@ -29,3 +29,9 @@ public class CasIzleme {
 		System.out.println(c.sayac.get());   // 200007
 	}
 }
+
+/* Beklenen cikti:
+6
+7
+200007
+*/

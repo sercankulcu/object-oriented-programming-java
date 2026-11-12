@@ -15,3 +15,9 @@ public class Matematik {
 		System.out.println(Math.sqrt(16.0));              // 4.0
 	}
 }
+
+/* Beklenen cikti:
+Toplama Sonucu: 8
+9
+4.0
+*/

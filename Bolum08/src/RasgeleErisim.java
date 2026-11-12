@@ -29,3 +29,8 @@ public class RasgeleErisim {
 		new File("dosya").delete();
 	}
 }
+
+/* Beklenen cikti:
+Ilk byte: 1
+100. konumdaki int: 256
+*/

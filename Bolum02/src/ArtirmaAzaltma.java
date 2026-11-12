@@ -10,3 +10,9 @@ public class ArtirmaAzaltma {
 		System.out.println(a + " " + d);  // 6 7
 	}
 }
+
+/* Beklenen cikti:
+6 5
+7 7
+6 7
+*/

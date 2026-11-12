@@ -32,3 +32,7 @@ public class KanalAcKapa {
 		Files.delete(Paths.get("dosya.txt"));
 	}
 }
+
+/* Beklenen cikti:
+Baglandi: true
+*/

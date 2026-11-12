@@ -32,3 +32,9 @@ public class StaticSayac {
 		BankaHesabi.main(args);
 	}
 }
+
+/* Beklenen cikti:
+Ayse
+3
+Ali Can
+*/

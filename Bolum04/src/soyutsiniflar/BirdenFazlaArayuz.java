@@ -47,3 +47,11 @@ public class BirdenFazlaArayuz {
 		System.out.println(h.isim + ": " + h.ses());   // Daisy: vak
 	}
 }
+
+/* Beklenen cikti:
+Donald ucuyor
+Donald yuzuyor
+Donald
+true
+Daisy: vak
+*/

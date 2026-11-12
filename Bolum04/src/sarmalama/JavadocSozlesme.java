@@ -35,3 +35,8 @@ public class JavadocSozlesme {
 		}
 	}
 }
+
+/* Beklenen cikti:
+700.0
+Gecersiz miktar: 5000.0
+*/

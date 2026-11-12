@@ -15,3 +15,7 @@ public class Bos {
 		}
 	}
 }
+
+/* Beklenen cikti:
+java.lang.NullPointerException: Cannot read field "ad" because "<local1>" is null
+*/

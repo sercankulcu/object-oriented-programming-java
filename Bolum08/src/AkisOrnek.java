@@ -13,3 +13,9 @@ public class AkisOrnek {
 		System.err.println("Bu satir hata akisina yazildi.");        // Bu satir hata akisina yazildi.
 	}
 }
+
+/* Beklenen cikti:
+Merhaba, Dunya!
+Girdiginiz sayi: 42
+Bu satir hata akisina yazildi.
+*/

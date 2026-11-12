@@ -42,3 +42,9 @@ public class TryLockOrnegi {
 		// 2: alindi
 	}
 }
+
+/* Beklenen cikti:
+1: alinamadi
+main: kilidi birakiyor
+2: alindi
+*/

@@ -44,3 +44,13 @@ public class AskiyaAlma {
 		// adim 5
 	}
 }
+
+/* Beklenen cikti:
+adim 1
+adim 2
+adim 3
+main: duraklatildi
+main: devam
+adim 4
+adim 5
+*/

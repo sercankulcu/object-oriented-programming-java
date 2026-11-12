@@ -77,3 +77,13 @@ public class IteratorOrnekleri {
 		cmeIzleme();
 	}
 }
+
+/* Beklenen cikti:
+3
+8
+5
+java.util.ConcurrentModificationException
+[7, 13]
+[7, 13]
+java.util.ConcurrentModificationException
+*/

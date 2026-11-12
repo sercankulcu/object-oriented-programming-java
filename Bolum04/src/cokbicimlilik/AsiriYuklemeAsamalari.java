@@ -28,3 +28,16 @@ public class AsiriYuklemeAsamalari {
 		f(Long.valueOf(4));      // f(Object)
 	}
 }
+
+/* Beklenen cikti:
+f(long)
+f(long)
+f(Integer)
+f(Object)
+f(Object)
+f(int...)
+f(int...)
+f(long)
+f(long)
+f(Object)
+*/

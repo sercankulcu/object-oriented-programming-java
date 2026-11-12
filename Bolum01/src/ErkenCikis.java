@@ -36,3 +36,8 @@ public class ErkenCikis {
 		breakli(new Scanner("4 9 -2"));   // Sira: 3
 	}
 }
+
+/* Beklenen cikti:
+Sira: 3
+Sira: 3
+*/

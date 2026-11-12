@@ -39,3 +39,11 @@ public class Olusturma {
 		System.out.println(kitap != null);            // true
 	}
 }
+
+/* Beklenen cikti:
+Java 21 / Nesneler
+6
+42
+Toyota Corolla 2022
+true
+*/

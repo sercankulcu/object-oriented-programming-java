@@ -22,3 +22,8 @@ public class IkiTamSayi {
 		calistir(new Scanner("13 11"));  // Birinci tamsayiyi girin: Ikinci tamsayiyi girin: 11 13
 	}
 }
+
+/* Beklenen cikti:
+Birinci tamsayiyi girin: Ikinci tamsayiyi girin: 4 11
+Birinci tamsayiyi girin: Ikinci tamsayiyi girin: 11 13
+*/

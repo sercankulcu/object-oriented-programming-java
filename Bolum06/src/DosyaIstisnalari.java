@@ -115,3 +115,16 @@ public class DosyaIstisnalari {
 		parseVeClassNotFound();
 	}
 }
+
+/* Beklenen cikti:
+java.io.FileNotFoundException: dosya.txt (The system cannot find the file specified)
+birinci satir
+ikinci satir
+birinci satir
+ikinci satir
+java.sql.SQLException: No suitable driver found for jdbc:mysql://localhost/okul
+(MySQL sunucusu yok: baglanti kurulamadi)
+java.text.ParseException: Unparseable date: "01-01-2022"
+Scanner yuklendi
+java.lang.ClassNotFoundException: com.example.NonExistentClass
+*/

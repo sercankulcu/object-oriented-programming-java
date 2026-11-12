@@ -17,3 +17,7 @@ public class Problem1 {
 		System.out.println(" " + Sayac.toplam);   // 2 1 3
 	}
 }
+
+/* Beklenen cikti:
+2 1 3
+*/

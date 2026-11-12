@@ -10,3 +10,7 @@ public class ToplamaOrnegi {
 		System.out.println("Toplam: " + sonuc);   // Toplam: 8
 	}
 }
+
+/* Beklenen cikti:
+Toplam: 8
+*/

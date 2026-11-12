@@ -27,3 +27,7 @@ public class SatirKopya {
 		dosya2.delete();
 	}
 }
+
+/* Beklenen cikti:
+Kopyalandi: dosya2.txt
+*/

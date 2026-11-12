@@ -14,3 +14,10 @@ public class MasaBasiKontrol {
 		System.out.println(toplam);  // 13
 	}
 }
+
+/* Beklenen cikti:
+tur: toplam = 2, sayi = 47
+tur: toplam = 9, sayi = 4
+tur: toplam = 13, sayi = 0
+13
+*/

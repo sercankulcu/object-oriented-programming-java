@@ -32,3 +32,12 @@ class OzellikTest2 {
 		// KALDI: enBuyukDizininEnBuyukElemanidir() -> Karsi ornek: [-60, -69, -39, -65, -13] ==> expected: <true> but was: <false>
 	}
 }
+
+/* Beklenen cikti:
+[KALDI] OzellikTest2 > enBuyukDizininEnBuyukElemanidir()
+---- Ozet ----
+Bulunan test : 1
+Gecen        : 0
+Kalan        : 1
+  KALDI: enBuyukDizininEnBuyukElemanidir() -> Karsi ornek: [-60, -69, -39, -65, -13] ==> expected: <true> but was: <false>
+*/

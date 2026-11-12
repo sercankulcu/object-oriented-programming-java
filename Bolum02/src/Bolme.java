@@ -12,3 +12,7 @@ public class Bolme {
 		}
 	}
 }
+
+/* Beklenen cikti:
+java.lang.ArithmeticException: / by zero
+*/

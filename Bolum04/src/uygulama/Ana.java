@@ -12,3 +12,7 @@ public class Ana {
 		System.out.println("Bakiye: " + h.getBakiye());   // Bakiye: 250.0
 	}
 }
+
+/* Beklenen cikti:
+Bakiye: 250.0
+*/

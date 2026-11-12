@@ -16,3 +16,8 @@ public class Paradigma {
 		System.out.println("Fonksiyonel: " + sonuc);  // Fonksiyonel: 15
 	}
 }
+
+/* Beklenen cikti:
+Buyruksal: 15
+Fonksiyonel: 15
+*/

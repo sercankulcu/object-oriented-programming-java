@@ -131,3 +131,15 @@ public class SekilHiyerarsisi {
 		System.out.println(sekiller[0].cevreHesapla() + " " + sekiller[1].cevreHesapla());   // 20.0 20.0
 	}
 }
+
+/* Beklenen cikti:
+Kare alani: 25.0
+Kare ciziliyor: kenar 5.0
+Dikdortgen alani: 24.0
+Dikdortgen ciziliyor.
+Cember alani: 153.93804002589985
+Cember ciziliyor: yaricap 7.0
+24.0
+202.93804002589985
+20.0 20.0
+*/

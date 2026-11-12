@@ -100,3 +100,17 @@ public class KontrolOrnekProblemler {
 		alistirmalar2();
 	}
 }
+
+/* Beklenen cikti:
+B
+22
+50
+2418
+4
+243
+-1
+10
+37
+10 8 6 4 2
+42
+*/

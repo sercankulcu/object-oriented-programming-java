@@ -34,3 +34,9 @@ public class DizilerArrayStore {
 		}
 	}
 }
+
+/* Beklenen cikti:
+ilk atama tamam
+java.lang.ArrayStoreException: cokbicimlilik.OrnekHiyerarsi$Kedi
+ArrayStoreException: java.lang.Integer
+*/

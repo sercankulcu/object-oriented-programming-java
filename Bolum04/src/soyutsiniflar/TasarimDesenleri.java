@@ -140,3 +140,20 @@ public class TasarimDesenleri {
 		d.guncelle();  // Ogrenci: Ayse   (g.goster(m.getAd()))
 	}
 }
+
+/* Beklenen cikti:
+main basladi
+Ayarlar olusturuldu
+true
+9.0
+true
+Ekran: 25 °C
+Ekran: 34 °C
+Uyari: sicak!
+225.0
+225.0
+200.0
+120.0
+7.0
+Ogrenci: Ayse
+*/

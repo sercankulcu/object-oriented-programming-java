@@ -22,3 +22,7 @@ public class StatikIcSinif {
 		Outer.main(args);
 	}
 }
+
+/* Beklenen cikti:
+Statik Ic Sinif
+*/

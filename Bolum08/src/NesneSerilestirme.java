@@ -41,3 +41,9 @@ public class NesneSerilestirme {
 		new File("ogrenci.ser").delete();
 	}
 }
+
+/* Beklenen cikti:
+Serilestirme basarili.
+ogrenci.ser: 72 byte
+Ogrenci: Ogrenci [ad=Ahmet, yas=20]
+*/

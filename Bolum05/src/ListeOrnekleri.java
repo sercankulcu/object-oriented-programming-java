@@ -116,3 +116,31 @@ public class ListeOrnekleri {
 		listedeGezinme();
 	}
 }
+
+/* Beklenen cikti:
+Armut
+[Ali, Banu, Cem, Deniz, Ece]
+[Ali, Banu, Cem, Can, Ece]
+[Ali, Banu, Cem, Can]
+[Ali, Banu, Fatma, Cem, Can]
+indeks: 1
+Ece var mi: false
+boyut: 5
+[10, 15, 20, 30, 40]
+[15, 20, 30, 40]
+[Kiraz, Elma, Armut, Muz]
+Kiraz
+Muz
+[Elma, Armut, Muz]
+11 / 20
+10
+10 / 20
+[A, B, C]
+C
+C
+2
+false
+Fizik Java Devre
+Fizik Java Devre
+Fizik Java Devre
+*/

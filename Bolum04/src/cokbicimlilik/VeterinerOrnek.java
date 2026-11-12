@@ -27,3 +27,9 @@ public class VeterinerOrnek {
 		System.out.println(h.getClass().getSimpleName());   // Kopek
 	}
 }
+
+/* Beklenen cikti:
+Muayene: Miyav!
+Muayene: Hav hav!
+Kopek
+*/

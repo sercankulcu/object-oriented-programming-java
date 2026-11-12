@@ -28,3 +28,8 @@ public class AsalSayi {
 		calistir(21);  // 21 bir asal sayi degildir.
 	}
 }
+
+/* Beklenen cikti:
+7 bir asal sayidir.
+21 bir asal sayi degildir.
+*/

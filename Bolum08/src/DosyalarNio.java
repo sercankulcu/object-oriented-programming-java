@@ -25,3 +25,12 @@ public class DosyalarNio {
 		Files.delete(yol.getParent());
 	}
 }
+
+/* Beklenen cikti:
+notlar.txt: true
+Boyut: 23 byte
+ALI 70
+AYŞE 85
+CAN 90
+4 satir
+*/

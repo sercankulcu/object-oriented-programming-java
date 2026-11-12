@@ -70,3 +70,11 @@ public class FareOlaylari {
 		bas(panel, 75, 30, MouseEvent.BUTTON1, InputEvent.SHIFT_DOWN_MASK);   // sol (75, 30) + Shift
 	}
 }
+
+/* Beklenen cikti:
+tik
+tik
+sol (40, 120)
+sag (200, 50)
+sol (75, 30) + Shift
+*/

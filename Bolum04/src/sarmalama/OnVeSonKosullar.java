@@ -30,3 +30,7 @@ public class OnVeSonKosullar {
 		System.out.println(new SonKosul.VeriIslemleri().veriEkle("Ali"));  // true
 	}
 }
+
+/* Beklenen cikti:
+true
+*/

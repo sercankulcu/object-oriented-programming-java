@@ -16,3 +16,7 @@ public class Toplam {
 		}
 	}
 }
+
+/* Beklenen cikti:
+java.lang.StackOverflowError
+*/

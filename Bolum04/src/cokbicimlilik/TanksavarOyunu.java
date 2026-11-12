@@ -73,3 +73,9 @@ public class TanksavarOyunu {
 		System.out.println(t2);     // Top57mm, yukseklik 40
 	}
 }
+
+/* Beklenen cikti:
+[Top37mm, yukseklik 30, Top37mm, yukseklik 30, Top57mm, yukseklik 40]
+Top37mm, yukseklik 30
+Top57mm, yukseklik 40
+*/

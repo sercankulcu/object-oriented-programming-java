@@ -19,3 +19,7 @@ public class AltProgram {
 		giris.close();
 	}
 }
+
+/* Beklenen cikti:
+58.0 gecti
+*/

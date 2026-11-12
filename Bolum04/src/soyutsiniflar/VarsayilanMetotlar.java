@@ -126,3 +126,21 @@ public class VarsayilanMetotlar {
 		new Rapor().yazdir();   // Belge: Vize sonuclari
 	}
 }
+
+/* Beklenen cikti:
+true
+2 false
+1
+true
+false
+12.566370614359172
+9.0
+10.0
+24.0
+Merhaba
+Hos geldiniz
+Taraniyor
+Yazdiriliyor
+Kopya hazir
+Belge: Vize sonuclari
+*/

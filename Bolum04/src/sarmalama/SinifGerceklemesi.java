@@ -39,3 +39,8 @@ public class SinifGerceklemesi {
 		araba.dur();         // Ruzgar durdu.
 	}
 }
+
+/* Beklenen cikti:
+Ruzgar hareket ediyor: 100 km/sa
+Ruzgar durdu.
+*/

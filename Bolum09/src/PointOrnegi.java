@@ -16,3 +16,12 @@ public class PointOrnegi {
 		System.out.println(Point.distance(0, 0, 3, 4));       // 5.0
 	}
 }
+
+/* Beklenen cikti:
+30.0 40.0
+30 40
+50.0
+java.awt.Point[x=60,y=80]
+java.awt.Point[x=65,y=70]
+5.0
+*/

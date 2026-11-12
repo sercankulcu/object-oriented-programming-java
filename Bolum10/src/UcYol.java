@@ -22,3 +22,9 @@ public class UcYol {
 		t3.start(); t3.join();     // 3) Lambda
 	}
 }
+
+/* Beklenen cikti:
+1) Runnable sinifi
+2) Thread alt sinifi
+3) Lambda
+*/

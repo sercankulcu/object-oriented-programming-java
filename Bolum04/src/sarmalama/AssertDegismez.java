@@ -24,3 +24,7 @@ public class AssertDegismez {
 		}
 	}
 }
+
+/* Beklenen cikti:
+bitti
+*/

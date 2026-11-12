@@ -27,3 +27,7 @@ public class OtomatikAnahtar {
 		}
 	}
 }
+
+/* Beklenen cikti:
+Yeni id: 5
+*/
