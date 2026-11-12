@@ -42,6 +42,8 @@ public class SatirOku {
 	}
 }
 
+/* Not: dosya boyutu isletim sistemine gore degisir: println satir sonunu Windows'ta 2 bayt (\r\n),
+   Linux ve macOS'ta 1 bayt (\n) yazar; asagidaki cikti Windows'ta alinmistir (Linux'ta 25 byte). */
 /* Beklenen cikti:
 Java
 Giris Cikis

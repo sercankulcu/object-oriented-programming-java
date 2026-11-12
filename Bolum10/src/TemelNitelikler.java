@@ -48,6 +48,8 @@ public class TemelNitelikler {
 	}
 }
 
+/* Not: bu programin ciktisi her calistirmada degisir: JVM'nin kendi is parcaciklari (Attach Listener,
+   Finalizer, ...) surume ve ortama gore farklidir; asagidaki bir ornek calistirmadir. */
 /* Beklenen cikti:
 Ad      : main
 Kimlik  : 1
