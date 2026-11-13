@@ -18,7 +18,7 @@ public class DizgiTemelleri {
 
 	// Olusturma ve Birlestirme
 	static void olusturmaVeBirlestirme() {
-		String s0 = "Giresun";            // deyim
+		String s0 = "Giresun";            // dizgi sabiti
 		char[] harfler = {'J', 'a', 'v', 'a'};
 		String s1 = new String(harfler);  // char[]
 		String s2 = String.valueOf(42);   // sayidan
