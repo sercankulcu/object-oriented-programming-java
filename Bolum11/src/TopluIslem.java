@@ -26,8 +26,10 @@ public class TopluIslem {
 						+ sonuc[0] + " satir etkiledi");   // 1000 komut, ilki 1 satir etkiledi
 			} catch (SQLException e) {
 				conn.rollback();
+				throw e;
+			} finally {
+				conn.setAutoCommit(true);
 			}
-			conn.setAutoCommit(true);
 		}
 	}
 }

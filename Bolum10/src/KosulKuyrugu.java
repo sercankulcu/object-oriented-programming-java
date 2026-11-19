@@ -17,6 +17,9 @@ public class KosulKuyrugu {
 		private int son = 0;
 		private int buyukluk = 0;
 		public BlockingQueue(int boyut) {
+			if (boyut <= 0)
+				throw new IllegalArgumentException(
+						"boyut > 0 olmali");
 			veri = new Object[boyut];
 		}
 
@@ -42,6 +45,7 @@ public class KosulKuyrugu {
 				while (buyukluk == 0)
 					bosDegil.await();
 				Object oge = veri[bas];
+				veri[bas] = null;
 				bas = (bas + 1) % veri.length;
 				buyukluk--;
 				doluDegil.signal();

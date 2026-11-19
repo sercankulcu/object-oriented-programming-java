@@ -8,6 +8,9 @@ public class UreticiTuketici {
 		private int son = 0;
 		private int buyukluk = 0;
 		public BlockingQueue(int boyut) {
+			if (boyut <= 0)
+				throw new IllegalArgumentException(
+						"boyut > 0 olmali");
 			veri = new Object[boyut];
 		}
 		public synchronized int getSize() {
@@ -29,6 +32,7 @@ public class UreticiTuketici {
 				wait();
 			}
 			Object oge = veri[bas];
+			veri[bas] = null;
 			bas = (bas + 1) % veri.length;
 			buyukluk--;
 			notifyAll();

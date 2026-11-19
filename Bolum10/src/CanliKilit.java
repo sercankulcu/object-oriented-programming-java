@@ -16,7 +16,7 @@ public class CanliKilit {
 			int benim = 0;
 			while (benim < 3) {
 				if (kilit.tryLock(50, TimeUnit.MILLISECONDS)) {
-					// ... is, sonra kilit.unlock()
+					// is try icinde; unlock finally icinde
 					try {
 						yapilan++;
 						benim++;
