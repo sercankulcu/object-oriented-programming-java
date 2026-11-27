@@ -1,6 +1,6 @@
 # Object-Oriented Programming in Java
 
-Java code examples for the undergraduate **Object-Oriented Programming with Java (Java ile Nesneye Dayalı Programlama)** course at Giresun University. Each `BolumNN/src` folder holds chapter NN of the course and contains the code shown on that chapter's slides as small runnable programs. Class, method and variable names follow the slides, so each program's output can be compared directly with the slide examples.
+Java code examples for the undergraduate **Object-Oriented Programming with Java (Java ile Nesneye Dayalı Programlama)** course at Giresun University. An English edition, with English names, comments and output, is [object-oriented-programming-java-en](https://github.com/sercankulcu/object-oriented-programming-java-en). Each `BolumNN/src` folder holds chapter NN of the course and contains the code shown on that chapter's slides as small runnable programs. Class, method and variable names follow the slides, so each program's output can be compared directly with the slide examples.
 
 Course page and slides: <https://sercankulcu.github.io/teaching/object-oriented-programming-with-java>
 
